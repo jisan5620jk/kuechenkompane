@@ -1,0 +1,213 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "apex_global_offer_timer_b9GWdM": {
+      "type": "Apex-global-offer-timer",
+      "name": "Apex Global Timer",
+      "settings": {
+        "bg_color": "#dce5dc",
+        "section_pt": 15,
+        "section_pb": 15,
+        "timer_clock": "#d2861a",
+        "timer_clock_text_font_size": 12,
+        "clock_font_weight": "400",
+        "timer_text": "Unser exklusives Angebot endet bald!",
+        "timer_font_size": 12,
+        "timer_color": "#000000",
+        "timer_font_weight": "400",
+        "target_date": "2025-09-26",
+        "target_time": "00:00:00",
+        "auto_restart": false,
+        "auto_interval_hours": 48
+      }
+    },
+    "rich_text_DTWea7": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_RdTMFb": {
+          "type": "heading",
+          "settings": {
+            "heading": "Ausverkauf von Restbeständen",
+            "heading_size": "h2"
+          }
+        },
+        "text_ALR8CN": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Jetzt Restbestände zum Vorteilspreis: Spare bis zu <strong>75% </strong>auf ausgewählte Artikel – nur solange der Vorrat reicht oder bis Preise angehoben werden.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_RdTMFb",
+        "text_ALR8CN"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "container": "container",
+        "color_scheme": "",
+        "content_alignment": "center",
+        "padding_top": 24,
+        "padding_bottom": 0,
+        "custom_class": "",
+        "animations": "inherit"
+      }
+    },
+    "collection-header": {
+      "type": "collection-page-header",
+      "disabled": true,
+      "settings": {
+        "color_scheme": "dark",
+        "container": "container-fluid",
+        "layout": "inside",
+        "image_position": "background",
+        "enable_parallax": false,
+        "parallax_direction": "vertical",
+        "text_alignment": "center",
+        "text_color": "inherit",
+        "upper_title": false,
+        "show_desc": true,
+        "collection_all_desc": "",
+        "padding_top": 36,
+        "padding_bottom": 50,
+        "enable_bg_zoom_effect": true
+      }
+    },
+    "hide_sold_out_toggle_YJq9yy": {
+      "type": "hide-sold-out-toggle",
+      "name": "Floow Hide Sold Out",
+      "settings": {
+        "show_only_in_editor": true,
+        "section_id": "#shopify-section-template--26793915416957__mrk_collection_grid_section_PKCq6B",
+        "text": "Nur verfügbare Artikel anzeigen",
+        "box_layout": false,
+        "section_width": 1340,
+        "section_margin": 15,
+        "margin_top_bottom_desktop": 16,
+        "margin_top_bottom_mobile": 16
+      }
+    },
+    "mrk_collection_grid_section_LpPYLP": {
+      "type": "mrk-collection-grid-section",
+      "name": "Akta Collection Grid",
+      "settings": {
+        "padding_top": 40,
+        "padding_bottom": 21,
+        "show_section_header": false,
+        "section_title": "Featured Collection",
+        "section_description": "Explore our best-selling products.",
+        "collection": "",
+        "products_limit": 20,
+        "use_metafield_image": false,
+        "hover_second_image": false,
+        "pagination_style": "circle",
+        "show_product_ratings": false,
+        "show_stock_status": true,
+        "show_gift_info": false,
+        "info_text": "",
+        "add_border_line": false,
+        "show_max_price": false,
+        "show_save_price": false
+      }
+    },
+    "promotion_banner_zN9WhN": {
+      "type": "promotion-banner",
+      "blocks": {
+        "promotion_8NQmaz": {
+          "type": "promotion",
+          "settings": {
+            "subheading": "DEINE CHANCE AUF",
+            "heading": "-75%",
+            "text_alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "promotion_8NQmaz"
+      ],
+      "name": "Promotion banner",
+      "settings": {
+        "container": "container-fluid",
+        "color_scheme": "",
+        "heading": "AUSVERKAUF VON RESTBESTÄNDEN",
+        "heading_size": "h2",
+        "text": "<p>Jetzt Restbestände zum Vorteilspreis: Spare bis zu <strong>75 % </strong>auf ausgewählte Artikel – nur solange der Vorrat reicht oder bis Preise angehoben werden.</p>",
+        "content_alignment": "left",
+        "banner_url": "shopify://collections/ausverkauf-von-restbestanden",
+        "button_label": "ANGEBOTE ENTDECKEN",
+        "button_style": "m-button--primary",
+        "button_size": "",
+        "padding_top": 70,
+        "padding_bottom": 70,
+        "custom_class": "",
+        "animations": "inherit"
+      }
+    },
+    "usp_list_xQHfgQ": {
+      "type": "usp-list",
+      "blocks": {
+        "item_JVyQJ8": {
+          "type": "item",
+          "settings": {
+            "usp_icon": "shopify://shop_images/GEZ100.png",
+            "usp_title": "Geld-zurück-Garantie",
+            "title_size": 18,
+            "usp_info": "100 Tage Rückgaberecht - ohne Risiko.",
+            "info_size": 14,
+            "divider": true
+          }
+        },
+        "item_BRBV37": {
+          "type": "item",
+          "settings": {
+            "usp_icon": "shopify://shop_images/Icons_for_Ku_echenkompane_D1-02.png",
+            "usp_title": "Kostenloser Versand",
+            "title_size": 18,
+            "usp_info": "Ab 100€ versandkostenfrei – schnell & zuverlässig.",
+            "info_size": 14,
+            "divider": true
+          }
+        },
+        "item_RKRMEB": {
+          "type": "item",
+          "settings": {
+            "usp_icon": "shopify://shop_images/Icons_for_Ku_echenkompane_D1-03.png",
+            "usp_title": "Schärfe Garantie",
+            "title_size": 18,
+            "usp_info": "Maximale Schärfe für müheloses Schneiden.",
+            "info_size": 14,
+            "divider": false
+          }
+        }
+      },
+      "block_order": [
+        "item_JVyQJ8",
+        "item_BRBV37",
+        "item_RKRMEB"
+      ],
+      "settings": {
+        "color_scheme": "",
+        "verticle_padding": 50,
+        "horizontal_padding": 50,
+        "verticle_padding_mobile": 30
+      }
+    }
+  },
+  "order": [
+    "apex_global_offer_timer_b9GWdM",
+    "rich_text_DTWea7",
+    "collection-header",
+    "hide_sold_out_toggle_YJq9yy",
+    "mrk_collection_grid_section_LpPYLP",
+    "promotion_banner_zN9WhN",
+    "usp_list_xQHfgQ"
+  ]
+}

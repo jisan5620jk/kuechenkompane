@@ -1,0 +1,147 @@
+<div id="easter-confetti-layer" style="position:fixed;inset:0;pointer-events:none;overflow:hidden;z-index:9999;"></div>
+
+<script>
+  (function () {
+    var IMAGES = [
+      {% for block in section.blocks %}
+        {% if block.type == 'egg_image' and block.settings.image %}
+          '{{ block.settings.image | image_url: width: 160 }}'{% unless forloop.last %},{% endunless %}
+        {% endif %}
+      {% endfor %}
+    ];
+
+    var layer = document.getElementById('easter-confetti-layer');
+    var spawnTimer = null;
+    var rafId = null;
+    var isRunning = false;
+    var particles = [];
+
+    function makeParticleData() {
+      if (IMAGES.length === 0) return null;
+      var isMobile = window.innerWidth <= 575;
+      var sizeScale = isMobile ? 0.4 : 1;
+      var W = window.innerWidth;
+      return {
+        imgIndex: Math.floor(Math.random() * IMAGES.length),
+        x0      : Math.random() * (W - 60),
+        sway    : (45 + Math.random() * 75) * sizeScale,
+        dur     : 2400 + Math.random() * 2000,
+        r0      : (Math.random() - 0.5) * 60,
+        r1      : 0,
+        sz      : (28 + Math.random() * 28) * sizeScale,
+        startMs : Date.now(),
+        el      : null
+      };
+    }
+
+    function buildEl(p) {
+      var el = document.createElement('div');
+      el.style.position = 'absolute';
+      el.style.pointerEvents = 'none';
+      var img = document.createElement('img');
+      img.src = IMAGES[p.imgIndex];
+      img.style.cssText = 'width:' + p.sz + 'px;height:' + (p.sz * 1.27) + 'px;object-fit:contain;display:block;';
+      el.appendChild(img);
+      p.r1 = p.r0 + (Math.random() - 0.5) * 420;
+      return el;
+    }
+
+    function spawnOne() {
+      var p = makeParticleData();
+      if (!p) return;
+      p.el = buildEl(p);
+      layer.appendChild(p.el);
+      particles.push(p);
+    }
+
+    function loop() {
+      if (!isRunning) return;
+      var now = Date.now();
+      var H = window.innerHeight;
+      var alive = [];
+
+      for (var i = 0; i < particles.length; i++) {
+        var p = particles[i];
+        var elapsed = now - p.startMs;
+        var progress = elapsed / p.dur;
+
+        if (progress >= 1) {
+          if (p.el && p.el.parentNode) p.el.parentNode.removeChild(p.el);
+          continue;
+        }
+
+        var y   = -65 + (H + 130) * progress;
+        var dx  = Math.sin(progress * Math.PI * 2.8) * p.sway;
+        var rot = p.r0 + (p.r1 - p.r0) * progress;
+        var op  = progress > 0.85 ? (1 - progress) / 0.15 : 0.93;
+
+        p.el.style.transform = 'translate(' + (p.x0 + dx) + 'px,' + y + 'px) rotate(' + rot + 'deg)';
+        p.el.style.opacity = op;
+        alive.push(p);
+      }
+
+      particles = alive;
+      rafId = requestAnimationFrame(loop);
+    }
+
+    function start() {
+      if (isRunning) return;
+      isRunning = true;
+
+      for (var i = 0; i < 6; i++) {
+        (function(i) { setTimeout(spawnOne, i * 70); })(i);
+      }
+
+      var lastSpawn = Date.now();
+      spawnTimer = setInterval(function () {
+        var now = Date.now();
+        var missed = Math.min(Math.floor((now - lastSpawn) / 270), 8);
+        lastSpawn = now;
+        for (var j = 0; j < Math.max(missed, 3); j++) spawnOne();
+      }, 270);
+
+      rafId = requestAnimationFrame(loop);
+    }
+
+    function stop() {
+      isRunning = false;
+      if (spawnTimer) { clearInterval(spawnTimer); spawnTimer = null; }
+      if (rafId) { cancelAnimationFrame(rafId); rafId = null; }
+      particles.forEach(function(p) { if (p.el && p.el.parentNode) p.el.parentNode.removeChild(p.el); });
+      particles = [];
+    }
+
+    document.addEventListener('passwordCorrect', start);
+    document.addEventListener('greetingStop', stop);
+
+    window.easterConfetti = { start: start, stop: stop };
+
+  })();
+</script>
+
+{% schema %}
+{
+  "name": "Easter confetti",
+  "tag": "section",
+  "class": "easter-confetti",
+  "settings": [],
+  "blocks": [
+    {
+      "type": "egg_image",
+      "name": "Animation Shape image",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Shape image"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Easter confetti"
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,1847 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "apex_timer_9Rjc9m": {
+      "type": "Apex-timer",
+      "disabled": true,
+      "settings": {
+        "bg_color": "#dce5dc",
+        "section_pt": 15,
+        "section_pb": 15,
+        "timer_clock": "#d2861a",
+        "timer_clock_text_font_size": 12,
+        "clock_font_weight": "400",
+        "timer_text": "Das Angebot endet in bald!",
+        "timer_font_size": 12,
+        "timer_color": "#000000",
+        "timer_font_weight": "400",
+        "start_time": "00:00:00"
+      }
+    },
+    "main": {
+      "type": "main-product",
+      "disabled": true,
+      "settings": {
+        "container": "container-fluid",
+        "layout": "layout-4",
+        "show_atwl": true,
+        "enable_history_state": true,
+        "enable_variant_group_images": false,
+        "disable_selected_variant_default": false,
+        "show_featured_media": true,
+        "show_zoom_button": true,
+        "enable_video_autoplay": true,
+        "show_nav_media_mobile": true,
+        "show_pagination_mobile": false,
+        "use_sticky_atc": true,
+        "use_sticky_atc_on_mobile": true,
+        "enable_dynamic_checkout": false,
+        "sticky_atc_wishtlist": false,
+        "sticky_atc_compare": false
+      }
+    },
+    "apex_theme_product_page_copy_bfPEWH": {
+      "type": "apex-theme-product-page-copy",
+      "blocks": {
+        "title_Bac9Mk": {
+          "type": "title",
+          "settings": {
+            "p_t_s": 32,
+            "p_t_s_m": 20,
+            "font_weight_t": "400"
+          }
+        },
+        "subtitle_xQXVba": {
+          "type": "subtitle",
+          "settings": {
+            "subtitle": "Jedes Stück ein echtes Natur-Unikat mit einzigartiger Maserung.",
+            "subtitle_font_size": 16,
+            "subtitle_weight": "400"
+          }
+        },
+        "review_Tgbbak": {
+          "type": "review",
+          "settings": {
+            "p": "4.7/5 bei Trustpilot",
+            "star_range": 5,
+            "star_color": "#000000"
+          }
+        },
+        "ratings_fD4VNJ": {
+          "type": "ratings",
+          "settings": {
+            "likeImg1": "shopify://shop_images/Testi3.webp",
+            "likeImg2": "shopify://shop_images/Testi1_06655792-039c-4c4c-a68d-210b3c8a4ab8.webp",
+            "likeImg3": "shopify://shop_images/Testi2.jpg",
+            "likecount": "200,532+ Personen",
+            "like_bg": "#ddede0",
+            "likeinfo": "lieben unsere Produkte!",
+            "demandBadge": "Hohe Nachfrage",
+            "demandText": "überdurchschnittlich oft besucht!"
+          }
+        },
+        "price_J4wXWJ": {
+          "type": "price",
+          "settings": {
+            "Show_lowest_price": true,
+            "lowest_price_text": "Der niedrigste Preis in den letzten 30 Tagen",
+            "taxes_included": true,
+            "taxes_included_text": "",
+            "show_saving": true,
+            "sale_badge_type": "percentage",
+            "badge_text": "",
+            "p_pt": 5,
+            "p_pb": 5,
+            "p_pt_m": 5,
+            "p_pb_m": 5,
+            "price_color": "#000000",
+            "c_price_color": "#bbbbbb",
+            "per_badge_bg": "#000000",
+            "per_badge_color": "#ffffff",
+            "f_s": 21,
+            "f_s_m": 19,
+            "c_price_size": 16,
+            "c_price_size_m": 16,
+            "price_font_weight": "600",
+            "price_tag_bg": "#ddede0",
+            "price_tag_text_color": "#000000",
+            "price_tag_font_size": 8,
+            "price_tag_arrow_bg": "#ddede0",
+            "border_radius": 2
+          }
+        },
+        "product_stock_status_dN9Lmm": {
+          "type": "product_stock_status",
+          "settings": {
+            "unavailable_text": "Derzeit ausverkauft"
+          }
+        },
+        "featurelist_item_tL79ih": {
+          "type": "featurelist_item",
+          "settings": {
+            "featurelist_item": "<p>Naturprodukt – begrenzte Stückzahl je Charge</p>",
+            "featurelist_item_color": "#000000",
+            "featurelist_item_size": 14,
+            "invert_img": false
+          }
+        },
+        "featurelist_item_jQJcPz": {
+          "type": "featurelist_item",
+          "settings": {
+            "featurelist_item": "<p>Jedes Stück ein echtes Unikat - made in germany</p>",
+            "featurelist_item_color": "#000000",
+            "featurelist_item_size": 14,
+            "invert_img": false
+          }
+        },
+        "featurelist_item_fr8wAx": {
+          "type": "featurelist_item",
+          "settings": {
+            "featurelist_item": "<p>Natürlich hygienisch & messerschonend – perfekt für den täglichen Einsatz</p>",
+            "featurelist_item_color": "#000000",
+            "featurelist_item_size": 14,
+            "invert_img": false
+          }
+        },
+        "variant_picker_KkEnbw": {
+          "type": "variant_picker",
+          "settings": {
+            "size_title": "Size"
+          }
+        },
+        "delivery_info_qfzDrb": {
+          "type": "delivery_info",
+          "settings": {
+            "delivery_info": "Jetzt bestellen - Lieferung vor dem:",
+            "weekday_days": 3,
+            "weekend_days": 4,
+            "delivery_alignment": "center",
+            "pt": 0
+          }
+        },
+        "buy_buttons_3hQqVi": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_quantity_selector": false,
+            "show_atc_button": true,
+            "show_dynamic_checkout": false,
+            "show_gift_card_recipient": true,
+            "btn_mt": 8
+          }
+        },
+        "payment_icon_tePtpf": {
+          "type": "paymentIcon",
+          "settings": {
+            "payment_img": "shopify://shop_images/Trust_Badges_-_DACH_1.png"
+          }
+        },
+        "product_info_9Yqdn9": {
+          "type": "productInfo",
+          "settings": {
+            "info_img_1": "shopify://shop_images/Garntie_d60e2759-1e67-4bce-b8fb-cfaf27d7576c.png",
+            "info_text_1": "100 Tage risikofrei testen",
+            "info_img_2": "shopify://shop_images/Delivery_acbeffd9-1fa0-4574-bba0-b6c8907df283.png",
+            "info_text_2": "Kostenloser Versand ab 100€",
+            "info_img_3": "shopify://shop_images/anvil_10102933_1.png",
+            "info_text_3": "2 Jahre Garantie",
+            "info_bg_color": "#ffffff",
+            "info_border_color": "#000000",
+            "info_text_color": "#000000",
+            "invert_img_color": false
+          }
+        }
+      },
+      "block_order": [
+        "title_Bac9Mk",
+        "subtitle_xQXVba",
+        "review_Tgbbak",
+        "ratings_fD4VNJ",
+        "price_J4wXWJ",
+        "product_stock_status_dN9Lmm",
+        "featurelist_item_tL79ih",
+        "featurelist_item_jQJcPz",
+        "featurelist_item_fr8wAx",
+        "variant_picker_KkEnbw",
+        "delivery_info_qfzDrb",
+        "buy_buttons_3hQqVi",
+        "payment_icon_tePtpf",
+        "product_info_9Yqdn9"
+      ],
+      "settings": {
+        "selected_gift_product": "",
+        "show_sold_out_badge_on_image": true,
+        "color_scheme": "default",
+        "container": "container",
+        "layout": "layout-6",
+        "show_atwl": true,
+        "enable_history_state": true,
+        "enable_variant_group_images": false,
+        "disable_selected_variant_default": false,
+        "show_featured_media": true,
+        "show_zoom_button": true,
+        "enable_video_autoplay": false,
+        "show_nav_media_mobile": false,
+        "show_pagination_mobile": true,
+        "use_sticky_atc": true,
+        "use_sticky_atc_on_mobile": true,
+        "enable_dynamic_checkout": false,
+        "sticky_atc_wishtlist": false,
+        "sticky_atc_compare": false,
+        "saving_text": "Du sparst",
+        "price_color": "#000000",
+        "stk_com_p": "#dc2626",
+        "show_stk_icon": false,
+        "glitter_effec": false,
+        "bubble_before_color": "#4b4b4b",
+        "bubble_after_color": "#4b4b4b",
+        "per_title": "Personalisierung",
+        "per_sub_title": "Gib Namen, Initialen oder Zahlen ein. Du kannst sie sogar kombinieren.",
+        "save_btn": "Save",
+        "cancel_btn": "Cancel"
+      }
+    },
+    "product_descrption_accordion_btdDtQ": {
+      "type": "product-descrption-accordion",
+      "blocks": {
+        "faq_jkYPLV": {
+          "type": "faq",
+          "settings": {
+            "question": "365 Tage Qualitätsversprechen",
+            "answer": "<p>Olivenholz ist ein Naturmaterial – jedes Stück ist einzigartig.<br/><br/>Genau deshalb stehen wir mit unserem Namen dafür ein.</p><p>Sollte dein Produkt innerhalb von 365 Tagen Materialfehler aufweisen oder nicht deinen Erwartungen entsprechen, finden wir gemeinsam eine Lösung.</p>"
+          }
+        },
+        "faq_kQAWhE": {
+          "type": "faq",
+          "settings": {
+            "question": "Versand & Zahlungsoptionen",
+            "answer": "<p>Olivenholz ist wertvoll. Deshalb versenden wir jedes Produkt:</p><ul><li>sorgfältig geprüft<br/></li><li>bruchsicher verpackt<br/></li><li>klimafreundlich versendet<br/></li></ul><p><strong>Kostenloser Versand  EU-weit (1-3 Tage)</strong></p><p>Mit dem kostenlosen 1- bis 3-tägigen Versand wird dein Paket schnell geliefert. Du hast die Möglichkeit für eine geringe Gebühr von 9,90 € auf Expressversand (Lieferung in einem Werktag) upzugraden.</p><p><strong>Versand in andere Länder z.B. Schweiz</strong></p><p>Wenn du dich außerhalb der EU befindest, kannst du dein Paket innerhalb von 2-3 Tagen für nur 16,90 € in alle anderen Länder liefern lassen und mit der Expressoption für 39,90 € sogar noch schneller!</p><p><strong>Zahlungsoptionen</strong></p><ul><li>Paypal</li><li>Visa, Mastercard, Maestro, American Express</li><li>Apple Pay, Google Pay</li><li>Klarna Rechnung</li></ul>"
+          }
+        },
+        "faq_pDwHXa": {
+          "type": "faq",
+          "settings": {
+            "question": "Produktinfos & Pflegehinweise",
+            "answer": "<h3>Material & Herkunft</h3><ul><li>100 % massives Olivenholz<br/></li><li>Natürlich gewachsene, individuelle Maserung<br/></li><li>Lebensmittelecht geölt<br/></li><li>Frei von chemischen Zusätzen<br/></li></ul><p>Olivenholz gehört zu den härtesten und dichtesten Hölzern Europas – dadurch besonders robust und langlebig.</p><h3>Hygienische Eigenschaften</h3><p>Durch seine dichte Struktur besitzt Olivenholz von Natur aus antibakterielle Eigenschaften und ist ideal für den Einsatz in der Küche geeignet.</p><h3>Pflegehinweis</h3><ul><li>Nicht spülmaschinengeeignet<br/></li><li>Mit warmem Wasser reinigen<br/></li><li>Regelmäßig mit etwas Speiseöl pflegen<br/></li></ul><p>So bleibt die natürliche Schönheit über viele Jahre erhalten.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "faq_jkYPLV",
+        "faq_kQAWhE",
+        "faq_pDwHXa"
+      ],
+      "settings": {
+        "color_scheme": "badge-hot",
+        "title": "Produktbeschreibung:",
+        "heading_type": "mrk-h3",
+        "description": "{{ product.description }}",
+        "mt": 30,
+        "mb": 40,
+        "add_showore_btn": true,
+        "readmore": "Mehr lesen",
+        "readless": "Weniger Lesen",
+        "br_color": "#000000",
+        "icon_color": "#000000"
+      }
+    },
+    "floow_comparison_table_with_image_tLKVyk": {
+      "type": "floow-comparison-table-with-image",
+      "blocks": {
+        "floow_table_group_FmpXqe": {
+          "type": "_floow-table-group",
+          "settings": {
+            "show_only_in_editor": false,
+            "bg_color": "",
+            "border_radius": 0,
+            "width": 500,
+            "gap": 10,
+            "flex-wrap": "nowrap",
+            "flex-direction": "column",
+            "justify-content": "center",
+            "align-items": "center",
+            "width_mobile": 300,
+            "gap-mobile": 10,
+            "flex-wrap-mobile": "nowrap",
+            "flex-direction-mobile": "column",
+            "justify-content-mobile": "center",
+            "align-items-mobile": "center",
+            "padding_top": 0,
+            "padding_bottom": 0,
+            "padding_right": 0,
+            "padding_left": 0,
+            "margin_top": 0,
+            "margin_bottom": 0
+          },
+          "blocks": {
+            "floow_image_GJ3Tib": {
+              "type": "_floow-image",
+              "settings": {
+                "image": "shopify://shop_images/kuechenkompane_vs_andere_final.png",
+                "width": 600,
+                "width_mobile": 600,
+                "radius": 26,
+                "radius_mobile": 20,
+                "margin_top": 0,
+                "margin_bottom": 0,
+                "margin_top_mobile": -80,
+                "margin_bottom_mobile": 0
+              },
+              "blocks": {}
+            },
+            "floow_heading_4TEP9U": {
+              "type": "_floow-heading",
+              "settings": {
+                "heading": "Küchenkompane vs. Andere Anbieter",
+                "heading_type": "h2",
+                "max_width": 0,
+                "font_size": 24,
+                "font_size_mobile": 18,
+                "alignment": "center",
+                "alignment_mobile": "center",
+                "color": "#000000",
+                "margin_top": 12,
+                "margin_bottom": 0,
+                "margin_top_mobile": 0,
+                "margin_bottom_mobile": 0
+              },
+              "blocks": {}
+            },
+            "floow_text_KDehax": {
+              "type": "_floow-text",
+              "settings": {
+                "text": "<p>Was uns von anderen abhebt:</p>",
+                "font_size": 18,
+                "margin_top": 0,
+                "margin_bottom": 0,
+                "text_type": "h2",
+                "alignment": "center",
+                "font_color": "#000000",
+                "background_color": "",
+                "padding_top": 0,
+                "padding_bottom": 0,
+                "padding_right": 0,
+                "padding_left": 0
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "floow_image_GJ3Tib",
+            "floow_heading_4TEP9U",
+            "floow_text_KDehax"
+          ]
+        },
+        "floow_table_group_YnLYHW": {
+          "type": "_floow-table-group",
+          "settings": {
+            "show_only_in_editor": false,
+            "bg_color": "",
+            "border_radius": 0,
+            "width": 500,
+            "gap": 10,
+            "flex-wrap": "nowrap",
+            "flex-direction": "column",
+            "justify-content": "center",
+            "align-items": "center",
+            "width_mobile": 600,
+            "gap-mobile": 10,
+            "flex-wrap-mobile": "nowrap",
+            "flex-direction-mobile": "column",
+            "justify-content-mobile": "center",
+            "align-items-mobile": "center",
+            "padding_top": 0,
+            "padding_bottom": 0,
+            "padding_right": 0,
+            "padding_left": 0,
+            "margin_top": 20,
+            "margin_bottom": 20
+          },
+          "blocks": {
+            "floow_table_8eXk3g": {
+              "type": "_floow-table",
+              "settings": {
+                "bg_color": "#ffffff",
+                "border_radius": 15,
+                "padding": 10,
+                "padding_mobile": 10,
+                "enable_show_more": true,
+                "visible_rows": 7,
+                "show_more_text": "Mehr anzeigen",
+                "show_less_text": "Weniger anzeigen",
+                "button_bg_color": "#324a34",
+                "button_text_color": "#ffffff",
+                "button_border_radius": 8,
+                "button_font_size": 14,
+                "button_margin_top": 12
+              },
+              "blocks": {
+                "floow_table_row_niAAUe": {
+                  "type": "_floow-table-row",
+                  "settings": {
+                    "border_color": "#000000",
+                    "border_width": 0
+                  },
+                  "blocks": {
+                    "floow_table_cell_neLJaW": {
+                      "type": "_floow-table-cell",
+                      "name": "Floow Table Cell",
+                      "settings": {
+                        "icon": "shopify://shop_images/kuechenkompane_logo_vs.png",
+                        "icon_height": 80,
+                        "icon_height_mobile": 50,
+                        "text": "",
+                        "font_size": 14,
+                        "flex_direction": "row",
+                        "gap": 0,
+                        "flex_direction_mobile": "column",
+                        "align_items_mobile": "center",
+                        "text_align_mobile": "center",
+                        "gap_mobile": 4,
+                        "bg_color": "#eeeff8",
+                        "padding_top": 15,
+                        "padding_bottom": 15,
+                        "padding_right": 15,
+                        "padding_left": 15,
+                        "border_radius_top_left": 5,
+                        "border_radius_top_right": 5,
+                        "border_radius_bottom_right": 5,
+                        "border_radius_bottom_left": 5
+                      },
+                      "blocks": {}
+                    },
+                    "floow_table_cell_yPAtQ8": {
+                      "type": "_floow-table-cell",
+                      "name": "Floow Table Cell",
+                      "settings": {
+                        "icon": "shopify://shop_images/andere-anbieter_e3f530b3-3aca-4bb0-8832-6212d37ee989.png",
+                        "icon_height": 80,
+                        "icon_height_mobile": 50,
+                        "text": "",
+                        "font_size": 14,
+                        "flex_direction": "row",
+                        "gap": 0,
+                        "flex_direction_mobile": "column",
+                        "align_items_mobile": "center",
+                        "text_align_mobile": "center",
+                        "gap_mobile": 4,
+                        "bg_color": "",
+                        "padding_top": 15,
+                        "padding_bottom": 15,
+                        "padding_right": 15,
+                        "padding_left": 15,
+                        "border_radius_top_left": 0,
+                        "border_radius_top_right": 0,
+                        "border_radius_bottom_right": 0,
+                        "border_radius_bottom_left": 0
+                      },
+                      "blocks": {}
+                    }
+                  },
+                  "block_order": [
+                    "floow_table_cell_neLJaW",
+                    "floow_table_cell_yPAtQ8"
+                  ]
+                },
+                "floow_table_row_3dF6cX": {
+                  "type": "_floow-table-row",
+                  "name": "Floow Table Row",
+                  "settings": {
+                    "border_color": "#000000",
+                    "border_width": 0
+                  },
+                  "blocks": {
+                    "floow_table_cell_g8nwh7": {
+                      "type": "_floow-table-cell",
+                      "name": "Floow Table Cell",
+                      "settings": {
+                        "icon": "shopify://shop_images/checked_11c824a8-258d-47b5-8d73-7c29463a3f60.png",
+                        "icon_height": 36,
+                        "icon_height_mobile": 24,
+                        "text": "<p>Hoher Härtegrad  <br/>60+ HRC</p>",
+                        "font_size": 16,
+                        "flex_direction": "row",
+                        "gap": 10,
+                        "flex_direction_mobile": "column",
+                        "align_items_mobile": "center",
+                        "text_align_mobile": "center",
+                        "gap_mobile": 10,
+                        "bg_color": "#eeeff8",
+                        "padding_top": 15,
+                        "padding_bottom": 15,
+                        "padding_right": 15,
+                        "padding_left": 15,
+                        "border_radius_top_left": 0,
+                        "border_radius_top_right": 0,
+                        "border_radius_bottom_right": 0,
+                        "border_radius_bottom_left": 0
+                      },
+                      "blocks": {}
+                    },
+                    "floow_table_cell_febpp8": {
+                      "type": "_floow-table-cell",
+                      "name": "Floow Table Cell",
+                      "settings": {
+                        "icon": "shopify://shop_images/close.svg",
+                        "icon_height": 36,
+                        "icon_height_mobile": 24,
+                        "text": "<p>Geringer Härtegrad <br/>&lt; 52 HRC</p>",
+                        "font_size": 16,
+                        "flex_direction": "row",
+                        "gap": 10,
+                        "flex_direction_mobile": "column",
+                        "align_items_mobile": "center",
+                        "text_align_mobile": "center",
+                        "gap_mobile": 10,
+                        "bg_color": "",
+                        "padding_top": 15,
+                        "padding_bottom": 5,
+                        "padding_right": 15,
+                        "padding_left": 15,
+                        "border_radius_top_left": 0,
+                        "border_radius_top_right": 0,
+                        "border_radius_bottom_right": 0,
+                        "border_radius_bottom_left": 0
+                      },
+                      "blocks": {}
+                    }
+                  },
+                  "block_order": [
+                    "floow_table_cell_g8nwh7",
+                    "floow_table_cell_febpp8"
+                  ]
+                },
+                "floow_table_row_GwbieV": {
+                  "type": "_floow-table-row",
+                  "name": "Floow Table Row",
+                  "settings": {
+                    "border_color": "#000000",
+                    "border_width": 0
+                  },
+                  "blocks": {
+                    "floow_table_cell_giwwKP": {
+                      "type": "_floow-table-cell",
+                      "name": "Floow Table Cell",
+                      "settings": {
+                        "icon": "shopify://shop_images/checked_11c824a8-258d-47b5-8d73-7c29463a3f60.png",
+                        "icon_height": 36,
+                        "icon_height_mobile": 24,
+                        "text": "<p>Hochwertiger <br/>Premiumstahl</p>",
+                        "font_size": 16,
+                        "flex_direction": "row",
+                        "gap": 10,
+                        "flex_direction_mobile": "column",
+                        "align_items_mobile": "center",
+                        "text_align_mobile": "center",
+                        "gap_mobile": 10,
+                        "bg_color": "#eeeff8",
+                        "padding_top": 15,
+                        "padding_bottom": 15,
+                        "padding_right": 15,
+                        "padding_left": 15,
+                        "border_radius_top_left": 0,
+                        "border_radius_top_right": 0,
+                        "border_radius_bottom_right": 0,
+                        "border_radius_bottom_left": 0
+                      },
+                      "blocks": {}
+                    },
+                    "floow_table_cell_AUqXmm": {
+                      "type": "_floow-table-cell",
+                      "name": "Floow Table Cell",
+                      "settings": {
+                        "icon": "shopify://shop_images/close.svg",
+                        "icon_height": 36,
+                        "icon_height_mobile": 24,
+                        "text": "<p>Billiger<br/>Stahl</p>",
+                        "font_size": 16,
+                        "flex_direction": "row",
+                        "gap": 10,
+                        "flex_direction_mobile": "column",
+                        "align_items_mobile": "center",
+                        "text_align_mobile": "center",
+                        "gap_mobile": 10,
+                        "bg_color": "",
+                        "padding_top": 15,
+                        "padding_bottom": 15,
+                        "padding_right": 15,
+                        "padding_left": 15,
+                        "border_radius_top_left": 0,
+                        "border_radius_top_right": 0,
+                        "border_radius_bottom_right": 0,
+                        "border_radius_bottom_left": 0
+                      },
+                      "blocks": {}
+                    }
+                  },
+                  "block_order": [
+                    "floow_table_cell_giwwKP",
+                    "floow_table_cell_AUqXmm"
+                  ]
+                },
+                "floow_table_row_WHWJze": {
+                  "type": "_floow-table-row",
+                  "name": "Floow Table Row",
+                  "settings": {
+                    "border_color": "#000000",
+                    "border_width": 0
+                  },
+                  "blocks": {
+                    "floow_table_cell_dXNBTq": {
+                      "type": "_floow-table-cell",
+                      "name": "Floow Table Cell",
+                      "settings": {
+                        "icon": "shopify://shop_images/checked_11c824a8-258d-47b5-8d73-7c29463a3f60.png",
+                        "icon_height": 36,
+                        "icon_height_mobile": 24,
+                        "text": "<p>Ergonomische<br/>Griffe</p>",
+                        "font_size": 16,
+                        "flex_direction": "row",
+                        "gap": 10,
+                        "flex_direction_mobile": "column",
+                        "align_items_mobile": "center",
+                        "text_align_mobile": "center",
+                        "gap_mobile": 10,
+                        "bg_color": "#eeeff8",
+                        "padding_top": 15,
+                        "padding_bottom": 15,
+                        "padding_right": 15,
+                        "padding_left": 15,
+                        "border_radius_top_left": 0,
+                        "border_radius_top_right": 0,
+                        "border_radius_bottom_right": 0,
+                        "border_radius_bottom_left": 0
+                      },
+                      "blocks": {}
+                    },
+                    "floow_table_cell_gQLYb4": {
+                      "type": "_floow-table-cell",
+                      "name": "Floow Table Cell",
+                      "settings": {
+                        "icon": "shopify://shop_images/close.svg",
+                        "icon_height": 36,
+                        "icon_height_mobile": 24,
+                        "text": "<p>Glatte haftende <br/>Fläche</p>",
+                        "font_size": 16,
+                        "flex_direction": "row",
+                        "gap": 10,
+                        "flex_direction_mobile": "column",
+                        "align_items_mobile": "center",
+                        "text_align_mobile": "center",
+                        "gap_mobile": 10,
+                        "bg_color": "",
+                        "padding_top": 15,
+                        "padding_bottom": 15,
+                        "padding_right": 15,
+                        "padding_left": 15,
+                        "border_radius_top_left": 0,
+                        "border_radius_top_right": 0,
+                        "border_radius_bottom_right": 0,
+                        "border_radius_bottom_left": 0
+                      },
+                      "blocks": {}
+                    }
+                  },
+                  "block_order": [
+                    "floow_table_cell_dXNBTq",
+                    "floow_table_cell_gQLYb4"
+                  ]
+                },
+                "floow_table_row_EmKGK7": {
+                  "type": "_floow-table-row",
+                  "name": "Floow Table Row",
+                  "settings": {
+                    "border_color": "#000000",
+                    "border_width": 0
+                  },
+                  "blocks": {
+                    "floow_table_cell_xDnTjr": {
+                      "type": "_floow-table-cell",
+                      "name": "Floow Table Cell",
+                      "settings": {
+                        "icon": "shopify://shop_images/checked_11c824a8-258d-47b5-8d73-7c29463a3f60.png",
+                        "icon_height": 36,
+                        "icon_height_mobile": 24,
+                        "text": "<p>100% <br/>Rostfrei</p>",
+                        "font_size": 16,
+                        "flex_direction": "row",
+                        "gap": 10,
+                        "flex_direction_mobile": "column",
+                        "align_items_mobile": "center",
+                        "text_align_mobile": "center",
+                        "gap_mobile": 4,
+                        "bg_color": "#eeeff8",
+                        "padding_top": 15,
+                        "padding_bottom": 15,
+                        "padding_right": 15,
+                        "padding_left": 15,
+                        "border_radius_top_left": 0,
+                        "border_radius_top_right": 0,
+                        "border_radius_bottom_right": 0,
+                        "border_radius_bottom_left": 0
+                      },
+                      "blocks": {}
+                    },
+                    "floow_table_cell_a6wwKz": {
+                      "type": "_floow-table-cell",
+                      "name": "Floow Table Cell",
+                      "settings": {
+                        "icon": "shopify://shop_images/close.svg",
+                        "icon_height": 36,
+                        "icon_height_mobile": 24,
+                        "text": "<p>Kaum<br/>rostbeständig</p>",
+                        "font_size": 16,
+                        "flex_direction": "row",
+                        "gap": 10,
+                        "flex_direction_mobile": "column",
+                        "align_items_mobile": "center",
+                        "text_align_mobile": "center",
+                        "gap_mobile": 4,
+                        "bg_color": "",
+                        "padding_top": 15,
+                        "padding_bottom": 15,
+                        "padding_right": 15,
+                        "padding_left": 15,
+                        "border_radius_top_left": 0,
+                        "border_radius_top_right": 0,
+                        "border_radius_bottom_right": 0,
+                        "border_radius_bottom_left": 0
+                      },
+                      "blocks": {}
+                    }
+                  },
+                  "block_order": [
+                    "floow_table_cell_xDnTjr",
+                    "floow_table_cell_a6wwKz"
+                  ]
+                },
+                "floow_table_row_QthVdL": {
+                  "type": "_floow-table-row",
+                  "name": "Floow Table Row",
+                  "settings": {
+                    "border_color": "#000000",
+                    "border_width": 0
+                  },
+                  "blocks": {
+                    "floow_table_cell_pgL99g": {
+                      "type": "_floow-table-cell",
+                      "name": "Floow Table Cell",
+                      "settings": {
+                        "icon": "shopify://shop_images/checked_11c824a8-258d-47b5-8d73-7c29463a3f60.png",
+                        "icon_height": 36,
+                        "icon_height_mobile": 24,
+                        "text": "<p>Von Hand<br/>gefertigt</p>",
+                        "font_size": 16,
+                        "flex_direction": "row",
+                        "gap": 10,
+                        "flex_direction_mobile": "column",
+                        "align_items_mobile": "center",
+                        "text_align_mobile": "center",
+                        "gap_mobile": 4,
+                        "bg_color": "#eeeff8",
+                        "padding_top": 15,
+                        "padding_bottom": 15,
+                        "padding_right": 15,
+                        "padding_left": 15,
+                        "border_radius_top_left": 0,
+                        "border_radius_top_right": 0,
+                        "border_radius_bottom_right": 0,
+                        "border_radius_bottom_left": 0
+                      },
+                      "blocks": {}
+                    },
+                    "floow_table_cell_UDBgQm": {
+                      "type": "_floow-table-cell",
+                      "name": "Floow Table Cell",
+                      "settings": {
+                        "icon": "shopify://shop_images/close.svg",
+                        "icon_height": 36,
+                        "icon_height_mobile": 24,
+                        "text": "<p>Maschinell<br/>produziert</p>",
+                        "font_size": 16,
+                        "flex_direction": "row",
+                        "gap": 10,
+                        "flex_direction_mobile": "column",
+                        "align_items_mobile": "center",
+                        "text_align_mobile": "center",
+                        "gap_mobile": 4,
+                        "bg_color": "",
+                        "padding_top": 15,
+                        "padding_bottom": 15,
+                        "padding_right": 15,
+                        "padding_left": 15,
+                        "border_radius_top_left": 0,
+                        "border_radius_top_right": 0,
+                        "border_radius_bottom_right": 0,
+                        "border_radius_bottom_left": 0
+                      },
+                      "blocks": {}
+                    }
+                  },
+                  "block_order": [
+                    "floow_table_cell_pgL99g",
+                    "floow_table_cell_UDBgQm"
+                  ]
+                },
+                "floow_table_row_tmC6xQ": {
+                  "type": "_floow-table-row",
+                  "name": "Floow Table Row",
+                  "settings": {
+                    "border_color": "#000000",
+                    "border_width": 0
+                  },
+                  "blocks": {
+                    "floow_table_cell_EYVJME": {
+                      "type": "_floow-table-cell",
+                      "name": "Floow Table Cell",
+                      "settings": {
+                        "icon": "shopify://shop_images/checked_11c824a8-258d-47b5-8d73-7c29463a3f60.png",
+                        "icon_height": 36,
+                        "icon_height_mobile": 24,
+                        "text": "<p>Eigene<br/>Herstellung</p>",
+                        "font_size": 16,
+                        "flex_direction": "row",
+                        "gap": 10,
+                        "flex_direction_mobile": "column",
+                        "align_items_mobile": "center",
+                        "text_align_mobile": "center",
+                        "gap_mobile": 4,
+                        "bg_color": "#eeeff8",
+                        "padding_top": 15,
+                        "padding_bottom": 15,
+                        "padding_right": 15,
+                        "padding_left": 15,
+                        "border_radius_top_left": 0,
+                        "border_radius_top_right": 0,
+                        "border_radius_bottom_right": 0,
+                        "border_radius_bottom_left": 0
+                      },
+                      "blocks": {}
+                    },
+                    "floow_table_cell_pN6QQk": {
+                      "type": "_floow-table-cell",
+                      "name": "Floow Table Cell",
+                      "settings": {
+                        "icon": "shopify://shop_images/close.svg",
+                        "icon_height": 36,
+                        "icon_height_mobile": 24,
+                        "text": "<p>Meistens nur<br/>eingekauft</p>",
+                        "font_size": 16,
+                        "flex_direction": "row",
+                        "gap": 10,
+                        "flex_direction_mobile": "column",
+                        "align_items_mobile": "center",
+                        "text_align_mobile": "center",
+                        "gap_mobile": 4,
+                        "bg_color": "",
+                        "padding_top": 15,
+                        "padding_bottom": 15,
+                        "padding_right": 15,
+                        "padding_left": 15,
+                        "border_radius_top_left": 0,
+                        "border_radius_top_right": 0,
+                        "border_radius_bottom_right": 0,
+                        "border_radius_bottom_left": 0
+                      },
+                      "blocks": {}
+                    }
+                  },
+                  "block_order": [
+                    "floow_table_cell_EYVJME",
+                    "floow_table_cell_pN6QQk"
+                  ]
+                }
+              },
+              "block_order": [
+                "floow_table_row_niAAUe",
+                "floow_table_row_3dF6cX",
+                "floow_table_row_GwbieV",
+                "floow_table_row_WHWJze",
+                "floow_table_row_EmKGK7",
+                "floow_table_row_QthVdL",
+                "floow_table_row_tmC6xQ"
+              ]
+            }
+          },
+          "block_order": [
+            "floow_table_8eXk3g"
+          ]
+        }
+      },
+      "block_order": [
+        "floow_table_group_FmpXqe",
+        "floow_table_group_YnLYHW"
+      ],
+      "disabled": true,
+      "name": "Floow Comp Table & Image",
+      "settings": {
+        "show_only_in_editor": true,
+        "bg_color": "#c6d1c4",
+        "border_radius": 0,
+        "gap": 40,
+        "flex-wrap": "nowrap",
+        "flex-direction": "row",
+        "justify-content": "center",
+        "align-items": "center",
+        "gap-mobile": 10,
+        "flex-wrap-mobile": "nowrap",
+        "flex-direction-mobile": "column",
+        "justify-content-mobile": "center",
+        "align-items-mobile": "center",
+        "padding_top": 50,
+        "padding_bottom": 50,
+        "padding_right": 25,
+        "padding_left": 25,
+        "padding_top_mobile": 20,
+        "padding_bottom_mobile": 20,
+        "padding_right_mobile": 10,
+        "padding_left_mobile": 10,
+        "margin_top": 60,
+        "margin_bottom": 40
+      }
+    },
+    "product-details-tabs": {
+      "type": "product-details-tabs",
+      "blocks": {
+        "tab_gknmWn": {
+          "type": "tab",
+          "settings": {
+            "header": "Beschreibung",
+            "content": "",
+            "content_page": ""
+          }
+        },
+        "tab": {
+          "type": "tab",
+          "settings": {
+            "header": "Lieferumfang",
+            "content": "{{ product.metafields.custom.accordion_content_2 | metafield_tag }}",
+            "content_page": ""
+          }
+        },
+        "tab_yXpqFL": {
+          "type": "tab",
+          "settings": {
+            "header": "Versand",
+            "content": "",
+            "content_page": ""
+          }
+        },
+        "tab_LBwXaE": {
+          "type": "tab",
+          "settings": {
+            "header": "Garantie",
+            "content": "",
+            "content_page": ""
+          }
+        }
+      },
+      "block_order": [
+        "tab_gknmWn",
+        "tab",
+        "tab_yXpqFL",
+        "tab_LBwXaE"
+      ],
+      "disabled": true,
+      "custom_css": [
+        ".m-tabs__header {justify-content: flex-start;}"
+      ],
+      "settings": {
+        "container": "container",
+        "color_scheme": "",
+        "default_open": true,
+        "padding_top": 0,
+        "padding_bottom": 50,
+        "custom_class": "",
+        "animations": "inherit"
+      }
+    },
+    "ugc_video_testimonial_D4kJ9X": {
+      "type": "ugc-video-testimonial",
+      "blocks": {
+        "item_7xpaVV": {
+          "type": "item",
+          "settings": {
+            "video_poster": "shopify://shop_images/Screenshot_1_fd6e8e0e-b98b-4b2d-be30-f3a0d7888a8e.jpg",
+            "video": "shopify://files/videos/Küchenkompane (3).mp4",
+            "product": "premium"
+          }
+        },
+        "item_tYitmU": {
+          "type": "item",
+          "settings": {
+            "video_poster": "shopify://shop_images/Screenshot_5_89195910-0d90-440f-990e-ccde72fb3897.jpg",
+            "video": "shopify://files/videos/PXL_20250128_155346978_mp4_1_V2.mov",
+            "product": "premium"
+          }
+        },
+        "item_iJxMti": {
+          "type": "item",
+          "settings": {
+            "video_poster": "shopify://shop_images/Screenshot_2_c43ac8ad-5ad8-4e2a-812e-7a9d24440cdf.jpg",
+            "video": "shopify://files/videos/Review-2.mp4",
+            "product": "premium"
+          }
+        },
+        "item_UYW7B3": {
+          "type": "item",
+          "settings": {
+            "video_poster": "shopify://shop_images/Screenshot_3_3afbc759-565a-46fd-b360-7da9ae57dfbd.jpg",
+            "video": "shopify://files/videos/Reeview-1.mp4",
+            "product": "premium"
+          }
+        },
+        "item_ft7YRa": {
+          "type": "item",
+          "settings": {
+            "video_poster": "shopify://shop_images/Screenshot_4_2bfcf4a3-7294-43e4-b92e-db75219f6273.jpg",
+            "video": "shopify://files/videos/PXL_20250128_155346978_mp4_1_V3.mp4",
+            "product": "premium"
+          }
+        },
+        "item_cHcggm": {
+          "type": "item",
+          "settings": {
+            "video_poster": "shopify://shop_images/Screenshot_6_303b9316-5d7c-4433-ad93-6a9da4680614.jpg",
+            "video": "shopify://files/videos/PXL_20250128_155346978_mp4_1_V1.mp4",
+            "product": ""
+          }
+        }
+      },
+      "block_order": [
+        "item_7xpaVV",
+        "item_tYitmU",
+        "item_iJxMti",
+        "item_UYW7B3",
+        "item_ft7YRa",
+        "item_cHcggm"
+      ],
+      "disabled": true,
+      "settings": {
+        "color_scheme": "",
+        "pt": 70,
+        "pb": 50,
+        "pt_mobile": 30,
+        "pb_mobile": 30,
+        "title": "Unsere Produkte in Aktion",
+        "title_size": 20,
+        "heading_type": "mrk-h1",
+        "show_button": false,
+        "btn_url": "https://www.instagram.com/kuechenkompane/",
+        "btn_text": "@kuechenkompane",
+        "autoplay": false
+      }
+    },
+    "logo_greyed_out_FMbnW7": {
+      "type": "logo-greyed-out",
+      "blocks": {
+        "item_mmE6dV": {
+          "type": "item",
+          "settings": {
+            "logo_img": "shopify://shop_images/n_tv_logo_V2_1.png"
+          }
+        },
+        "item_wJFrdf": {
+          "type": "item",
+          "settings": {
+            "logo_img": "shopify://shop_images/n_tv_logo_V4_1.png"
+          }
+        },
+        "item_9i6JaX": {
+          "type": "item",
+          "settings": {
+            "logo_img": "shopify://shop_images/n_tv_logo_V3_1.png"
+          }
+        },
+        "item_FJTFNX": {
+          "type": "item",
+          "settings": {
+            "logo_img": "shopify://shop_images/n_tv_logo_V4_1.png"
+          }
+        },
+        "item_mBdBJK": {
+          "type": "item",
+          "settings": {
+            "logo_img": "shopify://shop_images/n_tv_logo_V6_1.png"
+          }
+        },
+        "item_YtJUgW": {
+          "type": "item",
+          "settings": {
+            "logo_img": "shopify://shop_images/n_tv_logo_V7_1.png"
+          }
+        },
+        "item_dRhRRe": {
+          "type": "item",
+          "settings": {
+            "logo_img": "shopify://shop_images/n_tv_logo_V2_1.png"
+          }
+        },
+        "item_cNkAMR": {
+          "type": "item",
+          "settings": {
+            "logo_img": "shopify://shop_images/n_tv_logo_V3_1.png"
+          }
+        },
+        "item_zdbtYQ": {
+          "type": "item",
+          "settings": {
+            "logo_img": "shopify://shop_images/n_tv_logo_V7_1.png"
+          }
+        },
+        "item_MwAh8h": {
+          "type": "item",
+          "settings": {
+            "logo_img": "shopify://shop_images/n_tv_logo_V6_1.png"
+          }
+        }
+      },
+      "block_order": [
+        "item_mmE6dV",
+        "item_wJFrdf",
+        "item_9i6JaX",
+        "item_FJTFNX",
+        "item_mBdBJK",
+        "item_YtJUgW",
+        "item_dRhRRe",
+        "item_cNkAMR",
+        "item_zdbtYQ",
+        "item_MwAh8h"
+      ],
+      "disabled": true,
+      "settings": {
+        "bg_color": "#fafafb",
+        "p_top": 50,
+        "p_bottom": 50
+      }
+    },
+    "scrolling_promotion_UKXeX3": {
+      "type": "scrolling-promotion",
+      "blocks": {
+        "image_bpiG7J": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/n_tv_logo_V7_1.png",
+            "image_height": 120,
+            "image_link": ""
+          }
+        },
+        "image_NptXmD": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/n_tv_logo_V6_1.png",
+            "image_height": 100,
+            "image_link": ""
+          }
+        },
+        "image_JPQVbf": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/n_tv_logo_V2_1.png",
+            "image_height": 100,
+            "image_link": ""
+          }
+        },
+        "image_T7Lehj": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/n_tv_logo_V4_1.png",
+            "image_height": 100,
+            "image_link": ""
+          }
+        },
+        "image_4NEDGT": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/n_tv_logo_V3_1.png",
+            "image_height": 100,
+            "image_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_bpiG7J",
+        "image_NptXmD",
+        "image_JPQVbf",
+        "image_T7Lehj",
+        "image_4NEDGT"
+      ],
+      "disabled": true,
+      "custom_css": [
+        ".gesehen-in {text-align: center; font-size: 24px; /* Adjust as needed */ font-weight: normal; text-transform: normal; margin-bottom: -15px; display: block; width: 100%; position: relative; top: 15px; /* Adjust this value if needed */}"
+      ],
+      "settings": {
+        "Gesehen_title": "Präsentiert von",
+        "heading_type": "mrk-h3",
+        "text_alignment": "center",
+        "container": "w-full",
+        "direction": "left",
+        "speed": 60,
+        "item_gap": 200,
+        "item_gap_mobile": 30,
+        "color_scheme": "scheme-cee058e4-58e3-46aa-9af9-219dadc79066",
+        "padding_top": 20,
+        "padding_bottom": 20,
+        "custom_class": ""
+      }
+    },
+    "benefit_text_P4XApk": {
+      "type": "benefit-text",
+      "blocks": {
+        "subtitle_jER8HM": {
+          "type": "subtitle",
+          "settings": {
+            "subtitle": "Gewachsen unter mediterraner Sonne"
+          }
+        },
+        "title_hXWbxr": {
+          "type": "title",
+          "settings": {
+            "title": "Aus jahrzehntealten Olivenbäumen"
+          }
+        },
+        "description_abE8wX": {
+          "type": "description",
+          "settings": {
+            "description": "Seit Jahrhunderten steht der Olivenbaum für Beständigkeit, Kraft und Natürlichkeit.\nUnser Olivenholz stammt aus traditionellen Anbaugebieten, in denen die Bäume langsam wachsen – und dadurch eine besonders dichte, widerstandsfähige Struktur entwickeln.\n\nDas Ergebnis:\nEine außergewöhnliche Maserung.\nEine enorme Härte.\nUnd ein Holz, das Generationen überdauert."
+          }
+        }
+      },
+      "block_order": [
+        "subtitle_jER8HM",
+        "title_hXWbxr",
+        "description_abE8wX"
+      ],
+      "settings": {
+        "color_scheme": "",
+        "media_type": "image",
+        "image": "shopify://shop_images/freepik__erstelle-mir-ein-bild-von-einer-olivenbaum-plantag__20214_1.jpg",
+        "padding_top": 0,
+        "padding_bottom": 50,
+        "reverse": false,
+        "padding_top_mobile": 50,
+        "padding_bottom_mobile": 50,
+        "heading_type": "mrk-h3",
+        "sub_heading": "p-medium",
+        "des_size": "p-medium"
+      }
+    },
+    "feature_highlight_ktLbnH": {
+      "type": "feature-highlight",
+      "blocks": {
+        "feature_item_left_KLYLgM": {
+          "type": "feature_item_left",
+          "settings": {
+            "item_title": "8-teiliges Messerset",
+            "item_info": "Mit extra scharfen Klingen aus deutschem 7CR17-Edelstahl.",
+            "item_icon": "shopify://shop_images/Untitled_Export_V7_1.png"
+          }
+        },
+        "feature_item_left_etKjAM": {
+          "type": "feature_item_left",
+          "settings": {
+            "item_title": "Drehbarer Messerblock",
+            "item_info": "Magnetischer und drehbarer Messerblock für das ganze Set",
+            "item_icon": "shopify://shop_images/Untitled_Export_V2_1.png"
+          }
+        },
+        "feature_item_left_zGYhna": {
+          "type": "feature_item_left",
+          "settings": {
+            "item_title": "Messerschärfer",
+            "item_info": "Jedes Messer ist in Sekunden wieder scharf.",
+            "item_icon": "shopify://shop_images/Untitled_Export_V3_1.png"
+          }
+        },
+        "feature_center_image_mBHAJH": {
+          "type": "feature_center_image",
+          "settings": {
+            "center_image": "shopify://shop_images/Artboard_2_Kopie_5_1_51f9998a-33b1-4ffd-bfc3-ab3d5b8a61bd.jpg"
+          }
+        },
+        "feature_item_right_YpUkf4": {
+          "type": "feature_item_right",
+          "settings": {
+            "item_title": "Mizo Schneidebrette",
+            "item_info": "Aus Akazienholz, perfekt für schnelle und kleine Schneidearbeiten.",
+            "item_icon": "shopify://shop_images/Untitled_Export_V4_1.png"
+          }
+        },
+        "feature_item_right_dN8J9K": {
+          "type": "feature_item_right",
+          "settings": {
+            "item_title": "Pflegöl",
+            "item_info": "Kamelienöl schützt und pflegt Klinge und Griff.",
+            "item_icon": "shopify://shop_images/Untitled_Export_V5_1.png"
+          }
+        },
+        "feature_item_right_jLCbWD": {
+          "type": "feature_item_right",
+          "settings": {
+            "item_title": "365 Tage Schleifservice",
+            "item_info": "Kostenloser Nachschliff für ein Jahr - immer scharf.",
+            "item_icon": "shopify://shop_images/Untitled_Export_V6_1.png"
+          }
+        }
+      },
+      "block_order": [
+        "feature_item_left_KLYLgM",
+        "feature_item_left_etKjAM",
+        "feature_item_left_zGYhna",
+        "feature_center_image_mBHAJH",
+        "feature_item_right_YpUkf4",
+        "feature_item_right_dN8J9K",
+        "feature_item_right_jLCbWD"
+      ],
+      "disabled": true,
+      "settings": {
+        "pt": 50,
+        "pb": 50,
+        "pt_mobile": 30,
+        "pb_mobile": 30,
+        "title": "Im Set enthalten:"
+      }
+    },
+    "us_vs_them_8Tbqki": {
+      "type": "us-vs-them",
+      "blocks": {
+        "title_F4F6qE": {
+          "type": "title",
+          "settings": {
+            "title": "KÜCHENKOMPANE® vs. ANDERE"
+          }
+        },
+        "description_9Mxcd4": {
+          "type": "description",
+          "settings": {
+            "description": "<p>Unsere Vergleichsgrafik zeigt, warum Küchenkompane die beste Wahl ist. Mit messerscharfer Präzision, hochwertigem Stahl und ergonomischem Design bieten unsere Messer maximale Qualität und Komfort.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "title_F4F6qE",
+        "description_9Mxcd4"
+      ],
+      "disabled": true,
+      "settings": {
+        "color_scheme": "",
+        "img": "shopify://shop_images/steel_kitchen_knives_V11_1.jpg",
+        "padding_top": 50,
+        "padding_bottom": 50,
+        "padding_top_mobile": 50,
+        "padding_bottom_mobile": 50,
+        "heading_type": "mrk-h1",
+        "des_size": "p-medium"
+      }
+    },
+    "benefit_text_right_AFHFhC": {
+      "type": "benefit-text-right",
+      "blocks": {
+        "subtitle_XPX87U": {
+          "type": "subtitle",
+          "disabled": true,
+          "settings": {
+            "subtitle": "Robust & langlebig"
+          }
+        },
+        "title_YwDaTz": {
+          "type": "title",
+          "settings": {
+            "title": "Veredelt & verarbeitet in Deutschland"
+          }
+        },
+        "description_j4ByyM": {
+          "type": "description",
+          "settings": {
+            "description": "Unsere Olivenholzprodukte werden in Deutschland sorgfältig geschliffen, geölt und geprüft. Durch höchste Qualitätsstandards, kurze Lieferketten und den Verzicht auf Massenproduktion entsteht ein langlebiges Naturprodukt – mediterranes Olivenholz trifft auf deutsche Handwerkspräzision."
+          }
+        }
+      },
+      "block_order": [
+        "subtitle_XPX87U",
+        "title_YwDaTz",
+        "description_j4ByyM"
+      ],
+      "settings": {
+        "color_scheme": "badge-hot",
+        "media_type": "image",
+        "image": "shopify://shop_images/freepik__mann-bearbeiten-rohes-olivenholz-in-holz-maufaktur__20211_1.jpg",
+        "padding_top": 50,
+        "padding_bottom": 50,
+        "reverse": true,
+        "padding_top_mobile": 30,
+        "padding_bottom_mobile": 50,
+        "heading_type": "mrk-h2",
+        "sub_heading": "p-medium",
+        "des_size": "p-medium"
+      }
+    },
+    "benefit_text_MCeGiV": {
+      "type": "benefit-text",
+      "blocks": {
+        "subtitle_8kbCAt": {
+          "type": "subtitle",
+          "disabled": true,
+          "settings": {
+            "subtitle": "Der Küchen-Trend 2025"
+          }
+        },
+        "title_KU4fTr": {
+          "type": "title",
+          "settings": {
+            "title": "Extrem widerstandsfähig & langlebig"
+          }
+        },
+        "description_PBBAnQ": {
+          "type": "description",
+          "settings": {
+            "description": "Olivenholz gehört zu den härtesten Holzarten Europas. Es ist besonders dicht, robust und weniger anfällig für Feuchtigkeit als viele andere Hölzer. Bei richtiger Pflege bleibt es formstabil, widerstandsfähig gegen Schnittspuren und begleitet dich über viele Jahre zuverlässig in deiner Küche."
+          }
+        }
+      },
+      "block_order": [
+        "subtitle_8kbCAt",
+        "title_KU4fTr",
+        "description_PBBAnQ"
+      ],
+      "settings": {
+        "color_scheme": "badge-hot",
+        "media_type": "image",
+        "image": "shopify://shop_images/freepik__mann-bearbeitet-olivenholz-schssel-in-manufaktur-u__20213_1.jpg",
+        "padding_top": 50,
+        "padding_bottom": 50,
+        "reverse": false,
+        "padding_top_mobile": 50,
+        "padding_bottom_mobile": 50,
+        "heading_type": "mrk-h2",
+        "sub_heading": "p-medium",
+        "des_size": "p-medium"
+      }
+    },
+    "trustpilot_testimonials_YbXp3E": {
+      "type": "trustpilot-testimonials",
+      "blocks": {
+        "block_n66cBX": {
+          "type": "block",
+          "settings": {
+            "tes_title": "Sehr hochwertige Verarbeitung",
+            "tes_text": "Die Maserung ist wunderschön und jedes Brett sieht anders aus. Man merkt sofort, dass es echtes Olivenholz ist – massiv, schwer und extrem stabil.",
+            "user_name": "Katharina M.",
+            "date": "Vor 2 Stunden"
+          }
+        },
+        "block_Cjk3qr": {
+          "type": "block",
+          "settings": {
+            "tes_title": "100% Naturgefühl",
+            "tes_text": "Ich liebe, dass es keine künstliche Beschichtung hat. Reines Holz, natürlich geölt und perfekt verarbeitet. Fühlt sich unglaublich hochwertig an.",
+            "user_name": "Tobias R.",
+            "date": "Vor 8 Stunden"
+          }
+        },
+        "block_ncTrUJ": {
+          "type": "block",
+          "settings": {
+            "tes_title": "Ideal für den täglichen Einsatz",
+            "tes_text": "Wir nutzen die Bretter täglich – zum Schneiden von Gemüse und zum Servieren von Käse. Kaum Schnittspuren und sehr pflegeleicht.",
+            "user_name": "Martina S.",
+            "date": "Vor 19 Stunden"
+          }
+        },
+        "block_tk6TF7": {
+          "type": "block",
+          "settings": {
+            "tes_title": "Ein echtes Unikat",
+            "tes_text": "Die Maserung ist einzigartig. Kein Brett gleicht dem anderen – genau das macht es so besonders. In unserer Küche ein echter Hingucker.",
+            "user_name": "Daniel K.",
+            "date": "Vor 25 Stunden"
+          }
+        },
+        "block_qCCEJY": {
+          "type": "block",
+          "settings": {
+            "tes_title": "Qualität, die überzeugt",
+            "tes_text": "Ich war erst skeptisch, aber die Qualität hat mich wirklich überrascht. Sehr robust, keine Risse und nach dem Einölen sieht es wieder aus wie neu.",
+            "user_name": "Stefan W.",
+            "date": "Vor 47 Stunden"
+          }
+        },
+        "block_AVgLTe": {
+          "type": "block",
+          "settings": {
+            "tes_title": "Gut, Schnell, Zuverlässig",
+            "tes_text": "Sehr gut, gesamte Bestellung hat die Erwartungen mehr als erfüllt. Probleme seitens DHL wurden sehr schnell von Küchenkompane gelöst.",
+            "user_name": "Peter L.",
+            "date": "Vor 52 Stunden"
+          }
+        }
+      },
+      "block_order": [
+        "block_n66cBX",
+        "block_Cjk3qr",
+        "block_ncTrUJ",
+        "block_tk6TF7",
+        "block_qCCEJY",
+        "block_AVgLTe"
+      ],
+      "settings": {
+        "color_scheme": "badge-hot",
+        "content_color_scheme": "scheme-4e655027-1e2f-4337-9849-9e285e031119",
+        "mt": 50,
+        "mb": 30,
+        "mt_mobile": 20,
+        "mb_mobile": 20,
+        "title": "Vertraut von",
+        "title_highlight": "+200K Kunden",
+        "heading_type": "mrk-h2",
+        "h_text_color": "#fa8526",
+        "arrow_icon_color": "#000000"
+      }
+    },
+    "apex_faqs_jx7hp6": {
+      "type": "apex-faqs",
+      "blocks": {
+        "item_Y76Jjj": {
+          "type": "item",
+          "settings": {
+            "faq_title": "Woher stammt das Olivenholz?",
+            "faq_body": "<p>Unser Olivenholz stammt aus Griechenland. Verwendet wird ausschließlich Holz von Bäumen, die keine Früchte mehr tragen. Die Veredelung, das Schleifen und Ölen erfolgen sorgfältig in Deutschland.</p>"
+          }
+        },
+        "item_J7jdRT": {
+          "type": "item",
+          "settings": {
+            "faq_title": "Was bedeutet „Made in Germany“ bei diesem Produkt?",
+            "faq_body": "<p>Das Rohmaterial kommt aus Griechenland. Die Weiterverarbeitung, Qualitätskontrolle, Veredelung und Endbehandlung erfolgen in Deutschland – nach höchsten handwerklichen Standards.</p>"
+          }
+        },
+        "item_V7NfBy": {
+          "type": "item",
+          "settings": {
+            "faq_title": "Ist jedes Schneidebrett wirklich ein Unikat?",
+            "faq_body": "<p>Ja. Die charakteristische Maserung entsteht natürlich im Baum. Kein Stück gleicht dem anderen – jedes Brett ist ein echtes Einzelstück.</p>"
+          }
+        },
+        "item_Q9DGdb": {
+          "type": "item",
+          "settings": {
+            "faq_title": "Ist Olivenholz hygienisch?",
+            "faq_body": "<p>Olivenholz besitzt eine sehr dichte Struktur und natürliche antibakterielle Eigenschaften. Es nimmt weniger Feuchtigkeit auf als viele andere Holzarten und ist daher besonders hygienisch im täglichen Einsatz.</p>"
+          }
+        },
+        "item_xpq4qN": {
+          "type": "item",
+          "settings": {
+            "faq_title": "Wie pflege ich mein Olivenholz-Brett richtig?",
+            "faq_body": "<p>Einfach mit lauwarmem Wasser reinigen, gut trocknen lassen und regelmäßig mit etwas Speiseöl (z. B. Olivenöl) nachölen. Nicht spülmaschinengeeignet.</p>"
+          }
+        },
+        "item_XFGU6y": {
+          "type": "item",
+          "settings": {
+            "faq_title": "Ist das Brett spülmaschinengeeignet?",
+            "faq_body": "<p>Nein. Wie jedes hochwertige Naturholz sollte es nicht in die Spülmaschine gegeben werden, da Hitze und Feuchtigkeit das Material beschädigen können.</p>"
+          }
+        },
+        "item_cDC8UT": {
+          "type": "item",
+          "settings": {
+            "faq_title": "Kann das Holz reißen?",
+            "faq_body": "<p>Bei richtiger Pflege ist Olivenholz extrem widerstandsfähig. Wichtig ist, das Brett nicht dauerhaft Nässe oder starker Hitze auszusetzen und es gelegentlich nachzuölen.</p>"
+          }
+        },
+        "item_PNKhQY": {
+          "type": "item",
+          "settings": {
+            "faq_title": "Ist das Holz nachhaltig?",
+            "faq_body": "<p>Ja. Das Holz stammt von alten, nicht mehr ertragreichen Olivenbäumen. Es wird kein Baum ausschließlich für unsere Produkte gefällt.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "item_Y76Jjj",
+        "item_J7jdRT",
+        "item_V7NfBy",
+        "item_Q9DGdb",
+        "item_xpq4qN",
+        "item_XFGU6y",
+        "item_cDC8UT",
+        "item_PNKhQY"
+      ],
+      "settings": {
+        "color_scheme": "badge-hot",
+        "icon_color": "#000000",
+        "pt": 50,
+        "pb": 50,
+        "pt_mobile": 30,
+        "pb_mobile": 30,
+        "title": "FAQ - Häufige Fragen",
+        "heading_type": "mrk-h2",
+        "sub_title": "",
+        "sub_title_font_size": 20,
+        "faq_title_font_size": 18,
+        "faq_text_font_size": 16,
+        "alignment": "text-left"
+      }
+    },
+    "cta_final_9B8iN9": {
+      "type": "cta-final",
+      "blocks": {
+        "item_9JUQhz": {
+          "type": "Item",
+          "settings": {
+            "feature_item": "Holz aus Griechenland – sorgfältig ausgewählt",
+            "svg_icon": "<img src=\"https://cdn.shopify.com/s/files/1/0018/5329/2643/files/thumb-up_16346369_1.png?v=1739744170\" alt=\"icon\">"
+          }
+        },
+        "item_NYUrjj": {
+          "type": "Item",
+          "settings": {
+            "feature_item": "In Deutschland handwerklich veredelt & geprüft",
+            "svg_icon": "<img src=\"https://cdn.shopify.com/s/files/1/0018/5329/2643/files/diamond_11883313_1.png?v=1739744170\" alt=\"icon\">"
+          }
+        },
+        "item_Prmf4W": {
+          "type": "Item",
+          "settings": {
+            "feature_item": "Jedes Stück ein echtes, kontrolliertes Unikat",
+            "svg_icon": "<img src=\"https://cdn.shopify.com/s/files/1/0018/5329/2643/files/setting_9552070_1.png?v=1739744170\" alt=\"icon\">"
+          }
+        }
+      },
+      "block_order": [
+        "item_9JUQhz",
+        "item_NYUrjj",
+        "item_Prmf4W"
+      ],
+      "custom_css": [
+        ".item-icon {display: inline-block; width: 30px; height: 28px;}",
+        "ul.health-feature img {width: 28px; height: 28px; object-fit: contain; border-radius: 0; line-height: 7;}"
+      ],
+      "settings": {
+        "color_scheme": "footer",
+        "subtitle": "Vielen Menschen haben mich als Gründer gefragt:",
+        "sub_heading": "p-medium",
+        "title": "“Warum geben wir auf unsere Olivenholz-Produkte eine Zufriedenheitsgarantie?”",
+        "heading_type": "mrk-h2",
+        "des": "Unsere Olivenholz-Produkte stammen aus Griechenland und werden in Deutschland sorgfältig veredelt, geschliffen und geölt.\nJedes Stück wird einzeln geprüft – weil Naturmaterial Respekt verdient.\n\nWir kennen jede Faser, jede Maserung und jeden Verarbeitungsschritt.\nDeshalb können wir mit voller Überzeugung sagen: Qualität, die bleibt.",
+        "des_size": "p-medium",
+        "img": "shopify://shop_images/ChatGPT_Image_17._Feb._2026_00_25_30_1.jpg",
+        "verticle_padding": 70,
+        "horizontal_padding": 0,
+        "border_t": false,
+        "border_b": false,
+        "button_style": "m-button--primary",
+        "button_size": "",
+        "item_color": "#0f0f0f",
+        "item_bg": "#f0f0f3",
+        "item_size": 16,
+        "backBtn": "Zum Produkt"
+      }
+    },
+    "benefit_list_gif_iJWmYF": {
+      "type": "benefit-list-gif",
+      "blocks": {
+        "heading_tWq74p": {
+          "type": "heading",
+          "settings": {
+            "title_style": "Beautiful",
+            "title": "BENEFITS"
+          }
+        },
+        "content_nQLTqP": {
+          "type": "content",
+          "settings": {
+            "rich_text": "<p><strong>Suitable for your skin color</strong></p><p>The Changing Foundation seamlessly adapts to your unique skin tone upon application. Designed for fair to medium skin tones, it provides perfect, natural coverage that enhances your complexion.<br/></p><p><strong>Hides imperfections for a natural look</strong></p><p>This lightweight foundation effectively conceals redness and imperfections, allowing your natural beauty to shine through. Experience a radiant glow like never before.</p><p><strong>Create the best result with a brush</strong></p><p>For optimal results, apply the foundation with a brush. This technique ensures that the pigments penetrate deeply into the skin, preventing any white cast for a flawless finish.</p><p><strong>Radiant and even skin all day long</strong></p><p>The Changing Foundation offers long-lasting wear, staying in place for up to 16 hours. With its natural, radiant finish, you can start each day looking and feeling your best.</p><p><strong>No clogged pores</strong></p><p>The Changing Foundation feels light on the skin. Its moisturizing and nourishing ingredients help maintain a fresh appearance without clogging pores, making it ideal for everyday wear.</p>",
+            "video": "shopify://files/videos/216b022817724c84aa85fa2280a076e5.HD-1080p-2.5Mbps-39479780.mp4"
+          }
+        }
+      },
+      "block_order": [
+        "heading_tWq74p",
+        "content_nQLTqP"
+      ],
+      "disabled": true,
+      "settings": {
+        "background_color": "#f6f0e6",
+        "padding_top": 100,
+        "padding_bottom": 100,
+        "padding_top_mobile": 40,
+        "padding_bottom_mobile": 40,
+        "title_color": "#1e1e1e",
+        "title_size": 40,
+        "content_color": "#1e1e1e",
+        "content_size": 15
+      }
+    },
+    "1741277473f9b1112d": {
+      "type": "apps",
+      "blocks": {
+        "loox_reviews_loox_dynamic_section_9tFX78": {
+          "type": "shopify://apps/loox-reviews/blocks/loox-dynamic-section/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
+          "settings": {
+            "reviews_to_display": "",
+            "default_tab": "automatic",
+            "only_photos": false,
+            "aggregated": false,
+            "limit": 20,
+            "hide_thumbnails": false,
+            "maxwidth": 1080,
+            "is_sample": true
+          }
+        }
+      },
+      "block_order": [
+        "loox_reviews_loox_dynamic_section_9tFX78"
+      ],
+      "disabled": true,
+      "settings": {
+        "heading": "",
+        "heading_size": "h3",
+        "subheading": "",
+        "header_alignment": "center",
+        "container": "container",
+        "background_color": "",
+        "padding_top": 50,
+        "padding_bottom": 50,
+        "padding_top_mobile": 30,
+        "padding_bottom_mobile": 30,
+        "custom_class": ""
+      }
+    },
+    "store_benefits_bottom_NPnyUL": {
+      "type": "store-benefits-bottom",
+      "blocks": {
+        "item_96wqwW": {
+          "type": "item",
+          "settings": {
+            "icon": "icon1",
+            "svg-code": "",
+            "store_benefit_text": "Schneller Versand"
+          }
+        },
+        "item_6LarDz": {
+          "type": "item",
+          "settings": {
+            "icon": "icon2",
+            "svg-code": "",
+            "store_benefit_text": "Kostenloser Versand ab 100€"
+          }
+        },
+        "item_AXkcTt": {
+          "type": "item",
+          "settings": {
+            "icon": "icon3",
+            "svg-code": "",
+            "store_benefit_text": "30 Tage Geld-Zurück-Garantie"
+          }
+        },
+        "item_h3KX9m": {
+          "type": "item",
+          "settings": {
+            "icon": "icon4",
+            "svg-code": "",
+            "store_benefit_text": "100% SICHERE ZAHLUNG"
+          }
+        },
+        "item_MzPUFH": {
+          "type": "item",
+          "settings": {
+            "icon": "icon5",
+            "svg-code": "",
+            "store_benefit_text": "LEBENSLANGE GARANTIE"
+          }
+        }
+      },
+      "block_order": [
+        "item_96wqwW",
+        "item_6LarDz",
+        "item_AXkcTt",
+        "item_h3KX9m",
+        "item_MzPUFH"
+      ],
+      "settings": {
+        "color_scheme": "",
+        "icon_color": "#000000",
+        "pt": 30,
+        "pb": 30,
+        "font_size": 14,
+        "ptm": 30,
+        "pbm": 30
+      }
+    }
+  },
+  "order": [
+    "apex_timer_9Rjc9m",
+    "main",
+    "apex_theme_product_page_copy_bfPEWH",
+    "product_descrption_accordion_btdDtQ",
+    "floow_comparison_table_with_image_tLKVyk",
+    "product-details-tabs",
+    "ugc_video_testimonial_D4kJ9X",
+    "logo_greyed_out_FMbnW7",
+    "scrolling_promotion_UKXeX3",
+    "benefit_text_P4XApk",
+    "feature_highlight_ktLbnH",
+    "us_vs_them_8Tbqki",
+    "benefit_text_right_AFHFhC",
+    "benefit_text_MCeGiV",
+    "trustpilot_testimonials_YbXp3E",
+    "apex_faqs_jx7hp6",
+    "cta_final_9B8iN9",
+    "benefit_list_gif_iJWmYF",
+    "1741277473f9b1112d",
+    "store_benefits_bottom_NPnyUL"
+  ]
+}

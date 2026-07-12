@@ -1,0 +1,576 @@
+
+{% liquid
+  assign enable_rtl = settings.enable_rtl
+  assign language_support_rtl = settings.language_support_rtl
+  if enable_rtl and language_support_rtl != blank
+    assign shop_locale = localization.language.iso_code
+    assign language_support_rtl_list = language_support_rtl | split: ','
+    assign is_rtl = language_support_rtl_list | where: shop_locale
+    if is_rtl.size > 0
+      assign enable_rtl = true
+    else
+      assign enable_rtl = false
+    endif
+  endif
+
+
+  assign body_classes = 'template-' | append: template.name | append: ' ' | append: template.suffix | append: ' m-gradient m-color-' | append: settings.default_color_scheme
+  if settings.page_transition
+    assign body_classes = body_classes | append: ' m:overflow-hidden'
+  endif
+  if template.suffix == 'about-us'
+    assign body_classes = body_classes | append: ' sf__page-about'
+  endif
+%}
+
+<!doctype html>
+<html
+  class="no-js{% if settings.page_transition %} m:overflow-hidden{% endif %}"
+  lang="{{ request.locale.iso_code }}"
+  data-template="{{ template.name }}"
+  {% if enable_rtl %}dir="rtl"{% endif %}
+>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="{{ settings.color_primary }}">
+
+    {% comment %} ablyft {% endcomment %}
+    <script src="https://cdn.ablyft.com/s/59636450.js"></script>
+    <!-- =============================================
+         CANONICAL & SEO
+    ============================================== -->
+    {% if template == 'collection' %}
+      {% assign is_paginated = false %}
+      {% if canonical_url contains '?page=' or canonical_url contains '&page=' %}
+        {% assign is_paginated = true %}
+      {% endif %}
+      {% if is_paginated or collection.metafields.custom.noindex == true %}
+        <meta name="robots" content="noindex,follow">
+        <link rel="canonical" href="{{ collection.url }}">
+      {% else %}
+        <link rel="canonical" href="{{ canonical_url }}">
+      {% endif %}
+    {% else %}
+      <link rel="canonical" href="{{ canonical_url }}">
+    {% endif %}
+
+    <!-- =============================================
+         TITLE & META
+    ============================================== -->
+    <title>
+      {{- page_title -}}
+      {%- if current_tags -%}
+        {%- assign meta_tags = current_tags | join: ', ' %} &ndash; {{ 'general.meta.tags' | t: tags: meta_tags -}}
+      {%- endif -%}
+      {%- if current_page != 1 %} &ndash; {{ 'general.meta.page' | t: page: current_page }}{% endif -%}
+      {%- if template == 'password' -%}
+        {{- shop.name -}}
+      {%- else -%}
+        {%- unless page_title contains shop.name %} &ndash; {{ shop.name }}{% endunless -%}
+      {%- endif -%}
+    </title>
+
+    {%- if page_description -%}
+      <meta name="description" content="{{ page_description | escape }}">
+    {%- endif -%}
+
+    <!-- =============================================
+         FAVICON
+    ============================================== -->
+    {%- if settings.use_favicon == true and settings.favicon != blank -%}
+      <link rel="shortcut icon" type="image/png" href="{{ settings.favicon | image_url: width: 32, height: 32 }}">
+    {%- endif -%}
+
+    <!-- =============================================
+         PRECONNECT (DNS lookup speed boost)
+    ============================================== -->
+    <link rel="preconnect" href="https://fonts.shopifycdn.com" crossorigin>
+    <link rel="preconnect" href="https://cdn.shopify.com" crossorigin>
+
+     
+
+    <!-- =============================================
+         CRITICAL CSS (inline, blocks nothing)
+    ============================================== -->
+    {%- liquid
+      render 'social-meta-tags'
+      render 'font-face'
+      render 'critical-css'
+      echo 'main.css' | asset_url | stylesheet_tag: preload: true
+      render 'style-tags'
+    -%}
+
+    <!-- =============================================
+         NON-CRITICAL CSS (print trick = non-blocking)
+    ============================================== -->
+<link rel="preload" href="{{ 'splide.min.css' | asset_url }}" as="style">
+<link rel="stylesheet" href="{{ 'splide.min.css' | asset_url }}" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="{{ 'splide.min.css' | asset_url }}"></noscript>
+
+<link rel="preload" href="{{ 'style.css' | asset_url }}" as="style">
+<link rel="stylesheet" href="{{ 'style.css' | asset_url }}" media="print" onload="this.media='all'">
+
+{%- if template.name == 'product' or template.name == 'index' -%}
+  <link rel="preload" href="{{ 'floow.css' | asset_url }}" as="style">
+  <link rel="stylesheet" href="{{ 'floow.css' | asset_url }}" media="print" onload="this.media='all'">
+{%- endif -%}
+
+<noscript>
+  <link rel="stylesheet" href="{{ 'style.css' | asset_url }}">
+  {%- if template.name == 'product' or template.name == 'index' -%}
+    <link rel="stylesheet" href="{{ 'floow.css' | asset_url }}">
+  {%- endif -%}
+</noscript>
+
+
+    <!-- =============================================
+         TYPOGRAPHY CUSTOM CSS VARIABLES
+    ============================================== -->
+    <style>
+      :root {
+        --mrk-h1-color: {{ settings.h1_color }};
+        --mrk-h1-size-desktop: {{ settings.h1_size_desktop }}px;
+        --mrk-h1-size-laptop: {{ settings.h1_size_laptop }}px;
+        --mrk-h1-size-mobile: {{ settings.h1_size_mobile }}px;
+        --mrk-h1-margin-desktop: {{ settings.h1_mt_desktop }}px {{ settings.h1_mr_desktop }}px {{ settings.h1_mb_desktop }}px {{ settings.h1_ml_desktop }}px;
+        --mrk-h1-margin-laptop: {{ settings.h1_mt_laptop }}px {{ settings.h1_mr_laptop }}px {{ settings.h1_mb_laptop }}px {{ settings.h1_ml_laptop }}px;
+        --mrk-h1-margin-mobile: {{ settings.h1_mt_mobile }}px {{ settings.h1_mr_mobile }}px {{ settings.h1_mb_mobile }}px {{ settings.h1_ml_mobile }}px;
+
+        --mrk-h2-color: {{ settings.h2_color }};
+        --mrk-h2-size-desktop: {{ settings.h2_size_desktop }}px;
+        --mrk-h2-size-laptop: {{ settings.h2_size_laptop }}px;
+        --mrk-h2-size-mobile: {{ settings.h2_size_mobile }}px;
+        --mrk-h2-margin-desktop: {{ settings.h2_mt_desktop }}px {{ settings.h2_mr_desktop }}px {{ settings.h2_mb_desktop }}px {{ settings.h2_ml_desktop }}px;
+        --mrk-h2-margin-laptop: {{ settings.h2_mt_laptop }}px {{ settings.h2_mr_laptop }}px {{ settings.h2_mb_laptop }}px {{ settings.h2_ml_laptop }}px;
+        --mrk-h2-margin-mobile: {{ settings.h2_mt_mobile }}px {{ settings.h2_mr_mobile }}px {{ settings.h2_mb_mobile }}px {{ settings.h2_ml_mobile }}px;
+
+        --mrk-h3-color: {{ settings.h3_color }};
+        --mrk-h3-size-desktop: {{ settings.h3_size_desktop }}px;
+        --mrk-h3-size-laptop: {{ settings.h3_size_laptop }}px;
+        --mrk-h3-size-mobile: {{ settings.h3_size_mobile }}px;
+        --mrk-h3-margin-desktop: {{ settings.h3_mt_desktop }}px {{ settings.h3_mr_desktop }}px {{ settings.h3_mb_desktop }}px {{ settings.h3_ml_desktop }}px;
+        --mrk-h3-margin-laptop: {{ settings.h3_mt_laptop }}px {{ settings.h3_mr_laptop }}px {{ settings.h3_mb_laptop }}px {{ settings.h3_ml_laptop }}px;
+        --mrk-h3-margin-mobile: {{ settings.h3_mt_mobile }}px {{ settings.h3_mr_mobile }}px {{ settings.h3_mb_mobile }}px {{ settings.h3_ml_mobile }}px;
+
+        --mrk-h4-color: {{ settings.h4_color }};
+        --mrk-h4-size-desktop: {{ settings.h4_size_desktop }}px;
+        --mrk-h4-size-laptop: {{ settings.h4_size_laptop }}px;
+        --mrk-h4-size-mobile: {{ settings.h4_size_mobile }}px;
+        --mrk-h4-margin-desktop: {{ settings.h4_mt_desktop }}px {{ settings.h4_mr_desktop }}px {{ settings.h4_mb_desktop }}px {{ settings.h4_ml_desktop }}px;
+        --mrk-h4-margin-laptop: {{ settings.h4_mt_laptop }}px {{ settings.h4_mr_laptop }}px {{ settings.h4_mb_laptop }}px {{ settings.h4_ml_laptop }}px;
+        --mrk-h4-margin-mobile: {{ settings.h4_mt_mobile }}px {{ settings.h4_mr_mobile }}px {{ settings.h4_mb_mobile }}px {{ settings.h4_ml_mobile }}px;
+
+        --mrk-h5-color: {{ settings.h5_color }};
+        --mrk-h5-size-desktop: {{ settings.h5_size_desktop }}px;
+        --mrk-h5-size-laptop: {{ settings.h5_size_laptop }}px;
+        --mrk-h5-size-mobile: {{ settings.h5_size_mobile }}px;
+        --mrk-h5-margin-desktop: {{ settings.h5_mt_desktop }}px {{ settings.h5_mr_desktop }}px {{ settings.h5_mb_desktop }}px {{ settings.h5_ml_desktop }}px;
+        --mrk-h5-margin-laptop: {{ settings.h5_mt_laptop }}px {{ settings.h5_mr_laptop }}px {{ settings.h5_mb_laptop }}px {{ settings.h5_ml_laptop }}px;
+        --mrk-h5-margin-mobile: {{ settings.h5_mt_mobile }}px {{ settings.h5_mr_mobile }}px {{ settings.h5_mb_mobile }}px {{ settings.h5_ml_mobile }}px;
+
+        --mrk-h6-color: {{ settings.h6_color }};
+        --mrk-h6-size-desktop: {{ settings.h6_size_desktop }}px;
+        --mrk-h6-size-laptop: {{ settings.h6_size_laptop }}px;
+        --mrk-h6-size-mobile: {{ settings.h6_size_mobile }}px;
+        --mrk-h6-margin-desktop: {{ settings.h6_mt_desktop }}px {{ settings.h6_mr_desktop }}px {{ settings.h6_mb_desktop }}px {{ settings.h6_ml_desktop }}px;
+        --mrk-h6-margin-laptop: {{ settings.h6_mt_laptop }}px {{ settings.h6_mr_laptop }}px {{ settings.h6_mb_laptop }}px {{ settings.h6_ml_laptop }}px;
+        --mrk-h6-margin-mobile: {{ settings.h6_mt_mobile }}px {{ settings.h6_mr_mobile }}px {{ settings.h6_mb_mobile }}px {{ settings.h6_ml_mobile }}px;
+      }
+
+      /* Heading Styles */
+      .mrk-h1 { font-size: var(--mrk-h1-size-desktop); margin: var(--mrk-h1-margin-desktop); font-weight: {{ settings.mrk_h1_font_weight }}; }
+      .mrk-h2 { font-size: var(--mrk-h2-size-desktop); margin: var(--mrk-h2-margin-desktop); font-weight: {{ settings.mrk_h2_font_weight }}; }
+      .mrk-h3 { font-size: var(--mrk-h3-size-desktop); margin: var(--mrk-h3-margin-desktop); font-weight: {{ settings.mrk_h3_font_weight }}; }
+      .mrk-h4 { font-size: var(--mrk-h4-size-desktop); margin: var(--mrk-h4-margin-desktop); font-weight: {{ settings.mrk_h4_font_weight }}; }
+      .mrk-h5 { font-size: var(--mrk-h5-size-desktop); margin: var(--mrk-h5-margin-desktop); font-weight: {{ settings.mrk_h5_font_weight }}; }
+      .mrk-h6 { font-size: var(--mrk-h6-size-desktop); margin: var(--mrk-h6-margin-desktop); font-weight: {{ settings.mrk_h6_font_weight }}; }
+
+      /* Paragraph Styles */
+      .p-xl, .p-xl p   { font-weight: {{ settings.p_xl_font_weight }};     font-size: {{ settings.p_xl_size_desktop }}px;     line-height: {{ settings.p_xl_line_height }}; }
+      .p-large, .p-large p { font-weight: {{ settings.p_large_font_weight }}; font-size: {{ settings.p_large_size_desktop }}px;  line-height: {{ settings.p_large_line_height }}; }
+      .p-medium, .p-medium p { font-weight: {{ settings.p_medium_font_weight }}; font-size: {{ settings.p_medium_size_desktop }}px; line-height: {{ settings.p_medium_line_height }}; }
+      .p-small, .p-small p  { font-weight: {{ settings.p_small_font_weight }};  font-size: {{ settings.p_small_size_desktop }}px;  line-height: {{ settings.p_small_line_height }}; }
+      .p-x-small, .p-x-small p { font-weight: {{ settings.p_xs_font_weight }}; font-size: {{ settings.p_xs_size_desktop }}px; line-height: {{ settings.p_xs_line_height }}; }
+
+      /* Misc overrides */
+      .m-tooltip.m-spinner-button, .m-button--icon { display: none; }
+      .template-page #MainContent { padding-bottom: 0; }
+      .m-slider-controls__button { width: 44px !important; }
+      .swiper-button-next:after, .swiper-button-prev:after { display: none; }
+
+      /* Laptop breakpoint */
+      @media (max-width: 1024px) {
+        .mrk-h1 { font-size: var(--mrk-h1-size-laptop); margin: var(--mrk-h1-margin-laptop); }
+        .mrk-h2 { font-size: var(--mrk-h2-size-laptop); margin: var(--mrk-h2-margin-laptop); }
+        .mrk-h3 { font-size: var(--mrk-h3-size-laptop); margin: var(--mrk-h3-margin-laptop); }
+        .mrk-h4 { font-size: var(--mrk-h4-size-laptop); margin: var(--mrk-h4-margin-laptop); }
+        .mrk-h5 { font-size: var(--mrk-h5-size-laptop); margin: var(--mrk-h5-margin-laptop); }
+        .mrk-h6 { font-size: var(--mrk-h6-size-laptop); margin: var(--mrk-h6-margin-laptop); }
+        .p-xl, .p-xl p       { font-size: {{ settings.p_xl_size_laptop }}px; }
+        .p-large, .p-large p { font-size: {{ settings.p_large_size_laptop }}px; }
+        .p-medium, .p-medium p { font-size: {{ settings.p_medium_size_laptop }}px; }
+        .p-small, .p-small p { font-size: {{ settings.p_small_size_laptop }}px; }
+        .p-x-small, .p-x-small p { font-size: {{ settings.p_xs_size_laptop }}px; }
+      }
+
+      /* Mobile breakpoint */
+      @media (max-width: 767px) {
+        .mrk-h1 { font-size: var(--mrk-h1-size-mobile); margin: var(--mrk-h1-margin-mobile); }
+        .mrk-h2 { font-size: var(--mrk-h2-size-mobile); margin: var(--mrk-h2-margin-mobile); }
+        .mrk-h3 { font-size: var(--mrk-h3-size-mobile); margin: var(--mrk-h3-margin-mobile); }
+        .mrk-h4 { font-size: var(--mrk-h4-size-mobile); margin: var(--mrk-h4-margin-mobile); }
+        .mrk-h5 { font-size: var(--mrk-h5-size-mobile); margin: var(--mrk-h5-margin-mobile); }
+        .mrk-h6 { font-size: var(--mrk-h6-size-mobile); margin: var(--mrk-h6-margin-mobile); }
+        .p-xl       { font-size: {{ settings.p_xl_size_mobile }}px; }
+        .p-large    { font-size: {{ settings.p_large_size_mobile }}px; }
+        .p-medium   { font-size: {{ settings.p_medium_size_mobile }}px; }
+        .p-small    { font-size: {{ settings.p_small_size_mobile }}px; }
+        .p-x-small  { font-size: {{ settings.p_xs_size_mobile }}px; }
+        .m-search-popup__result.m-scrollbar--vertical { position: relative; z-index: 100; }
+      }
+
+
+       m-cart-drawer,
+      .m-cart-drawer {
+        display: none !important;
+      }
+      .m-cart-drawer--active {
+        display: block !important;
+      }
+
+    
+    </style>
+
+    <!-- =============================================
+         RENDER TYPOGRAPHY
+    ============================================== -->
+    {% render 'typegraphy' %}
+
+    <!-- =============================================
+         INLINE CRITICAL JS (must run early)
+    ============================================== -->
+    <script>
+      /* 1. no-js → js class swap */
+      document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
+        if (window.Shopify && Shopify.designMode) {
+        document.documentElement.classList.add('shopify-design-mode');
+      }
+
+      /* 2. Real viewport height fix */
+      (function setVh() {
+        var vh = window.innerHeight * 0.01;
+        document.documentElement.style.setProperty('--vh', vh + 'px');
+        window.addEventListener('resize', function () {
+          document.documentElement.style.setProperty('--vh', window.innerHeight * 0.01 + 'px');
+        });
+      })();
+
+      /* 3. Defer Shopify checkout CSS */
+      (function deferShopifyCheckoutCSS() {
+        var interval = setInterval(function () {
+          var link = document.querySelector('#shopify-accelerated-checkout-styles');
+          if (link) {
+            clearInterval(interval);
+            link.media = 'print';
+            link.onload = function () { this.media = 'all'; };
+          }
+        }, 100);
+      })();
+
+      /* 4. noscript style extractor */
+      (function extractNoscriptStyles() {
+        document.querySelectorAll('noscript').forEach(function (noscript) {
+          noscript.querySelectorAll('style').forEach(function (style) {
+            var s = document.createElement('style');
+            s.textContent = style.textContent;
+            document.head.appendChild(s);
+          });
+        });
+      })();
+    </script>
+
+    <!-- =============================================
+         PASSWORD PROTECTED COLLECTION JS
+    ============================================== -->
+    <script>
+      (function () {
+        var correctPassword = '{{ settings.password | escape }}';
+        var collectionHandle = '{{ settings.collection_handle }}';
+        var collectionKey = 'collectionAccess_' + collectionHandle;
+
+        function lockScroll()   { document.body.classList.add('scroll-lock'); }
+        function unlockScroll() { document.body.classList.remove('scroll-lock'); }
+
+        function checkPasswordFactory(popup, passwordInput, errorEl) {
+          return function () {
+            if (!passwordInput) return;
+            var userPassword = (passwordInput.value || '').toLowerCase();
+            var correct = String(correctPassword || '').toLowerCase();
+            if (userPassword === correct) {
+              document.dispatchEvent(new Event('passwordCorrect'));
+              try { localStorage.setItem(collectionKey, 'true'); } catch (e) {}
+              if (popup) popup.style.display = 'none';
+              unlockScroll();
+            } else {
+              if (errorEl) errorEl.style.display = 'block';
+            }
+          };
+        }
+
+        document.addEventListener('DOMContentLoaded', function () {
+          var popup         = document.getElementById('password-popup');
+          var passwordInput = document.getElementById('popup-password');
+          var errorMessage  = document.getElementById('error-message');
+
+          if (!popup) return;
+
+          /* Move popup to body if needed */
+          if (popup.parentElement !== document.body) {
+            document.body.appendChild(popup);
+          }
+
+          if (localStorage.getItem(collectionKey) === 'true') {
+            popup.style.display = 'none';
+            unlockScroll();
+          } else {
+            lockScroll();
+          }
+
+          window.checkPassword = checkPasswordFactory(popup, passwordInput, errorMessage);
+
+          if (passwordInput) {
+            passwordInput.addEventListener('keydown', function (ev) {
+              if (ev.key === 'Enter') { ev.preventDefault(); window.checkPassword(); }
+            });
+          }
+        });
+      })();
+    </script>
+
+    <!-- =============================================
+         DEFERRED THIRD-PARTY SCRIPTS
+         (Clarity + Ablyft load after 3s idle)
+    ============================================== -->
+    <script>
+      (function () {
+        function loadThirdParty() {
+          /* Microsoft Clarity */
+          (function (c, l, a, r, i, t, y) {
+            c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments); };
+            t = l.createElement(r); t.async = 1;
+            t.src = 'https://www.clarity.ms/tag/' + i;
+            y = l.getElementsByTagName(r)[0];
+            y.parentNode.insertBefore(t, y);
+          })(window, document, 'clarity', 'script', 'tefbj2e4ie');
+
+          /* Ablyft — loaded ONCE here only */
+          var ablyft = document.createElement('script');
+          ablyft.src = 'https://cdn.ablyft.com/s/75700830.js';
+          ablyft.async = true;
+          document.head.appendChild(ablyft);
+        }
+
+        /* Use requestIdleCallback if available, else 3s timeout */
+        if ('requestIdleCallback' in window) {
+          requestIdleCallback(loadThirdParty, { timeout: 3000 });
+        } else {
+          setTimeout(loadThirdParty, 3000);
+        }
+      })();
+    </script>
+
+    <!-- =============================================
+         DEFERRED JS ASSETS
+    ============================================== -->
+    <script src="{{ 'splide.min.js' | asset_url }}" defer></script>
+    {%- if template.name == 'index' or template.name == 'product' -%}
+      <script src="{{ 'splide-extension-auto-scroll.min.js' | asset_url }}" defer></script>
+    {%- endif -%}
+    {%- if template.name == 'product' or template.name == 'index' -%}
+      <script src="{{ 'floow.js' | asset_url }}" defer></script>
+    {%- endif -%}
+    <script src="{{ 'theme-global.js' | asset_url }}" defer></script>
+    {%- if request.design_mode -%}
+      <script src="{{ 'theme-editor.js' | asset_url }}" defer></script>
+    {%- endif -%}
+
+    <!-- =============================================
+         SHOPIFY content_for_header
+         (scripts deferred to avoid render-blocking)
+    ============================================== -->
+    {% comment %} {% capture content_for_header2 %}{{ content_for_header }}{% endcapture %}
+    {{
+      content_for_header2 | replace: '<script ', '<script defer '
+    }} {% endcomment %}
+    {% capture checkout_attr %}id="shopify-accelerated-checkout-styles" media="print" onload="this.media='all'"{% endcapture %}
+    {% capture content_for_header2 %}{{ content_for_header }}{% endcapture %}
+    {{
+      content_for_header2
+      | replace: '<script ', '<script defer '
+      | replace: 'id="shopify-accelerated-checkout-styles"', checkout_attr
+    }}
+
+    {% render 'theme-data' %}
+    {% render 'custom-code-head' %}
+  </head>
+
+  <body
+    id="m-theme"
+    class="{{ body_classes }}"
+    {% if template.name == 'product' %}data-product-id="{{ product.id }}"{% endif %}
+  >
+    {%- liquid
+      render 'page-transition'
+      render 'scroll-top-button'
+      sections 'header-group'
+    -%}
+
+    <main role="main" id="MainContent">
+      {{ content_for_layout }}
+    </main>
+
+    {% if request.page_type == 'product' %}
+      {% sections 'floow-buy-box' %}
+    {% endif %}
+
+    {%- liquid
+      sections 'footer-group'
+      render 'script-tags'
+      render 'cookie-banner'
+      render 'custom-code-body'
+    -%}
+
+    <!-- =============================================
+         DEFERRED FEATURE JS (load only when needed)
+    ============================================== -->
+
+    {%- if template.name == 'product' -%}
+      <script src="{{ 'bundle-selector-custom.js' | asset_url }}" defer></script>
+    {%- endif -%}
+    {% comment %} {%- if template.name == 'product' or template.name == 'collection' or template.name == 'index' -%} {% endcomment %}
+     {%- if template.name == 'product' or template.name == 'index' -%}
+      <script src="{{ 'stock-count-status.js' | asset_url }}" defer></script>
+    {%- endif -%}
+
+        {%- if settings.enable_predictive_search -%}
+      <script src="{{ 'predictive-search.js' | asset_url }}" defer></script>
+    {%- endif -%}
+
+
+    {%- if linklists['gift-wrapping'].links != blank and linklists['gift-wrapping'].links.first.type == 'product_link' -%}
+      <script src="{{ 'gift-wrapping.js' | asset_url }}" defer></script>
+    {%- endif -%}
+
+    {%- if settings.show_swatch_option -%}
+      <script src="{{ 'product-card-swatch.js' | asset_url }}" defer></script>
+    {%- endif -%}
+
+    <!-- =============================================
+         CART DRAWER DATA
+    ============================================== -->
+    <script>
+      Shopify.cart_drawer = Shopify.cart_drawer || {};
+      Shopify.cart_drawer.freeProduct1 = {
+        title:     '{{ settings.cart_free_product_1.title }}',
+        available: '{{ settings.cart_free_product_1.selected_or_first_available_variant.available }}',
+        url:       '{{ settings.cart_free_product_1.url }}',
+        handle:    '{{ settings.cart_free_product_1.handle }}',
+        variantId: '{{ settings.cart_free_product_1.selected_or_first_available_variant.id }}',
+        rule:      '{{ settings.cart_free_product_1_rule }}',
+        condition: 'cart-total',
+      };
+      Shopify.cart_drawer.freeProduct2 = {
+        title:     '{{ settings.cart_free_product_2.title }}',
+        available: '{{ settings.cart_free_product_2.selected_or_first_available_variant.available }}',
+        url:       '{{ settings.cart_free_product_2.url }}',
+        handle:    '{{ settings.cart_free_product_2.handle }}',
+        variantId: '{{ settings.cart_free_product_2.selected_or_first_available_variant.id }}',
+        rule:      '{{ settings.cart_free_product_2_rule }}',
+        condition: 'cart-total',
+      };
+      Shopify.cart_drawer.extraAddon = {
+        parentProduct: '{{ settings.eadn_parent_product.id }}',
+        freeProduct1:  '{{ settings.eadn_free_product_1.selected_or_first_available_variant.id }}',
+        freeProduct2:  '{{ settings.eadn_free_product_2.selected_or_first_available_variant.id }}',
+      };
+    </script>
+
+    {%- if settings.enable_cart_drawer and template != 'cart' -%}
+      {% render 'cart-drawer' %}
+    {%- endif -%}
+
+
+<script>
+window.addEventListener('load', function () {
+
+  setTimeout(function () {
+
+    var s = document.createElement('script');
+    s.async = true;
+
+    {% if template == 'index' %}
+
+      s.src = 'https://t.adcell.com/js/inlineretarget.js?method=track&pid=10239&type=startpage';
+
+    {% elsif template contains 'product' and product %}
+
+      s.src = 'https://t.adcell.com/js/inlineretarget.js?method=product&pid=10239&productId={{ product.id }}&productName={{ product.title | url_encode }}&categoryId={{ product.collections.first.id }}';
+
+    {% elsif template contains 'collection' and collection %}
+
+      s.src = 'https://t.adcell.com/js/inlineretarget.js?method=category&pid=10239&categoryName={{ collection.title | url_encode }}&categoryId={{ collection.id }}';
+
+    {% elsif template contains 'search' and search.terms %}
+
+      s.src = 'https://t.adcell.com/js/inlineretarget.js?method=search&pid=10239&search={{ search.terms | url_encode }}';
+
+    {% elsif template contains 'cart' %}
+
+      s.src = 'https://t.adcell.com/js/inlineretarget.js?method=basket&pid=10239&basketProductCount={{ cart.item_count }}&basketTotal={{ cart.total_price | money_without_currency }}';
+
+    {% endif %}
+
+    document.body.appendChild(s);
+
+  }, 3500);
+
+});
+</script>
+
+    <!-- =============================================
+         CLICK-TRIGGERED LAZY IMAGE LOADER
+    ============================================== -->
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        function lazyLoadOnClick(triggerSelector, containerSelector, condition) {
+          var trigger   = document.querySelector(triggerSelector);
+          var container = document.querySelector(containerSelector);
+          var loaded    = false;
+          if (trigger && container) {
+            trigger.addEventListener('click', function () {
+              if (!loaded && (!condition || condition())) {
+                container.querySelectorAll('img[data-src]').forEach(function (img) {
+                  img.src = img.getAttribute('data-src');
+                  img.removeAttribute('data-src');
+                });
+                loaded = true;
+              }
+            });
+          }
+        }
+
+        lazyLoadOnClick('.mobile-menu-icon-wrapper', '.mobile--menu-container', function () { return window.innerWidth <= 1024; });
+        lazyLoadOnClick('.m-hamburger-box',          '.mobile--menu-container', function () { return window.innerWidth <= 1024; });
+        lazyLoadOnClick('.m-cart-icon-bubble',       '.x-card-empty-container');
+        lazyLoadOnClick('.m-header__search-icon',    '.search--recomend-product');
+        lazyLoadOnClick('.m-header__search',         '.search--recomend-product');
+      });
+    </script>
+
+    <div id="global-dropdown-root"></div>
+    {% render 'mrk-lightbox' %}
+  </body>
+</html>
+

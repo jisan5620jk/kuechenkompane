@@ -1,0 +1,118 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "collection-header": {
+      "type": "collection-page-header",
+      "disabled": true,
+      "settings": {
+        "color_scheme": "dark",
+        "container": "container-fluid",
+        "layout": "inside",
+        "image_position": "background",
+        "enable_parallax": false,
+        "parallax_direction": "vertical",
+        "text_alignment": "center",
+        "text_color": "inherit",
+        "upper_title": false,
+        "show_desc": true,
+        "collection_all_desc": "",
+        "padding_top": 36,
+        "padding_bottom": 50,
+        "enable_bg_zoom_effect": true
+      }
+    },
+    "rich_text_JT3zXC": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_8CzWJG": {
+          "type": "heading",
+          "settings": {
+            "heading": "Das größte Gewinnspiel des Jahres",
+            "heading_size": "h2"
+          }
+        },
+        "text_mADfM3": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Du kannst doppelt gewinnen: Bis zu 75% sparen – und jede Bestellung ist automatisch dein Los. Das kannst du gewinnen:  </p><p><strong>1× Weber Grill (5.999 €)  <br/>3× 500 €-Gutschein  <br/>5× Aoki Damastmesser-Set </strong></p><p>Auslosung ist am 01.06. Bestellungen gelten bis Sonntag 23:59.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_8CzWJG",
+        "text_mADfM3"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "container": "container",
+        "color_scheme": "",
+        "content_alignment": "center",
+        "padding_top": 52,
+        "padding_bottom": 52,
+        "custom_class": "",
+        "animations": "inherit"
+      }
+    },
+    "mrk_collection_grid_section_Bj38Vy": {
+      "type": "mrk-collection-grid-section",
+      "name": "Akta Collection Grid",
+      "settings": {
+        "padding_top": 19,
+        "padding_bottom": 22,
+        "show_section_header": false,
+        "section_title": "Featured Collection",
+        "section_description": "Explore our best-selling products.",
+        "collection": "",
+        "products_limit": 20,
+        "use_metafield_image": false,
+        "hover_second_image": false,
+        "pagination_style": "circle",
+        "show_product_ratings": false,
+        "show_stock_status": false,
+        "show_gift_info": false,
+        "info_text": "",
+        "add_border_line": false,
+        "show_max_price": false,
+        "show_save_price": false
+      }
+    },
+    "rich_text_ijBTPA": {
+      "type": "rich-text",
+      "blocks": {
+        "text_Pp4WF3": {
+          "type": "text",
+          "settings": {
+            "text": "{{ collection.description }}"
+          }
+        }
+      },
+      "block_order": [
+        "text_Pp4WF3"
+      ],
+      "disabled": true,
+      "settings": {
+        "container": "container",
+        "color_scheme": "",
+        "content_alignment": "center",
+        "padding_top": 108,
+        "padding_bottom": 116,
+        "custom_class": "",
+        "animations": "inherit"
+      }
+    }
+  },
+  "order": [
+    "collection-header",
+    "rich_text_JT3zXC",
+    "mrk_collection_grid_section_Bj38Vy",
+    "rich_text_ijBTPA"
+  ]
+}

@@ -1,0 +1,124 @@
+<style>
+  .count-icon {
+    display: inline-block;
+    position: relative;
+    height: 9px;
+    width: 9px;
+    top: -1px;
+    margin-right: 8px;
+  }
+
+  .count-icon::after {
+    width: 9px;
+    height: 9px;
+    background: {{ section.settings.bubble_after_color  }};
+    border-radius: 9px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    content: '';
+
+  }
+  .count-icon::before {
+    animation: bubble 2s linear infinite;
+    width: 9px;
+    height: 9px;
+    background: {{ section.settings.bubble_before_color  }};
+    border-radius: 9px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    content: '';
+    /* margin-top: 8px; */
+  }
+
+  .count-people {
+    margin-right: 4px;
+    font-weight: 700;
+  }
+  #viewers-count {
+
+  }
+  #stock-count {
+    font-weight: 700;
+    margin: 0 3px;
+  }
+  .viewer-count {
+    padding-left: 7px;
+    line-height: 1.2;
+  }
+  @keyframes bubble {
+    0% {
+      opacity: 0.5;
+    }
+    100% {
+      transform: scale(2.5);
+      opacity: 0;
+    }
+  }
+
+  .viewer-count {
+    margin-top: {{ block.settings.viewer_margin_top }}px;
+    margin-bottom: {{ block.settings.viewer_margin_bottom }}px;
+
+  }
+  .product-count {
+    padding-left: 7px;
+    margin-top: {{ block.settings.product_margin_top }}px;
+    margin-bottom: {{ block.settings.product_margin_bottom }}px;
+  }
+  .product-page .info-badge.sale-badge {
+    --border-color: {{ section.settings.border_color }};
+  }
+  @media only screen and (max-width: 480px) {
+    .viewer-count {
+      margin-top: {{ block.settings.viewer_margin_top_mobile }}px;
+      margin-bottom: {{ block.settings.viewer_margin_bottom_mobile }}px;
+
+    }
+    .product-count {
+      margin-top: {{ block.settings.p_margin_size_mobile_top }}px;
+      margin-bottom: {{ block.settings.p_margin_size_mobile_bottom }}px;
+    }
+    .product-price {
+      margin-bottom: 0 !important;
+    }
+    .product-page .info-badge.sale-badge {
+      border-color: var(--border-color) !important;
+    }
+
+  }
+</style>
+
+<div class="viewer-count">
+  <p
+    class="viewer-count-mobile"
+    style="font-size:{{block.settings.viewer_count_font_size}}px; color: {{block.settings.viewer_text_color}};"
+  >
+    <span class="count-icon"></span>
+    <span class="count-people">
+      <span id="viewers-count" style="color: {{block.settings.viewer_count_text_color}};">9 </span>
+      {{ block.settings.view_main_text_1 }}
+    </span>
+
+    {{ block.settings.view_main_text_2 }}
+  </p>
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const viewersEl = document.getElementById('viewers-count');
+    // Use a safe fallback if Liquid setting is empty: read as string then Number() fallback.
+    const viewerIntervalMs = Number('{{ block.settings.viewer_count_time | default: 30 | times: 1000 }}') || 30000;
+
+    function updateViewersCount() {
+      if (!viewersEl) return; // element missing -> do nothing
+      var viewersCount = Math.floor(Math.random() * (20 - 5 + 1)) + 5;
+      viewersEl.innerText = viewersCount + ' ';
+    }
+
+    // call immediately once so user doesn't wait one interval
+    updateViewersCount();
+    setInterval(updateViewersCount, viewerIntervalMs);
+  });
+</script>

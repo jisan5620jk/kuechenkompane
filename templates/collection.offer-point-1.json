@@ -1,0 +1,210 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "apex_timer_NcLteF": {
+      "type": "Apex-timer",
+      "name": "Apex Product Timer",
+      "settings": {
+        "bg_color": "#c6d1c4",
+        "section_pt": 15,
+        "section_pb": 15,
+        "timer_clock": "#d2861a",
+        "timer_clock_text_font_size": 17,
+        "clock_font_weight": "500",
+        "timer_text": "AKTION ENDET IN 48H",
+        "timer_font_size": 12,
+        "timer_color": "#000000",
+        "timer_font_weight": "400",
+        "start_time": "00:00:00"
+      }
+    },
+    "image_with_text_jADKWn": {
+      "type": "image-with-text",
+      "name": "Image with text",
+      "settings": {
+        "heading": "",
+        "heading_size": "h3",
+        "subheading": "",
+        "container": "container-fluid",
+        "color_scheme": "",
+        "item_gap": 100,
+        "item_gap_mobile": 16,
+        "layout": "left",
+        "image_column_size": "6",
+        "image_overlap": false,
+        "show_image_reverse": false,
+        "hover_effect": false,
+        "image_animation": "none",
+        "image": "shopify://shop_images/gelb_1.jpg",
+        "link": "",
+        "link_2": "",
+        "second_image_offset_top": 10,
+        "title": "GEWINNSPIEL - REGELN:",
+        "sub_title": "",
+        "text": "<p>🎟️ <strong>3 Lose pro 50 € Einkaufswert  (NUR 48h)</strong></p><p>🎟️ <strong>1 Los pro 50 € Einkaufswert  (Ab Montag 08.07)</strong></p><p><strong>📅 Teilnahmezeitraum: 05. Juli bis 12. Juli 2025</strong></p><p><strong>🏖️ Das gibt’s zu gewinnen: </strong>Eine unvergessliche All-Inclusive-<strong>Malediven-Reise für 2 Personen </strong>– inkl. Flug & Unterkunft im Wasserbungalow</p><p><strong>🔔 Auslosung: </strong>Gewinner wird <strong>öffentlich gezogen & per E-Mail benachrichtigt</strong>.</p>",
+        "text_size": "medium",
+        "content_alignment": "left",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "m-button--link",
+        "button_size": "",
+        "padding_top": 26,
+        "padding_bottom": 0,
+        "custom_class": "",
+        "animations": "inherit"
+      }
+    },
+    "collection-header": {
+      "type": "collection-page-header",
+      "disabled": true,
+      "settings": {
+        "color_scheme": "default",
+        "container": "container-fluid",
+        "layout": "outside_no_border",
+        "image_position": "background",
+        "enable_parallax": false,
+        "parallax_direction": "vertical",
+        "text_alignment": "center",
+        "text_color": "inherit",
+        "upper_title": false,
+        "show_desc": false,
+        "collection_all_desc": "",
+        "padding_top": 22,
+        "padding_bottom": 18,
+        "enable_bg_zoom_effect": true
+      }
+    },
+    "mrk_collection_grid_section_cKPqG3": {
+      "type": "mrk-collection-grid-section",
+      "name": "Akta Collection Grid",
+      "settings": {
+        "padding_top": 40,
+        "padding_bottom": 40,
+        "show_section_header": false,
+        "section_title": "Featured Collection",
+        "section_description": "Explore our best-selling products.",
+        "collection": "",
+        "products_limit": 20,
+        "use_metafield_image": false,
+        "hover_second_image": false,
+        "pagination_style": "circle",
+        "show_product_ratings": false,
+        "show_stock_status": false,
+        "show_gift_info": false,
+        "info_text": "",
+        "add_border_line": false,
+        "show_max_price": false,
+        "show_save_price": false
+      }
+    },
+    "usp_list_nd6t8y": {
+      "type": "usp-list",
+      "blocks": {
+        "item_aVKf6y": {
+          "type": "item",
+          "settings": {
+            "usp_icon": "shopify://shop_images/cash-bag_10424649_1_79aeb0c4-e404-44f1-8f3d-4ac7d82ea745.png",
+            "usp_title": "100 Tage-geld-zurück Garantie",
+            "title_size": 18,
+            "usp_info": "Wir sind von der Qualität unserer Produkte überzeugt und möchten sicherstellen, dass Du zu 100% zufrieden bist.",
+            "info_size": 14,
+            "divider": false
+          }
+        },
+        "item_9zb4Pn": {
+          "type": "item",
+          "settings": {
+            "usp_icon": "shopify://shop_images/diamond_11883313_1_e3cffe8b-0079-4e4c-89d0-205bf4509eb0.png",
+            "usp_title": "140,000+ zufriedene Kunden",
+            "title_size": 18,
+            "usp_info": "Unsere Messer erobern ganz deutschland im Sturm. Wann wirst du dir ein upgrade zulegen?",
+            "info_size": 14,
+            "divider": false
+          }
+        },
+        "item_4VaJ6g": {
+          "type": "item",
+          "settings": {
+            "usp_icon": "shopify://shop_images/thumb-up_16346369_1_bbb9da88-a768-4853-a27c-06a2092e4acf.png",
+            "usp_title": "Geprüfte Qualität",
+            "title_size": 18,
+            "usp_info": "Möchtest du Küchen-Produkte entdecken, die halten, was sie versprechen? Unsere Produkte sind getestet, empfohlen und garantieren Sicherheit.",
+            "info_size": 14,
+            "divider": false
+          }
+        }
+      },
+      "block_order": [
+        "item_aVKf6y",
+        "item_9zb4Pn",
+        "item_4VaJ6g"
+      ],
+      "settings": {
+        "color_scheme": "",
+        "verticle_padding": 50,
+        "horizontal_padding": 50,
+        "verticle_padding_mobile": 30
+      }
+    },
+    "promotion_banner_dgKacc": {
+      "type": "promotion-banner",
+      "blocks": {
+        "promotion_NBbJbf": {
+          "type": "promotion",
+          "settings": {
+            "subheading": "JETZT ODER NIE",
+            "heading": "-75%",
+            "text_alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "promotion_NBbJbf"
+      ],
+      "name": "Promotion banner",
+      "settings": {
+        "container": "container-fluid",
+        "color_scheme": "",
+        "heading": "Entdecke unsere Auslaufmodelle",
+        "heading_size": "h2",
+        "text": "<p>Noch nicht das richtige gefunden? Entdecke jetzt unsere Auslaufmodelle bevor sie alle weg sind. Für die nächsten 48h bis zu -75% Rabatt.</p>",
+        "content_alignment": "left",
+        "banner_url": "shopify://collections/ausverkauf",
+        "button_label": "",
+        "button_style": "m-button--primary",
+        "button_size": "",
+        "padding_top": 70,
+        "padding_bottom": 70,
+        "custom_class": "",
+        "animations": "inherit"
+      }
+    },
+    "collection_description_KrcbiD": {
+      "type": "collection-description",
+      "settings": {
+        "collection_bg": "#f8f8f8",
+        "collection_pt": 30,
+        "collection_pb": 30,
+        "collection_pt_m": 30,
+        "collection_pb_m": 30
+      }
+    }
+  },
+  "order": [
+    "apex_timer_NcLteF",
+    "image_with_text_jADKWn",
+    "collection-header",
+    "mrk_collection_grid_section_cKPqG3",
+    "usp_list_nd6t8y",
+    "promotion_banner_dgKacc",
+    "collection_description_KrcbiD"
+  ]
+}

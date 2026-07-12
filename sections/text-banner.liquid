@@ -1,0 +1,373 @@
+<style>
+  /* common css end  */
+  .text-banner-area {   
+    padding: 65px 0;
+    padding-top: {{ section.settings.pt | default: '65px' }}px;
+    padding-bottom: {{ section.settings.pb | default: '65px' }}px;
+    margin-top: {{ section.settings.mt | default: '0' }};
+    margin-bottom: {{ section.settings.mb | default: '0' }};
+  }
+
+
+  @media only screen and (max-width: 768px) {
+    .text-banner-area {
+    padding-top: {{ section.settings.pt_mobile | default: section.settings.pt | default: '65px' }};
+    padding-bottom: {{ section.settings.pb_mobile | default: section.settings.pb | default: '65px' }};
+    margin-top: {{ section.settings.mt_mobile | default: section.settings.mt | default: '0' }};
+    margin-bottom: {{ section.settings.mb_mobile | default: section.settings.mb | default: '0' }};
+    }
+  }
+
+
+
+  .text-banner-content {
+    text-align: center;
+    max-width: 500px;
+    padding: 0 15px;
+    margin: 0 auto;
+  }
+
+  .text-banner-title {  
+    text-transform: uppercase;
+    line-height: 1;
+    font-weight: 600;
+  }
+
+  .text-banner-subtitle { 
+    letter-spacing: -0.8px;   
+    margin-bottom: 8px;
+    font-weight: 600;
+  }
+
+  .text-banner-content p {    
+    
+  }
+  /* h3.text-banner-title.mb-0 {
+    margin-bottom: 0 !important;
+  } */
+  @media only screen and (max-width: 749px) {  
+
+    
+  }
+
+  {% for block in section.blocks %}
+      {%- case block.type -%}
+        {%- when 'title' -%}
+         
+          .text-banner-title{
+            margin-bottom: {{ block.settings.mb }}px !important;
+          }
+          @media (max-width: 768px){
+            .text-banner-title{
+              margin-bottom: {{ block.settings.mb_m }}px !important;
+            }
+          }
+
+        {%- when 'title_style' -%}
+
+          .text-banner-subtitle.style{
+            margin-bottom: {{ block.settings.mb }}px !important;
+          }
+          @media (max-width: 768px){
+            .text-banner-subtitle.style{
+              margin-bottom: {{ block.settings.mb_m }}px !important;
+            }
+          }
+
+        {%- when 'text' -%}          
+         
+          .text-banner-text{
+            margin-bottom: {{ block.settings.mb }}px !important;
+          }
+          @media (max-width: 768px){
+            .text-banner-text{
+              margin-bottom: {{ block.settings.mb_m }}px !important;
+            }
+          }
+        
+    {%- endcase -%}
+  {% endfor %}
+
+
+
+</style>
+<div class="text-banner-area m-color-{{ section.settings.color_scheme }}">
+  <div class="text-banner-content">
+    {% for block in section.blocks %}
+      {%- case block.type -%}
+        {%- when 'title' -%}
+          
+          <h3 class="text-banner-title mb-0 {{ section.settings.heading_type }}">{{ block.settings.title }}</h3>
+
+        {%- when 'title_style' -%}          
+          
+          <h3 class="text-banner-subtitle style {{ section.settings.heading_type }}"><i>{{ block.settings.style_title }}</i></h3>
+
+        {%- when 'text' -%}
+
+          <p class="text-banner-text {{ section.settings.des_size}}">
+            {{ block.settings.text }}
+          </p>
+      {%- endcase -%}
+    {% endfor %}
+  </div>
+</div>
+{% schema %}
+{
+  "name": "Apex Text Banner",
+  "settings": [
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "Color scheme"
+    },    
+    {
+      "type": "header",
+      "content": "Section Spacing"
+    },
+    {
+      "type": "range",
+      "id": "pt",
+      "label": "Padding Top",
+      "default": 65,
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "pb",
+      "label": "Padding Bottom",
+      "default": 65,
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "mt",
+      "label": "Margin Top",
+      "default": 0,
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "mb",
+      "label": "Margin Bottom",
+      "default": 0,
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px"
+    },
+    {
+      "type": "header",
+      "content": "Mobile Spacing"
+    },
+    {
+      "type": "range",
+      "id": "pt_mobile",
+      "label": "Padding Top (Mobile)",
+      "default": 65,
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "pb_mobile",
+      "label": "Padding Bottom (Mobile)",
+      "default": 65,
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "mt_mobile",
+      "label": "Margin Top (Mobile)",
+      "default": 0,
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "mb_mobile",
+      "label": "Margin Bottom (Mobile)",
+      "default": 0,
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px"
+    },
+    {
+      "type": "header",
+      "content": "Typography"
+    },
+    {
+      "type": "select",
+      "id": "heading_type",
+      "label": "Choose Heading Size",
+      "options": [
+        {
+          "value": "mrk-h1",
+          "label": "H1"
+        },
+        {
+          "value": "mrk-h2",
+          "label": "H2"
+        },
+        {
+          "value": "mrk-h3",
+          "label": "H3"
+        },
+        {
+          "value": "mrk-h4",
+          "label": "H4"
+        },
+        {
+          "value": "mrk-h5",
+          "label": "H5"
+        },
+        {
+          "value": "mrk-h6",
+          "label": "H6"
+        }
+      ],
+      "default": "mrk-h1"
+    }, 
+    {
+      "type": "header",
+      "content": "Select Decription size"
+    },
+    {
+      "type": "select",
+      "id": "des_size",
+      "label": "Decription size",
+      "default": "p-medium",
+      "options": [
+        { "value": "p-xl", "label": "Extra Large" },
+        { "value": "p-large", "label": "Large" },
+        { "value": "p-medium", "label": "Medium" },
+        { "value": "p-small", "label": "Small" },
+        { "value": "p-x-small", "label": "Extra Small" }        
+      ]
+    }
+    
+  ],
+  "blocks": [
+    {
+      "type": "title",
+      "name": "Title",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title",
+          "default": "100% MONEY BACK"
+        },
+        {
+          "type": "range",
+          "id": "mb",
+          "label": "Margin Bottom",
+          "default": 0,
+          "min": 0,
+          "max": 100,
+          "step": 1,
+          "unit": "px"
+        },
+        {
+          "type": "range",
+          "id": "mb_m",
+          "label": "Margin Bottom (Mobile)",
+          "default": 0,
+          "min": 0,
+          "max": 100,
+          "step": 1,
+          "unit": "px"
+        }
+      ],
+      
+    },
+    {
+      "type": "title_style",
+      "name": "Title Style",
+      "settings": [
+        {
+          "type": "text",
+          "id": "style_title",
+          "label": "Styled Title",
+          "default": "guarantee"
+        },
+        {
+          "type": "range",
+          "id": "mb",
+          "label": "Margin Bottom",
+          "default": 0,
+          "min": 0,
+          "max": 100,
+          "step": 1,
+          "unit": "px"
+        },
+        {
+          "type": "range",
+          "id": "mb_m",
+          "label": "Margin Bottom (Mobile)",
+          "default": 0,
+          "min": 0,
+          "max": 100,
+          "step": 1,
+          "unit": "px"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "name": "Text",
+      "settings": [
+        {
+          "type": "textarea",
+          "id": "text",
+          "label": "Text",
+          "default": "We offer a 100% match guarantee on all our products. If you are not satisfied, you will receive a full refund without any hassle."
+        },
+        {
+          "type": "range",
+          "id": "mb",
+          "label": "Margin Bottom",
+          "default": 0,
+          "min": 0,
+          "max": 100,
+          "step": 1,
+          "unit": "px"
+        },
+        {
+          "type": "range",
+          "id": "mb_m",
+          "label": "Margin Bottom (Mobile)",
+          "default": 0,
+          "min": 0,
+          "max": 100,
+          "step": 1,
+          "unit": "px"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Apex Text Banner",
+      "settings": {}
+    }
+  ]
+}
+{% endschema %}

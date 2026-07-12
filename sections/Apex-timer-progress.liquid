@@ -1,0 +1,393 @@
+<style>
+  .rs_timerwrapper {
+    text-align: center;
+    padding: 15px;
+
+    text-transform: uppercase;
+    font-weight: 700;
+    line-height: 1;
+    position: relative;
+  }
+
+  .rs_timerwrapper .rslink {
+    position: absolute;
+    z-index: 999;
+    width: 100%;
+    left: 0;
+    top: 0;
+    right: 0;
+    height: 100%;
+    bottom: 0;
+    background: none;
+  }
+
+  .timer_text_wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    flex-wrap: wrap;
+  }
+
+  .timer_clock {
+    display: inline-block;
+    line-height: 1;
+    margin-right: 5px;
+
+    width: fit-content;
+    letter-spacing: 0.5px;
+
+
+    font-family: "Roboto", sans-serif;
+  }
+
+  .timer_text {
+    font-family: "Roboto", sans-serif;
+    font-size: 12px;
+    line-height: 1;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    color: #dcad27;
+    font-weight: 700;
+  }
+  .timer_text_wrapper {
+    font-family: "Roboto", sans-serif;
+  }
+</style>
+<div
+  class="rs_timerwrapper global-timer{{ section.id }}"
+  style="padding-top: {{ section.settings.section_pt }}px; padding-bottom: {{ section.settings.section_pb }}px;  background: {{ section.settings.bg_color }};  "
+>
+  <!-- <a class="rslink" href="#"></a> -->
+  <div class="timer_text_wrapper">
+    <div style="color: {{ section.settings.timer_clock }}; font-size: {{ section.settings.timer_clock_text_font_size }}px; font-weight: {{ section.settings.clock_font_weight }};">
+      <span class="" id="customer-count">0</span>/<span id="max-count">{{ section.settings.max_count_show }}</span>
+    </div>
+    <p
+      class="timer_text"
+      style="font-size: {{ section.settings.timer_font_size }}px; color: {{ section.settings.timer_color }};  font-weight: {{ section.settings.timer_font_weight }};"
+    >
+      {{ section.settings.timer_text }}
+    </p>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Apex Timer Progress",
+
+  "settings": [
+    {
+      "type": "color",
+      "id": "bg_color",
+      "label": "Background Color",
+      "default": "#DCE5DC"
+    },
+    {
+      "type": "range",
+      "id": "section_pt",
+      "label": "Padding Top",
+      "default": 15,
+      "min": 0,
+      "max": 100,
+      "step": 1
+    },
+    {
+      "type": "range",
+      "id": "section_pb",
+      "label": "Padding Bottom",
+      "default": 15,
+      "min": 0,
+      "max": 100,
+      "step": 1
+    },
+    {
+      "type": "header",
+      "content": "Clock Text Settings"
+    },
+    {
+      "type": "color",
+      "id": "timer_clock",
+      "label": "Timer Clock Font Color",
+      "default": "#D2861A"
+    },
+    {
+      "type": "range",
+      "id": "timer_clock_text_font_size",
+      "label": "Font Size",
+      "default": 12,
+      "min": 10,
+      "max": 50,
+      "step": 1
+    },
+    {
+      "type": "select",
+      "id": "clock_font_weight",
+      "label": "Font Weight",
+      "default": "400",
+      "options": [
+        {
+          "value": "100",
+          "label": "Thin (100)"
+        },
+        {
+          "value": "200",
+          "label": "Extra Light (200)"
+        },
+        {
+          "value": "300",
+          "label": "Light (300)"
+        },
+        {
+          "value": "400",
+          "label": "Normal (400)"
+        },
+        {
+          "value": "500",
+          "label": "Medium (500)"
+        },
+        {
+          "value": "600",
+          "label": "Semi-Bold (600)"
+        },
+        {
+          "value": "700",
+          "label": "Bold (700)"
+        },
+        {
+          "value": "800",
+          "label": "Extra-Bold (800)"
+        },
+        {
+          "value": "900",
+          "label": "Black (900)"
+        }
+      ]
+    },
+    {
+      "type": "header",
+      "content": "Text Settings"
+    },
+    {
+      "type": "text",
+      "id": "timer_text",
+      "label": "Timer Text",
+      "default": "Unser Exklusives Angebot läuft bald ab!"
+    },
+    {
+      "type": "range",
+      "id": "timer_font_size",
+      "label": "Font Size",
+      "default": 12,
+      "min": 10,
+      "max": 50,
+      "step": 1
+    },
+
+    {
+      "type": "color",
+      "id": "timer_color",
+      "label": "Font Color",
+      "default":"#000000"
+    },
+    {
+      "type": "select",
+      "id": "timer_font_weight",
+      "label": "Font Weight",
+      "default": "400",
+      "options": [
+        {
+          "value": "100",
+          "label": "Thin (100)"
+        },
+        {
+          "value": "200",
+          "label": "Extra Light (200)"
+        },
+        {
+          "value": "300",
+          "label": "Light (300)"
+        },
+        {
+          "value": "400",
+          "label": "Normal (400)"
+        },
+        {
+          "value": "500",
+          "label": "Medium (500)"
+        },
+        {
+          "value": "600",
+          "label": "Semi-Bold (600)"
+        },
+        {
+          "value": "700",
+          "label": "Bold (700)"
+        },
+        {
+          "value": "800",
+          "label": "Extra-Bold (800)"
+        },
+        {
+          "value": "900",
+          "label": "Black (900)"
+        }
+      ]
+    },
+    {
+      "type": "header",
+      "content": "Progress Settings"
+    },
+    {
+      "type": "number",
+      "id": "max_count",
+      "label": "Max Count Number",
+      "default": 89
+    },
+    {
+      "type": "number",
+      "id": "max_count_show",
+      "label": "Max Count Number Show",
+      "default": 100
+    },
+    {
+      "type": "number",
+      "id": "increment_by",
+      "label": "Increment By",
+      "default": 1
+    },
+    {
+      "type": "checkbox",
+      "id": "reset_when_max_reached",
+      "label": "Restart from 0 after reaching max?",
+      "default": false
+    },
+    {
+      "type": "number",
+      "id": "start_count",
+      "label": "Start Count",
+      "default": 32
+    }
+
+
+
+
+  ],
+  "presets": [
+    {
+      "name": "Apex Timer Progress"
+    }
+  ]
+}
+{% endschema %}
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const maxCount = {{ section.settings.max_count | default: 89 }};
+    const startCount = {{ section.settings.start_count | default: 0 }};
+    const incrementBy = {{ section.settings.increment_by | default: 1 }};
+    const resetWhenMaxReached = {{ section.settings.reset_when_max_reached | default: false }};
+    const storageKey = 'test_customer_offer_count';
+
+    const updateDelays = [5000, 35000, 250000, 500000, 700000]; // in ms
+
+    let storedCount = parseInt(localStorage.getItem(storageKey));
+    let currentCount = isNaN(storedCount) ? startCount : storedCount;
+
+    // Reset if needed
+    if (resetWhenMaxReached && currentCount >= maxCount) {
+      currentCount = startCount;
+      localStorage.setItem(storageKey, currentCount);
+    }
+
+    const currentEl = document.getElementById('customer-count');
+    // const maxEl = document.getElementById('max-count');
+    // maxEl.textContent = maxCount;
+    currentEl.textContent = currentCount;
+
+    function updateCounter() {
+      if (currentCount < maxCount) {
+        currentCount += incrementBy;
+        if (currentCount > maxCount) currentCount = maxCount;
+        currentEl.textContent = currentCount;
+        localStorage.setItem(storageKey, currentCount);
+      }
+
+      if (currentCount === maxCount && resetWhenMaxReached) {
+        currentCount = startCount;
+        localStorage.setItem(storageKey, currentCount);
+        currentEl.textContent = currentCount;
+      }
+    }
+
+    updateDelays.forEach((delay, index) => {
+      setTimeout(() => {
+        updateCounter();
+      }, delay);
+    });
+
+ 
+
+  });
+
+
+// document.addEventListener('DOMContentLoaded', function () {
+//   const maxCount = {{ section.settings.max_count | default: 100 }};
+//   const startCount = {{ section.settings.start_count | default: 0 }};
+//   const incrementBy = {{ section.settings.increment_by | default: 1 }};
+//   const resetWhenMaxReached = {{ section.settings.reset_when_max_reached | default: false }};
+//   const storageKey = 'test_customer_offer_count';
+//   const reached89TimeKey = 'test_customer_offer_reached_89_time';
+
+//   const updateDelays = [5000, 35000, 250000, 500000, 700000]; // in ms
+
+//   let storedCount = parseInt(localStorage.getItem(storageKey));
+//   let currentCount = isNaN(storedCount) ? startCount : storedCount;
+
+//   let timeoutIDs = [];
+
+//   // Reset if needed
+//   if (resetWhenMaxReached && currentCount >= maxCount) {
+//     currentCount = startCount;
+//     localStorage.setItem(storageKey, currentCount);
+//   }
+
+//   const currentEl = document.getElementById('customer-count');
+//   const maxEl = document.getElementById('max-count');
+
+//   if (maxEl) maxEl.textContent = maxCount;
+//   if (currentEl) currentEl.textContent = currentCount;
+
+//   function updateCounter() {
+//     if (currentCount < maxCount) {
+//       currentCount += incrementBy;
+//       if (currentCount > maxCount) currentCount = maxCount;
+
+//       if (currentEl) currentEl.textContent = currentCount;
+//       localStorage.setItem(storageKey, currentCount);
+
+//       if (currentCount === 89) {
+//         const timestamp = new Date().toISOString();
+//         localStorage.setItem(reached89TimeKey, timestamp);
+//         console.log(`Reached 89 at ${timestamp}`);
+
+//         // Cancel remaining timeouts
+//         timeoutIDs.forEach((id) => clearTimeout(id));
+//         timeoutIDs = [];
+//       }
+//     }
+
+//     if (currentCount === maxCount && resetWhenMaxReached) {
+//       currentCount = startCount;
+//       localStorage.setItem(storageKey, currentCount);
+//       if (currentEl) currentEl.textContent = currentCount;
+//     }
+//   }
+
+//   // Save timeout IDs so we can cancel them if needed
+//   updateDelays.forEach((delay) => {
+//     const id = setTimeout(updateCounter, delay);
+//     timeoutIDs.push(id);
+//   });
+// });
+</script>

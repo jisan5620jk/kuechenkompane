@@ -1,0 +1,84 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "page",
+      "disabled": true,
+      "settings": {}
+    },
+    "rich_text_JUTTrC": {
+      "type": "rich-text",
+      "name": "Rich text",
+      "settings": {
+        "container": "container",
+        "color_scheme": "",
+        "content_alignment": "center",
+        "padding_top": 52,
+        "padding_bottom": 52,
+        "custom_class": "",
+        "animations": "inherit"
+      }
+    },
+    "category_filter_by_image_qJGqNB": {
+      "type": "category-filter-by-image",
+      "name": "APEX Collection Filter",
+      "settings": {
+        "color_scheme": "",
+        "pt": 0,
+        "pb": 0,
+        "mobile_pt": 15,
+        "mobile_pb": 0,
+        "heading_type": "mrk-h1",
+        "title": "DAS SAGEN UNSER KUNDEN",
+        "c_n_text": "p-medium"
+      }
+    },
+    "176821464679a26dfa": {
+      "type": "apps",
+      "blocks": {
+        "loox_reviews_loox_agg_section_3XJcrB": {
+          "type": "shopify://apps/loox-reviews/blocks/loox-agg-section/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
+          "settings": {
+            "only_photos": true,
+            "hide_thumbnails": false,
+            "product_handle": "",
+            "aggregated": true,
+            "data-limit": 24,
+            "maxwidth": 1080,
+            "is_sample": true
+          }
+        }
+      },
+      "block_order": [
+        "loox_reviews_loox_agg_section_3XJcrB"
+      ],
+      "settings": {
+        "heading": "",
+        "heading_size": "h3",
+        "subheading": "",
+        "header_alignment": "center",
+        "container": "container",
+        "background_color": "",
+        "padding_top": 50,
+        "padding_bottom": 50,
+        "padding_top_mobile": 30,
+        "padding_bottom_mobile": 30,
+        "custom_class": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "rich_text_JUTTrC",
+    "category_filter_by_image_qJGqNB",
+    "176821464679a26dfa"
+  ]
+}

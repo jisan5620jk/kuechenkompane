@@ -1,0 +1,263 @@
+<style>
+      .guarantie-area{
+        margin-top: {{ section.settings.margin_top }}px;
+        margin-bottom: {{ section.settings.margin_bottom }}px;
+      }
+
+    /* common css end  */
+    .gurantie-content {
+        padding: 50px 10px;
+        max-width: 650px;
+        margin: 0 auto;
+    }
+
+    .container {
+        max-width: 1440px;       
+        margin: 0 auto;
+    }
+
+    .gurantie-img {
+        max-width: 145px;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .gurante-text {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .gurante-text h3 {
+             
+        line-height: 1;
+        margin-bottom: 20px;
+        font-weight: 500;
+    }
+
+    .gurante-text p {       
+        margin-bottom: 30px;
+    }
+
+    .gurantie-btn a {       
+        font-size: 18px;
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        position: relative;
+        font-weight: 500;
+        transition: .3s;
+    }
+
+    .gurantie-btn a i {
+        font-size: 14px;       
+    }
+
+    .gurantie-btn a::after {
+        position: absolute;
+        content: '';
+        width: 100%;
+        height: 2px;       
+        bottom: -6px;
+        left: 0;
+        transition: .3s;
+    }
+
+    .gurantie-btn a:hover::after {
+        width: 0;
+    }
+    .gurantie-btn img {
+      width: 24px;
+      height: 24px;
+  }
+    @media (max-width: 767px) {
+      .guarantie-area{
+        margin-top: {{ section.settings.margin_top_mobile }}px;
+        margin-bottom: {{ section.settings.margin_bottom_mobile }}px;
+      }     
+    }
+</style>
+<div class="guarantie-area m-color-{{ section.settings.color_scheme }}">
+  <div class="container">
+    <div class="gurantie-content">
+      {% if section.settings.icon_img != blank %}
+        <div class="gurantie-img">
+          <img src="{{  section.settings.icon_img |  img_url: 'large'}}" alt="icon">
+        </div>
+      {% endif %}
+      <div class="gurante-text">
+        {% for block in section.blocks %}
+          {% case block.type %}
+            {% when 'title' %}
+              <h3 class="{{ section.settings.heading_type }}">{{ block.settings.title }}</h3>
+            {% when 'text' %}
+              <p class="{{ section.settings.des_size}}">
+                {{ block.settings.text }}
+              </p>
+            {% when 'button' %}
+              <div class="gurantie-btn">
+                <a href="{{ block.settings.btn_link }}">
+                  {{ block.settings.btn_text }}
+                  <span>➔</span>
+                </a>
+              </div>
+          {% endcase %}
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
+{% schema %}
+{
+  "name": "APEX Guarantee & Objec",
+  "settings": [
+
+     {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "Color scheme"
+    },  
+    {
+      "type": "image_picker",
+      "id": "icon_img",
+      "label": "Icon Image"
+    },
+    {
+      "type": "range",
+      "id": "margin_top",
+      "label": "Margin Top",
+      "default": 0,
+      "min": 0,
+      "max": 100,
+      "step": 1
+    },
+    {
+      "type": "range",
+      "id": "margin_bottom",
+      "label": "Margin Bottom",
+      "default": 0,
+      "min": 0,
+      "max": 100,
+      "step": 1
+    },
+    {
+      "type": "range",
+      "id": "margin_top_mobile",
+      "label": "Margin Top (Mobile)",
+      "default": 0,
+      "min": 0,
+      "max": 100,
+      "step": 1
+    },
+    {
+      "type": "range",
+      "id": "margin_bottom_mobile",
+      "label": "Margin Bottom (Mobile)",
+      "default": 0,
+      "min": 0,
+      "max": 100,
+      "step": 1
+    },
+    {
+      "type": "header",
+      "content": "heading"
+    },
+    {
+      "type": "select",
+      "id": "heading_type",
+      "label": "Choose Heading Size",
+      "options": [
+        {
+          "value": "mrk-h1",
+          "label": "H1"
+        },
+        {
+          "value": "mrk-h2",
+          "label": "H2"
+        },
+        {
+          "value": "mrk-h3",
+          "label": "H3"
+        },
+        {
+          "value": "mrk-h4",
+          "label": "H4"
+        },
+        {
+          "value": "mrk-h5",
+          "label": "H5"
+        },
+        {
+          "value": "mrk-h6",
+          "label": "H6"
+        }
+      ],
+      "default": "mrk-h1"
+    },
+    {
+      "type": "header",
+      "content": "Select Decription size"
+    },
+    {
+      "type": "select",
+      "id": "des_size",
+      "label": "Decription size",
+      "default": "p-medium",
+      "options": [
+        { "value": "p-xl", "label": "Extra Large" },
+        { "value": "p-large", "label": "Large" },
+        { "value": "p-medium", "label": "Medium" },
+        { "value": "p-small", "label": "Small" },
+        { "value": "p-x-small", "label": "Extra Small" }        
+      ]
+    }  
+  ],
+  "blocks": [
+    {
+      "type": "title",
+      "name": "Title",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title",
+          "default": "100% money-back guarantee"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "name": "Text",
+      "settings": [
+        {
+          "type": "textarea",
+          "id": "text",
+          "label": "Text",
+          "default": "Try Maniko Nails risk-free for 45 days. If you are not 100% satisfied, we will refund your full purchase price, no questions asked."
+        }
+      ]
+    },
+    {
+      "type": "button",
+      "name": "Button",
+      "settings": [
+        {
+          "type": "text",
+          "id": "btn_text",
+          "label": "Button Text",
+          "default": "Learn more"
+        },
+        {
+          "type": "url",
+          "id": "btn_link",
+          "label": "Button Link"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "APEX Guarantee & Objec"
+    }
+  ]
+}
+{% endschema %}

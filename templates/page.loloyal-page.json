@@ -1,0 +1,173 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "reward_banner_ixQph3": {
+      "type": "reward-banner",
+      "blocks": {
+        "title_zeHXHC": {
+          "type": "title",
+          "settings": {
+            "title": "Küchenkompane Bonuspunkte"
+          }
+        },
+        "text_8RhiQy": {
+          "type": "text",
+          "settings": {
+            "text": "Werde Teil der Küchenkompane Welt! Sammle unsere Bonuspunkte und erhalte tolle Geschenke. Erstelle jetzt ein Konto und erhalte 300 Punkte GRATIS"
+          }
+        },
+        "button_nrHibw": {
+          "type": "Button",
+          "settings": {
+            "btn_text": "Los geht´s",
+            "btn_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "title_zeHXHC",
+        "text_8RhiQy",
+        "button_nrHibw"
+      ],
+      "disabled": true,
+      "name": "Reward Banner",
+      "settings": {
+        "bg_image": "shopify://shop_images/banner_desktop.jpg",
+        "bg_image_mobile": "shopify://shop_images/gruenn.png"
+      }
+    },
+    "main": {
+      "type": "page",
+      "disabled": true,
+      "settings": {}
+    },
+    "1751878483f5d466c2": {
+      "type": "apps",
+      "settings": {
+        "heading": "",
+        "heading_size": "h3",
+        "subheading": "",
+        "header_alignment": "center",
+        "container": "container",
+        "background_color": "",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "padding_top_mobile": 0,
+        "padding_bottom_mobile": 0,
+        "custom_class": ""
+      }
+    },
+    "work_process_fCkNfp": {
+      "type": "work-process",
+      "name": "Work Process",
+      "settings": {
+        "title": "So funktioniert es",
+        "bg_image": "shopify://shop_images/pfeileeee_desktop.jpg",
+        "bg_image_mobile": "shopify://shop_images/pfeileee.jpg",
+        "register": "ANMELDEN",
+        "register_info": "Account erstellen und 300 Punkte sichern.",
+        "earn": "VERDIENEN",
+        "earn_info": "Sammle Punkte für deine Bestellungen und Aktivitäten.",
+        "redeem": "EINLÖSEN",
+        "redeem_info": "Belohne dich mit exklusiven Angeboten, dank deiner Punkte."
+      }
+    },
+    "175187851140e57500": {
+      "type": "apps",
+      "settings": {
+        "heading": "",
+        "heading_size": "h3",
+        "subheading": "",
+        "header_alignment": "center",
+        "container": "container",
+        "background_color": "",
+        "padding_top": 50,
+        "padding_bottom": 50,
+        "padding_top_mobile": 30,
+        "padding_bottom_mobile": 30,
+        "custom_class": ""
+      }
+    },
+    "1751878518df6e3564": {
+      "type": "apps",
+      "settings": {
+        "heading": "",
+        "heading_size": "h3",
+        "subheading": "",
+        "header_alignment": "center",
+        "container": "container",
+        "background_color": "",
+        "padding_top": 50,
+        "padding_bottom": 50,
+        "padding_top_mobile": 30,
+        "padding_bottom_mobile": 30,
+        "custom_class": ""
+      }
+    },
+    "support_section_mypjCm": {
+      "type": "support-section",
+      "blocks": {
+        "icon_PHfCyL": {
+          "type": "icon",
+          "settings": {
+            "icon": "shopify://shop_images/service_1.png"
+          }
+        },
+        "title_dKQr6R": {
+          "type": "title",
+          "settings": {
+            "title": "Hast du eine Frage?"
+          }
+        },
+        "info_MnHKFR": {
+          "type": "info",
+          "settings": {
+            "info_text": "Unser Support-Team hilft dir sehr gerne weiter.",
+            "email": "info@kuechenkompane.de"
+          }
+        }
+      },
+      "block_order": [
+        "icon_PHfCyL",
+        "title_dKQr6R",
+        "info_MnHKFR"
+      ],
+      "custom_css": [],
+      "name": "Support Section",
+      "settings": {
+        "bg": "shopify://shop_images/bg_32602eea-e670-491d-8acc-b85945083761.jpg"
+      }
+    },
+    "reward_page_newsletter_nBqU9x": {
+      "type": "reward-page-newsletter",
+      "disabled": true,
+      "name": "Reward Page Newsletter",
+      "settings": {
+        "bg_img": "shopify://shop_images/subscription-bg.png",
+        "title": "Stay in the loop",
+        "newsletter_text": "Subscribe to stay up-to-date with our latest news, special offers and e-bike tips.",
+        "place_holder_text": "Enter your email",
+        "btn_text": "Subscribe",
+        "success_text": "Thank you for subscribing!"
+      }
+    }
+  },
+  "order": [
+    "reward_banner_ixQph3",
+    "main",
+    "1751878483f5d466c2",
+    "work_process_fCkNfp",
+    "175187851140e57500",
+    "1751878518df6e3564",
+    "support_section_mypjCm",
+    "reward_page_newsletter_nBqU9x"
+  ]
+}

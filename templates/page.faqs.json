@@ -1,0 +1,628 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "breadcrumb_RHyjx4": {
+      "type": "breadcrumb",
+      "settings": {
+        "container": "container",
+        "text_alignment": "center",
+        "hide_current": false,
+        "hide_on_mb": false,
+        "animations": "inherit"
+      }
+    },
+    "custom_content_tAfTRN": {
+      "type": "custom-content",
+      "settings": {
+        "heading": "FAQs",
+        "heading_type": "mrk-h1",
+        "subheading": "",
+        "description": "",
+        "p_size": "p-medium",
+        "container": "container-fluid",
+        "color_scheme": "",
+        "content_color_scheme": "",
+        "enable_parallax": false,
+        "parallax_direction": "vertical",
+        "gap": 30,
+        "gap_mobile": 16,
+        "use_scroll_mobile": false,
+        "padding_top": 30,
+        "padding_bottom": 30,
+        "custom_class": ""
+      }
+    },
+    "main": {
+      "type": "page-faqs",
+      "blocks": {
+        "content_Nw6ngj": {
+          "type": "content",
+          "settings": {
+            "content": "<h2>ALLGEMEINE FRAGEN</h2><h2></h2>"
+          }
+        },
+        "accordion-1": {
+          "type": "accordion",
+          "settings": {
+            "title": "Wer ist Küchenkompane?",
+            "content": "<p>Küchenkompane ist eine Marke, die sich auf hochwertige Küchenmesser und Küchenzubehör spezialisiert hat. Unsere Mission ist es, sowohl Hobbyköchen als auch Profis die bestmögliche Schneideerfahrung zu bieten. Wir kombinieren traditionelle Handwerkskunst mit modernster Technologie, um langlebige, scharfe und ergonomische Messer zu entwickeln, die das Kochen auf ein neues Niveau heben.</p>",
+            "open": true
+          }
+        },
+        "accordion-2": {
+          "type": "accordion",
+          "settings": {
+            "title": "Wo werden eure Messer hergestellt?",
+            "content": "<p>Unsere Messer werden in verschiedenen spezialisierten Manufakturen hergestellt – je nach Modell entweder in Japan oder Deutschland. Wir arbeiten ausschließlich mit erfahrenen Schmieden zusammen, die traditionelle Herstellungsverfahren mit modernen Präzisionstechniken kombinieren. Dadurch garantieren wir höchste Qualität und Langlebigkeit unserer Messer.</p>",
+            "open": false
+          }
+        },
+        "accordion-3": {
+          "type": "accordion",
+          "settings": {
+            "title": "Was macht eure Messer besonders?",
+            "content": "<p>Unsere Messer sind nicht nur extrem scharf, sondern auch besonders langlebig und ergonomisch gestaltet. Wir setzen auf hochwertige Materialien wie VG-10-Damaststahl oder rostfreien Hochleistungs-Edelstahl. Zudem achten wir darauf, dass jedes Messer perfekt ausbalanciert ist, um eine angenehme Handhabung zu gewährleisten. Unsere Kunden schätzen besonders die außergewöhnliche Schärfe und das edle Design unserer Produkte.</p>",
+            "open": false
+          }
+        },
+        "accordion-4": {
+          "type": "accordion",
+          "settings": {
+            "title": "Welche Materialien verwendet ihr für eure Messer?",
+            "content": "<p>Wir setzen auf eine Auswahl hochwertiger Materialien, darunter VG-10-Damaststahl, rostfreien Edelstahl und karbonhaltige Stähle. Diese Materialien sind nicht nur besonders scharf und schnitthaltig, sondern auch korrosionsbeständig. Die Griffe bestehen je nach Modell aus edlem Hartholz, robustem G10 oder rutschfestem Kunststoff, um maximalen Komfort und Sicherheit zu bieten.</p>",
+            "open": false
+          }
+        },
+        "accordion-5": {
+          "type": "accordion",
+          "settings": {
+            "title": "Warum sind eure Messer besser als herkömmliche Messer?",
+            "content": "<p>Unsere Messer werden mit größter Sorgfalt gefertigt und bieten eine überlegene Schneidleistung im Vergleich zu herkömmlichen Küchenmessern. Durch den präzisen Schliff, den speziellen Stahl und das ergonomische Design sind sie nicht nur langlebiger, sondern ermöglichen auch müheloses und präzises Schneiden. Zudem bleibt unsere Klinge wesentlich länger scharf, sodass Nachschärfen seltener erforderlich ist.</p>",
+            "open": false
+          }
+        },
+        "accordion_kyY9mL": {
+          "type": "accordion",
+          "settings": {
+            "title": "Bietet ihr auch andere Küchenprodukte an?",
+            "content": "<p>Ja, neben unseren Messern bieten wir auch hochwertige Schneidebretter, Messerblöcke und Zubehör wie Schleifsteine oder magnetische Messerhalter an. Unser Ziel ist es, dir eine komplette Küchenausstattung in bester Qualität zu liefern, die sowohl funktional als auch ästhetisch ansprechend ist.</p>",
+            "open": false
+          }
+        },
+        "accordion_aBCFWh": {
+          "type": "accordion",
+          "settings": {
+            "title": "Habt ihr ein Geschäft oder verkauft ihr nur online?",
+            "content": "<p>Aktuell vertreiben wir unsere Produkte ausschließlich online über unsere Website. Dies ermöglicht es uns, hochwertige Messer zu fairen Preisen anzubieten, da wir direkt an unsere Kunden verkaufen und Zwischenhändler umgehen.</p>",
+            "open": false
+          }
+        },
+        "accordion_YHbrHK": {
+          "type": "accordion",
+          "settings": {
+            "title": "Gibt es einen Showroom, wo man die Messer ansehen kann?",
+            "content": "<p>Derzeit haben wir keinen physischen Showroom, in dem du unsere Produkte testen kannst. Allerdings arbeiten wir daran, Partnerschaften mit ausgewählten Küchenfachgeschäften einzugehen, um unsere Messer dort vor Ort erlebbar zu machen.</p>",
+            "open": false
+          }
+        },
+        "accordion_teVk3B": {
+          "type": "accordion",
+          "settings": {
+            "title": "Sind eure Messer für Profis oder auch für Hobbyköche geeignet?",
+            "content": "<p>Unsere Messer sind so konzipiert, dass sie sowohl von Hobbyköchen als auch von Profis verwendet werden können. Während Hobbyköche von der einfachen Handhabung und der extremen Schärfe profitieren, schätzen Profis die hochwertige Verarbeitung und die perfekte Balance der Messer.</p>",
+            "open": false
+          }
+        },
+        "accordion_MbTzpB": {
+          "type": "accordion",
+          "settings": {
+            "title": "Gibt es Küchenkompane auch international?",
+            "content": "<p>Ja, wir sind ein international agierendes Unternehmen und versenden unsere Produkte in viele Länder weltweit. Kunden aus der EU, den USA und weiteren Ländern können unsere Produkte bequem über unseren Online-Shop bestellen.</p>",
+            "open": false
+          }
+        },
+        "content_jhMLTc": {
+          "type": "content",
+          "settings": {
+            "content": "<h2>FRAGEN ZU DEN PRODUKTEN</h2><h2></h2>"
+          }
+        },
+        "accordion_PyiLTJ": {
+          "type": "accordion",
+          "settings": {
+            "title": "Welche Messertypen bietet ihr an?",
+            "content": "<p>Unser Sortiment umfasst eine große Auswahl an Messertypen für unterschiedliche Einsatzzwecke. Dazu gehören klassische Kochmesser, Santokumesser, Brotmesser, Fleischmesser, Filetiermesser, Schälmesser und viele weitere Spezialmesser. Egal, ob du Gemüse hacken, Fleisch tranchieren oder Brot schneiden möchtest – wir haben das perfekte Messer für dich.</p>",
+            "open": false
+          }
+        },
+        "accordion_fie6Vf": {
+          "type": "accordion",
+          "settings": {
+            "title": "Was ist der Unterschied zwischen Damastmessern und Edelstahlmessern?",
+            "content": "<p>Damastmesser bestehen aus mehreren Lagen hochwertigem Stahl, die durch spezielle Schmiedetechniken miteinander verbunden werden. Sie zeichnen sich durch ihre besondere Optik, extreme Schärfe und lange Haltbarkeit aus. Edelstahlmesser hingegen sind oft robuster und leichter zu pflegen, jedoch nicht ganz so scharf wie Damastmesser.</p>",
+            "open": false
+          }
+        },
+        "accordion_M7zH4Q": {
+          "type": "accordion",
+          "settings": {
+            "title": "Was bedeutet „japanischer Schliff“?",
+            "content": "<p>Ein japanischer Schliff bedeutet, dass die Klinge in einem sehr spitzen Winkel (meist zwischen 12° und 15°) geschliffen wird. Dadurch entsteht eine extrem scharfe Schneide, die müheloses und präzises Schneiden ermöglicht. Japanische Messer sind bekannt für ihre außergewöhnliche Schärfe, erfordern aber eine etwas sorgfältigere Handhabung.</p>",
+            "open": false
+          }
+        },
+        "accordion_zRtfrE": {
+          "type": "accordion",
+          "settings": {
+            "title": "Welches Messer ist das beste für Anfänger?",
+            "content": "<p>Für Einsteiger empfehlen wir ein <strong>Kochmesser oder ein Santokumesser</strong>, da diese Messer sehr vielseitig einsetzbar sind. Ein Kochmesser eignet sich für Fleisch, Fisch und Gemüse, während das Santokumesser besonders für feine Schnitte und asiatische Zubereitungen ideal ist.</p>",
+            "open": false
+          }
+        },
+        "accordion_zqdVz3": {
+          "type": "accordion",
+          "settings": {
+            "title": "Welche Messer brauche ich als Grundausstattung?",
+            "content": "<p>Eine gute Grundausstattung für die Küche besteht aus:</p><ul><li><strong>Kochmesser (für alle Schneidarbeiten)</strong></li><li><strong>Brotmesser (zum Schneiden von Brot und Gebäck)</strong></li><li><strong>Gemüsemesser (für kleine, präzise Schnitte)</strong><br/>Ergänzend sind Spezialmesser wie ein Filetiermesser oder ein Santokumesser sinnvoll.</li></ul>",
+            "open": false
+          }
+        },
+        "accordion_4J4iRc": {
+          "type": "accordion",
+          "settings": {
+            "title": "Was ist der Härtegrad eurer Messer?",
+            "content": "<p>Unsere Messer haben eine Rockwell-Härte (HRC) zwischen <strong>58 und 62</strong>. Das bedeutet, dass sie außergewöhnlich schnitthaltig sind und lange scharf bleiben. Gleichzeitig sind sie flexibel genug, um nicht zu brechen.</p>",
+            "open": false
+          }
+        },
+        "accordion_FAhtgP": {
+          "type": "accordion",
+          "settings": {
+            "title": "Gibt es besondere Pflegehinweise für eure Messer?",
+            "content": "<p>Ja, unsere Messer sollten ausschließlich per Hand mit warmem Wasser gereinigt werden. Anschließend sollten sie sofort mit einem weichen Tuch abgetrocknet werden. Um die Schärfe der Klinge zu bewahren, sollten die Messer auf einer weichen Unterlage (z. B. Holz- oder Kunststoffbrett) verwendet werden.</p>",
+            "open": false
+          }
+        },
+        "accordion_bd7haK": {
+          "type": "accordion",
+          "settings": {
+            "title": "Sind eure Messer spülmaschinenfest?",
+            "content": "<p>Nein, wir raten dringend davon ab, unsere Messer in der Spülmaschine zu reinigen. Die aggressive Reinigung, hohe Temperaturen und starke Reinigungsmittel können die Klinge beschädigen und die Schärfe verringern.</p>",
+            "open": false
+          }
+        },
+        "accordion_jMA4mg": {
+          "type": "accordion",
+          "settings": {
+            "title": "Wie lange bleibt ein Messer von Küchenkompane scharf?",
+            "content": "<p>Das hängt von der Nutzung und Pflege ab. Bei regelmäßigem Gebrauch bleibt eine Klinge mehrere Monate bis Jahre scharf. Durch gelegentliches Nachschärfen mit einem Schleifstein oder Wetzstab lässt sich die Schärfe optimal erhalten.</p>",
+            "open": false
+          }
+        },
+        "accordion_QrU7Ny": {
+          "type": "accordion",
+          "settings": {
+            "title": "Kann ich ein individuelles Messer bei euch anfertigen lassen?",
+            "content": "<p>Aktuell bieten wir keine individuellen Messeranfertigungen an. Allerdings haben wir exklusive Sondereditionen in limitierter Auflage, die speziell für Sammler und passionierte Köche interessant sind.</p>",
+            "open": false
+          }
+        },
+        "content_ypWFw4": {
+          "type": "content",
+          "settings": {
+            "content": "<h2>Bestellungen, Versand &amp; Zahlung</h2><h2></h2>"
+          }
+        },
+        "accordion_VkbYd7": {
+          "type": "accordion",
+          "settings": {
+            "title": "Wie kann ich eine Bestellung aufgeben?",
+            "content": "<p>Du kannst deine Bestellung ganz einfach über unseren Online-Shop aufgeben. Wähle die gewünschten Produkte aus, lege sie in den Warenkorb und folge dem Bestellprozess. Wir bieten verschiedene sichere Zahlungsmethoden an, damit du sorgenfrei einkaufen kannst. Nach Abschluss der Bestellung erhältst du eine Bestätigungs-E-Mail mit allen Details.</p>",
+            "open": false
+          }
+        },
+        "accordion_wPLKHR": {
+          "type": "accordion",
+          "settings": {
+            "title": "Kann ich meine Bestellung nachträglich ändern oder stornieren?",
+            "content": "<p>Falls du deine Bestellung ändern oder stornieren möchtest, kontaktiere uns bitte umgehend. Solange die Bestellung noch nicht versandt wurde, können wir Änderungen vornehmen oder eine Stornierung durchführen. Sobald die Ware unser Lager verlassen hat, ist eine Stornierung nicht mehr möglich, aber du kannst von unserem Rückgaberecht Gebrauch machen.</p>",
+            "open": false
+          }
+        },
+        "accordion_wzrjGc": {
+          "type": "accordion",
+          "settings": {
+            "title": "Welche Zahlungsmethoden akzeptiert ihr?",
+            "content": "<p>Wir akzeptieren alle gängigen Zahlungsmethoden, darunter:<br/>- Kreditkarten (Visa, Mastercard, American Express)<br/>-  PayPal<br/>-  Klarna (Rechnungskauf & Ratenzahlung)<br/>-  Apple Pay & Google Pay<br/>-  Vorkasse (Banküberweisung)</p><p>Alle Zahlungen werden verschlüsselt verarbeitet, um maximale Sicherheit zu gewährleisten.</p>",
+            "open": false
+          }
+        },
+        "accordion_PkfjDP": {
+          "type": "accordion",
+          "settings": {
+            "title": "Ist meine Zahlung sicher?",
+            "content": "<p>Ja, die Sicherheit deiner Zahlung hat für uns höchste Priorität. Unser Online-Shop ist mit SSL-Verschlüsselung geschützt, und alle Transaktionen werden über zertifizierte Zahlungsanbieter abgewickelt. So kannst du sicher sein, dass deine Daten geschützt sind.</p>",
+            "open": false
+          }
+        },
+        "accordion_tbNMKL": {
+          "type": "accordion",
+          "settings": {
+            "title": "In welche Länder liefert ihr?",
+            "content": "<p>Wir versenden innerhalb der gesamten EU sowie in die Schweiz, die USA und Kanada. Falls dein Land nicht in der Liste ist, kontaktiere uns gerne – wir prüfen, ob ein Versand möglich ist.</p>",
+            "open": false
+          }
+        },
+        "accordion_XDAAcV": {
+          "type": "accordion",
+          "settings": {
+            "title": "Wie hoch sind die Versandkosten?",
+            "content": "<p>Der Versand innerhalb Deutschlands ist ab 100 € kostenlos. Für Bestellungen unter 100 € berechnen wir eine Versandkostenpauschale. Internationale Versandkosten variieren je nach Zielort und werden an der Kasse berechnet.</p>",
+            "open": false
+          }
+        },
+        "accordion_6gYP3X": {
+          "type": "accordion",
+          "settings": {
+            "title": "Wie lange dauert die Lieferung?",
+            "content": "<p>Die Lieferzeit beträgt:<br/>📦 Deutschland & EU: <strong>2-5 Werktage</strong><br/>📦 Schweiz & UK: <strong>4-7 Werktage</strong><br/>📦 USA & Kanada: <strong>5-10 Werktage</strong></p>",
+            "open": false
+          }
+        },
+        "accordion_7yXfwH": {
+          "type": "accordion",
+          "settings": {
+            "title": "Kann ich meine Bestellung nachverfolgen?",
+            "content": "<p>Ja, sobald deine Bestellung versandt wurde, erhältst du eine E-Mail mit einer Sendungsverfolgungsnummer. Mit dieser kannst du den Status deiner Lieferung jederzeit online überprüfen.</p>",
+            "open": false
+          }
+        },
+        "accordion_thFELd": {
+          "type": "accordion",
+          "settings": {
+            "title": "Was passiert, wenn meine Bestellung nicht ankommt?",
+            "content": "<p>Falls dein Paket nicht innerhalb der erwarteten Zeit ankommt, kontaktiere uns bitte. Wir prüfen den Status und setzen uns ggf. mit dem Versanddienstleister in Verbindung, um eine schnelle Lösung zu finden.</p>",
+            "open": false
+          }
+        },
+        "accordion_Fk6hYG": {
+          "type": "accordion",
+          "settings": {
+            "title": "Liefert ihr auch an Packstationen?",
+            "content": "<p>Ja, innerhalb Deutschlands kannst du deine Bestellung an eine DHL Packstation liefern lassen.</p>",
+            "open": false
+          }
+        },
+        "content_GRFeyG": {
+          "type": "content",
+          "settings": {
+            "content": "<h2>RÜCKGABE &amp; GARANTIE</h2><h2></h2>"
+          }
+        },
+        "accordion_9qknE4": {
+          "type": "accordion",
+          "settings": {
+            "title": "Kann ich meine Bestellung zurückgeben?",
+            "content": "<p>Ja, du kannst deine Bestellung innerhalb von <strong>30 Tagen</strong> zurückgeben, sofern die Ware unbenutzt ist und sich in der Originalverpackung befindet.</p>",
+            "open": false
+          }
+        },
+        "accordion_XDPVjh": {
+          "type": "accordion",
+          "settings": {
+            "title": "Wie läuft eine Rücksendung ab?",
+            "content": "<p>1️⃣ Kontaktiere unseren Kundenservice und beantrage eine Rücksendung.<br/>2️⃣ Du erhältst eine Rücksendeadresse und alle notwendigen Infos.<br/>3️⃣ Sende das Paket an uns zurück – nach Erhalt erfolgt die Rückerstattung.</p>",
+            "open": false
+          }
+        },
+        "accordion_7iLAUt": {
+          "type": "accordion",
+          "settings": {
+            "title": "Wer trägt die Kosten für die Rücksendung?",
+            "content": "<p>Wir übernhemen die Kosten für den Versand zum Kunden. Bei Rücksendungen müssen die Versandkosten vom Kunden getragen werden.</p>",
+            "open": false
+          }
+        },
+        "accordion_kiTNix": {
+          "type": "accordion",
+          "settings": {
+            "title": "Was mache ich, wenn ein Produkt beschädigt angekommen ist?",
+            "content": "<p>Falls deine Ware beschädigt ankommt, kontaktiere uns bitte mit Fotos des Defekts. Wir senden dir schnellstmöglich eine Ersatzlieferung oder bieten eine Rückerstattung an.</p>",
+            "open": false
+          }
+        },
+        "accordion_wMCdrb": {
+          "type": "accordion",
+          "settings": {
+            "title": "Gibt es eine Garantie auf eure Produkte?",
+            "content": "<p>Ja, wir bieten eine <strong>2-jährige Garantie</strong> auf alle unsere Messer. Sollte es während dieser Zeit zu einem Material- oder Verarbeitungsfehler kommen, ersetzen wir das Produkt kostenfrei.</p>",
+            "open": false
+          }
+        },
+        "accordion_DeTgy8": {
+          "type": "accordion",
+          "settings": {
+            "title": "Sind eure Messer wirklich so langlebig?",
+            "content": "<p>Ja! Unsere Messer werden aus hochwertigen Materialien gefertigt und halten – bei richtiger Pflege – viele Jahre oder sogar Jahrzehnte.</p>",
+            "open": false
+          }
+        },
+        "accordion_gAdkQ3": {
+          "type": "accordion",
+          "settings": {
+            "title": "Kann ich ein defektes Messer reparieren lassen?",
+            "content": "<p>Falls dein Messer beschädigt wurde, prüfe, ob es noch unter die Garantie fällt. Ansonsten bieten wir Reparatur- und Schleifservices an.</p>",
+            "open": false
+          }
+        },
+        "content_zrBRei": {
+          "type": "content",
+          "settings": {
+            "content": "<h2>PFLEGE &amp; SCHÄRFEN</h2><h2></h2>"
+          }
+        },
+        "accordion_wTWjBW": {
+          "type": "accordion",
+          "settings": {
+            "title": "Wie pflege ich meine Küchenkompane-Messer richtig?",
+            "content": "<p>Reinige dein Messer nur per Hand mit warmem Wasser und trockne es sofort ab. Verwende ein Schneidebrett aus Holz oder Kunststoff, um die Klinge zu schonen.</p>",
+            "open": false
+          }
+        },
+        "accordion_yVPWzg": {
+          "type": "accordion",
+          "settings": {
+            "title": "Wie oft sollte ich mein Messer schärfen?",
+            "content": "<p>Das hängt von der Nutzung ab. Bei täglichem Gebrauch empfehlen wir, das Messer alle 4-6 Monate nachzuschärfen.</p>",
+            "open": false
+          }
+        },
+        "accordion_U37nDT": {
+          "type": "accordion",
+          "settings": {
+            "title": "Welches Zubehör brauche ich zum Schärfen?",
+            "content": "<p>Wir empfehlen:<br/>🔹 Schleifstein (z. B. Körnung 1000/3000)<br/>🔹 Wetzstahl für schnelle Schärfung<br/>🔹 Schleifservice für professionelle Ergebnisse</p>",
+            "open": false
+          }
+        },
+        "accordion_MNycbb": {
+          "type": "accordion",
+          "settings": {
+            "title": "Was tun, wenn mein Messer stumpf wird?",
+            "content": "<p>Ein stumpfes Messer kannst du mit einem Wetzstab oder Schleifstein nachschärfen. Falls du unsicher bist, nutze unseren Schleifservice.</p>",
+            "open": false
+          }
+        }
+      },
+      "block_order": [
+        "content_Nw6ngj",
+        "accordion-1",
+        "accordion-2",
+        "accordion-3",
+        "accordion-4",
+        "accordion-5",
+        "accordion_kyY9mL",
+        "accordion_aBCFWh",
+        "accordion_YHbrHK",
+        "accordion_teVk3B",
+        "accordion_MbTzpB",
+        "content_jhMLTc",
+        "accordion_PyiLTJ",
+        "accordion_fie6Vf",
+        "accordion_M7zH4Q",
+        "accordion_zRtfrE",
+        "accordion_zqdVz3",
+        "accordion_4J4iRc",
+        "accordion_FAhtgP",
+        "accordion_bd7haK",
+        "accordion_jMA4mg",
+        "accordion_QrU7Ny",
+        "content_ypWFw4",
+        "accordion_VkbYd7",
+        "accordion_wPLKHR",
+        "accordion_wzrjGc",
+        "accordion_PkfjDP",
+        "accordion_tbNMKL",
+        "accordion_XDAAcV",
+        "accordion_6gYP3X",
+        "accordion_7yXfwH",
+        "accordion_thFELd",
+        "accordion_Fk6hYG",
+        "content_GRFeyG",
+        "accordion_9qknE4",
+        "accordion_XDPVjh",
+        "accordion_7iLAUt",
+        "accordion_kiTNix",
+        "accordion_wMCdrb",
+        "accordion_DeTgy8",
+        "accordion_gAdkQ3",
+        "content_zrBRei",
+        "accordion_wTWjBW",
+        "accordion_yVPWzg",
+        "accordion_U37nDT",
+        "accordion_MNycbb"
+      ],
+      "settings": {
+        "container": "container",
+        "color_scheme": "",
+        "menu": "",
+        "custom_class": ""
+      }
+    },
+    "page_faqs_nAxWfU": {
+      "type": "page-faqs",
+      "blocks": {
+        "content_43yYmL": {
+          "type": "content",
+          "settings": {
+            "content": "<h2>ANGEBOTE &amp; SONERAKTIONEN</h2><h2></h2>"
+          }
+        },
+        "accordion_kKrGTe": {
+          "type": "accordion",
+          "settings": {
+            "title": "Gibt es regelmäßig Rabatte?",
+            "content": "<p>Nein, wir verkaufen <strong>ausschließlich ohne Rabatte</strong>, da wir faire Preise bieten und keine künstlichen Preissenkungen brauchen.</p>",
+            "open": false
+          }
+        },
+        "accordion_ytfxpf": {
+          "type": "accordion",
+          "settings": {
+            "title": "Gibt es exklusive Sondereditionen?",
+            "content": "<p>Ja, wir bieten regelmäßig limitierte Sondereditionen an, die nur für kurze Zeit erhältlich sind.</p>",
+            "open": false
+          }
+        },
+        "accordion_LicJrn": {
+          "type": "accordion",
+          "settings": {
+            "title": "Kann ich ein Messer gravieren lassen?",
+            "content": "<p>Ja! Du benötigst eine individuelle Gravur, dann kontaktiere bitte unseren Kundensupport! </p>",
+            "open": false
+          }
+        },
+        "content_CeHtRa": {
+          "type": "content",
+          "settings": {
+            "content": "<h2>KUNDENSERVICE &amp; KONTAKT</h2>"
+          }
+        },
+        "accordion_ANqU7t": {
+          "type": "accordion",
+          "settings": {
+            "title": "Wie kann ich euch erreichen?",
+            "content": "<p>Du erreichst uns per:<br/>📩 E-Mail: <a>info@kuechenkompane.de</a><br/>📞 Telefon: 0800 - 8004680</p>",
+            "open": false
+          }
+        },
+        "accordion_aCPXW8": {
+          "type": "accordion",
+          "settings": {
+            "title": "Wann ist euer Kundenservice erreichbar?",
+            "content": "<p>Unser Support-Team ist von <strong>Montag bis Freitag, 9:00 – 18:00 Uhr</strong> erreichbar.</p>",
+            "open": false
+          }
+        },
+        "accordion_zV4TMj": {
+          "type": "accordion",
+          "settings": {
+            "title": "Bietet ihr Geschenkverpackungen an?",
+            "content": "<p>Nein, wir bieten leider keine Geschenkverpackung an. </p>",
+            "open": false
+          }
+        },
+        "accordion_3XM3fy": {
+          "type": "accordion",
+          "settings": {
+            "title": "Wo kann ich mehr über Küchenkompane erfahren?",
+            "content": "<p>Schau in unserem <a href=\"/blogs/herzlich-wilkommen\" title=\"Küchenmesser und Zubehör\"><strong>Blog</strong></a> vorbei oder abonniere unseren Newsletter für exklusive Inhalte.</p>",
+            "open": false
+          }
+        },
+        "accordion_DjBKYW": {
+          "type": "accordion",
+          "settings": {
+            "title": "Warum sollte ich bei Küchenkompane kaufen?",
+            "content": "<p>Hochwertige Qualität ohne Kompromisse<br/>Direkt vom Hersteller – keine Zwischenhändler<br/>Extrem scharfe Klingen, die lange halten<br/>Erstklassiger Kundenservice</p>",
+            "open": false
+          }
+        }
+      },
+      "block_order": [
+        "content_43yYmL",
+        "accordion_kKrGTe",
+        "accordion_ytfxpf",
+        "accordion_LicJrn",
+        "content_CeHtRa",
+        "accordion_ANqU7t",
+        "accordion_aCPXW8",
+        "accordion_zV4TMj",
+        "accordion_3XM3fy",
+        "accordion_DjBKYW"
+      ],
+      "settings": {
+        "container": "container",
+        "color_scheme": "",
+        "menu": "",
+        "custom_class": ""
+      }
+    },
+    "banner_version_2_gRbjx6": {
+      "type": "banner-version-2",
+      "settings": {
+        "color_scheme": "",
+        "u": "https://cdn.shopify.com/videos/c/o/v/bfddd4ffc23e4801bb72eb108dadbd31.mp4",
+        "u_mobile": "https://cdn.shopify.com/videos/c/o/v/aa429ef4f1a64d94bffd7e063a8de73e.mp4",
+        "mt": 0,
+        "mb": 0,
+        "mt_mobile": 0,
+        "mb_mobile": 0,
+        "top_text": "p-medium",
+        "title": "Meisterhaft kochen beginnt hier",
+        "heading_type": "mrk-h1",
+        "sub_title": "",
+        "sub_title_text": "p-medium",
+        "btn_text": "Produkte entdecken",
+        "btn_link": "shopify://pages/collection-bestseller",
+        "button_style": "m-button--primary",
+        "button_size": "",
+        "b_overlay": false,
+        "image_overlay_color": "#000000",
+        "image_overlay_opacity": 50,
+        "image_overlay_opacity_mobile": 30
+      }
+    },
+    "branded_image_version_2_RUeynx": {
+      "type": "branded-image-version-2",
+      "blocks": {
+        "title_ymcBc9": {
+          "type": "title",
+          "settings": {
+            "title": "Schneiden auf höchstem Niveau"
+          }
+        },
+        "text_8DpMLx": {
+          "type": "text",
+          "settings": {
+            "text": "Erlebe die perfekte Symbiose aus traditioneller Schmiedekunst und moderner Präzision. Unsere handgefertigten Messer mit gehämmerter Klinge bieten außergewöhnliche Schärfe und ein einzigartiges Design für jede Küche."
+          }
+        }
+      },
+      "block_order": [
+        "title_ymcBc9",
+        "text_8DpMLx"
+      ],
+      "settings": {
+        "color_scheme": "",
+        "shape_bg": "#deceba",
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "mobile_margin_top": 0,
+        "mobile_margin_bottom": 0,
+        "bg_img": "shopify://shop_images/IMG_0714_1.jpg",
+        "heading_type": "mrk-h1",
+        "sub_heading": "p-medium",
+        "des_size": "p-medium",
+        "button_style": "m-button--primary",
+        "button_size": ""
+      }
+    }
+  },
+  "order": [
+    "breadcrumb_RHyjx4",
+    "custom_content_tAfTRN",
+    "main",
+    "page_faqs_nAxWfU",
+    "banner_version_2_gRbjx6",
+    "branded_image_version_2_RUeynx"
+  ]
+}

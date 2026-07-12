@@ -1,0 +1,205 @@
+{{ 'akta-header.css' | asset_url | stylesheet_tag: preload: true }}
+<style>
+  .header-log-img {
+    max-width: {{- section.settings.logo_max_width -}}px;
+  }
+  @media(max-width:1024px){
+     .header-log-img {
+        max-width: {{- section.settings.mobile_logo_max_width -}}px;
+    }
+  }
+</style>
+<div class="akta-header  m-gradient m-color-{{ section.settings.color_scheme }}">
+  <div class="header-container container-fluid">
+    <div class="header-inner">
+      <div class="mobile-menu-icon-wrapper m-menu-button">
+        <div class="mobile-menu-icon">
+          <div class="mobile-menu-icon-inner"></div>
+        </div>
+      </div>
+
+      <div class="header-logo">
+        <a href="{{ routes.root_url }}">
+          {% if section.settings.logo != blank %}
+            <img
+              class="header-log-img"
+              src="{{ section.settings.logo | image_url }}"
+              width="150"
+              height="70"
+              alt="{{ shop.name }}"
+            >
+          {% else %}
+            <strong class="header-log-text">{{ shop.name }}</strong>
+          {% endif %}
+        </a>
+      </div>
+      <nav class="header-menu">
+        <ul class="header-menu-list">
+          {% for link in section.settings.main_menu.links %}
+            <li class="header-menu-item {% if link.links.size > 0 %}has-dropdown{% endif %}">
+              <a href="{{ link.url }}" class="menu-link">
+                {{ link.title }}
+
+                {% if link.links.size > 0 %}
+                  <span class="dropdown-icon">
+                    {% render 'icons', type: 'arrow_down' %}
+                  </span>
+                {% endif %}
+              </a>
+
+              {% if link.links.size > 0 %}
+                <ul class="dropdown-menu m-gradient m-color-{{ section.settings.color_scheme }}">
+                  {% for childlink in link.links %}
+                    <li class="{% if childlink.links.size > 0 %}has-submenu{% endif %}">
+                      <a href="{{ childlink.url }}">
+                        {{ childlink.title }}
+
+                        {% if childlink.links.size > 0 %}
+                          <span class="sub-arrow">
+                            {% render 'icons', type: 'arrow_right' %}
+                          </span>
+                        {% endif %}
+                      </a>
+
+                      {% if childlink.links.size > 0 %}
+                        <ul class="sub-dropdown-menu m-gradient m-color-{{ section.settings.color_scheme }}">
+                          {% for grandchild in childlink.links %}
+                            <li>
+                              <a href="{{ grandchild.url }}">
+                                {{ grandchild.title }}
+                              </a>
+                            </li>
+                          {% endfor %}
+                        </ul>
+                      {% endif %}
+                    </li>
+                  {% endfor %}
+                </ul>
+              {% endif %}
+            </li>
+          {% endfor %}
+        </ul>
+      </nav>
+
+      <div class="header-icons">
+        {% if section.settings.show_account_icon %}
+          {% if shop.customer_accounts_enabled or shop.customer_accounts_optional %}
+            <a
+              href="{{ routes.account_url }}"
+              aria-label="{{ 'layout.customer.account' | t  }}"
+              class="header-icon header-icon-account"
+            >
+              <span class="cart-icon-tooltip">
+                {{ 'layout.customer.account' | t }}
+              </span>
+              {% render 'icons', type: 'account' %}
+            </a>
+          {% endif %}
+        {% endif %}
+        {% if section.settings.show_cart_icon %}
+          <a
+            href="{{ routes.cart_url }}"
+            aria-label="{{ cart.item_count }}"
+            class="header-icon header-icon-cart m-cart-icon-bubble"
+          >
+            {% render 'icons', type: 'cart' %}
+
+            <span class="cart-icon-tooltip">
+              {{ 'layout.cart.title' | t }}
+            </span>
+            <span class="cart-count m-cart-count-bubble {% if cart == empty %} bubble-hidden{% endif %}">
+              {{- cart.item_count -}}
+            </span>
+          </a>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</div>
+
+{% comment %} mobile menu  {% endcomment %}
+{% render 'search-popup', header_settings: section.settings %}
+{% comment %} {%- render 'mobile-menu', section: section -%} {% endcomment %}
+
+{% schema %}
+{
+  "name": "AKTA Header",
+  "settings": [
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "Color scheme"
+    },
+    {
+      "type": "header",
+      "content": "Logo Settings"
+    },
+    {
+      "type": "image_picker",
+      "id": "logo",
+      "label": "Logo"
+    },
+    {
+      "type": "range",
+      "id": "logo_max_width",
+      "min": 30,
+      "max": 450,
+      "step": 5,
+      "unit": "px",
+      "label": "Logo width (desktop)",
+      "default": 110
+    },
+    {
+      "type": "range",
+      "id": "mobile_logo_max_width",
+      "min": 30,
+      "max": 450,
+      "step": 5,
+      "unit": "px",
+      "label": "Logo width (mobile)",
+      "default": 90
+    },
+    {
+      "type": "header",
+      "content": "Menu Settings"
+    },
+    {
+      "type": "link_list",
+      "id": "main_menu",
+      "label": "Main Menu"
+    },
+    {
+      "type": "header",
+      "content": "Addons"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_account_icon",
+      "label": "Show account icon",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "show_cart_icon",
+      "label": "Show cart icon",
+      "default": true
+    },
+    {
+      "type": "header",
+      "content": "Mobile Submenu"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_submenu",
+      "label": "Show Sub Menu",
+      "default": false
+    },
+    {
+      "type": "link_list",
+      "id": "mobile_sub_menu",
+      "label": "Mobile Sub menu"
+    }
+  ],
+  "presets": [{ "name": "AKTA Header" }]
+}
+{% endschema %}

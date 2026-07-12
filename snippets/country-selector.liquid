@@ -1,0 +1,40 @@
+{% if localization.available_countries.size > 1 %}
+  {% unless form_id %}
+    {% assign random_number = 'now' | date: '%N' | modulo: 10 | plus: 25 %}
+    {% assign form_id = 'country-' | append: random_number %}
+  {% endunless %}
+  <div class="m-switcher-dropdown m-country-switcher {{ box_size }}">
+    {% form 'localization', data-localization-form: '', id: form_id %}
+      <input type="hidden" name="country_code" value="{{ localization.country.iso_code }}" data-localization-input>
+      <m-select-component>
+        <m-localization-form>
+          <select name="country_code" class="js-selectNative" data-localization-select>
+            {%- for country in localization.available_countries -%}
+              <option
+                value="{{ country.iso_code }}"
+                {% if country.iso_code == localization.country.iso_code %}
+                  selected
+                {% endif %}
+              ></option>
+            {%- endfor -%}
+          </select>
+        </m-localization-form>
+        <div class="m-select-custom js-selectCustom" aria-hidden="true">
+          <div class="m-select-custom--trigger">
+            <span class="m-country-flags m-country-flags--{{ localization.country.iso_code }}"></span>
+            <span class="m-select-custom--trigger-text"></span>
+          </div>
+          <div class="m-select-custom--options m-select-custom--options-{{ pos }}">
+            {%- for country in localization.available_countries -%}
+              <div class="m-select-custom--option" data-value="{{ country.iso_code }}">
+                <span class="m-country-flags m-country-flags--{{ country.iso_code }}"></span>
+                {{ country.name }} ({{ country.currency.iso_code }}
+                {{ country.currency.symbol }})
+              </div>
+            {%- endfor -%}
+          </div>
+        </div>
+      </m-select-component>
+    {%- endform -%}
+  </div>
+{% endif %}

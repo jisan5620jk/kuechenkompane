@@ -1,0 +1,371 @@
+{%- style -%}
+  .product-description {
+    margin: 30px 0 40px;
+    margin-top: {{ section.settings.mt }}px;
+    margin-bottom: {{ section.settings.mb }}px;
+  }
+  .description-container {
+    max-width: 1230px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  .description-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+  }
+  .des-title {
+    font-size: {{ section.settings.font_size }}px;
+    line-height: 1.5em;
+    max-width: 1180px;
+    margin: 0px auto 9px auto;
+    font-weight: bold;
+    text-transform: capitalize;
+    letter-spacing: 0;
+  }
+  .description-content {
+    width: 50%;
+    flex: 0 0 auto;
+  }
+  .accordion-button {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid {{ section.settings.br_color }};
+    padding: 13px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.5em;
+  }
+
+  .accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition:  0.3s ease;
+    padding: 0 20px;
+    margin-top: 10px;
+  }
+  .accordion-content ul{
+    padding-left: 20px;
+  }
+  .accordion-button.active + .accordion-content {
+    margin-bottom: 23px;
+  }
+  .accordion-content p {
+    font-size: 14px;
+    line-height: 1.5em;
+    padding: 0px 18px;
+  }
+  .product-des {
+    font-size: 16px;
+    position: relative;
+  }
+
+  .description-accordion {
+    padding-top: 45px;
+  }
+  .hideContent {
+    max-height: 192px;
+    overflow: hidden;
+    transition: 0.3s;
+  }
+
+  .accordion-content:where(h1,h2,h3,h4,h5,h6) {
+    margin-bottom: 5px;
+    margin-top: 5px;
+  }
+  .p-dection-w h2,.accordion-content h2 {
+    font-size: 18px;
+    padding: 2% 0;
+  }
+  .p-dection-w p,.accordion-content p {
+    margin-top: 0;
+    line-height: 1.5;
+    padding:0;
+  }
+   .product-des li {
+      margin-bottom: 10px;
+  }
+  .product-des p {
+    margin-bottom: 10px;
+  }
+
+  .hideContent::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 30px;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%);
+    pointer-events: none;
+    transition: 0.3s;
+
+  }
+  .description-content ul {
+    padding-left: 30px;
+  }
+  .show-more {
+    display: inline-block;
+    text-decoration: underline;
+    margin-top: 16px;
+    cursor: pointer;
+  }
+  span.accordion-icon {
+    transition: 0.3s;
+  }
+  .accordion-item.open span.accordion-icon {
+    transform: rotate(180deg);
+  }
+  .accordion-item.open {
+    padding-bottom: 15px;
+  }
+  .p-dection-w p, .accordion-content p {
+      min-height: 15px;
+  }
+  .accordion-content p {
+      margin-bottom: 10px;
+  }
+  @media only screen and (max-width: 768px) {
+    .description-row {
+      flex-direction: column;
+    }
+    .description-content,
+    .description-accordion {
+      width: 100%;
+    }
+    .description-accordion {
+      padding-top: 0;
+    }
+  }
+{%- endstyle -%}
+<div class="product-description m-color-{{ section.settings.color_scheme }}">
+  <div class="description-container">
+    <div class="description-row">
+      <div class="description-content">
+        <h2 class="des-title {{ section.settings.heading_type }}">{{ section.settings.title }}</h2>
+        <div class="p-dection-w  {% if section.settings.add_showore_btn %}hideContent{% endif %}">
+          <div class="product-des">
+            {{ section.settings.description }}
+          </div>
+        </div>
+        {% if section.settings.add_showore_btn %}
+          <span class="show-more">{{ section.settings.readmore }}</span>
+        {% endif %}
+      </div>
+      <div class="description-accordion">
+        {% for block in section.blocks %}
+          <div class="accordion-item">
+            {% if block.settings.question != blank %}
+              <button class="accordion-button">
+                {{ block.settings.question }}
+                <span class="accordion-icon">
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path d="M12 17C11.814 17 11.6279 16.9267 11.4859 16.7803L4.21314 9.28029C3.92895 8.98723 3.92895 8.51267 4.21314 8.2198C4.49732 7.92692 4.9575 7.92673 5.2415 8.2198L12 15.1895L18.7586 8.21979C19.0427 7.92673 19.5029 7.92673 19.7869 8.21979C20.0709 8.51286 20.0711 8.98742 19.7869 9.28029L12.5142 16.7803C12.3722 16.9267 12.186 17 12 17Z" fill="{{ section.settings.icon_color }}"></path>
+                  </svg>
+                </span>
+              </button>
+            {% endif %}
+            <div class="accordion-content">
+              {{ block.settings.answer }}
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
+{% schema %}
+{
+  "name": "APEX Pr Des Accordion",
+  "settings": [
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "Color scheme"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title",
+      "default": "product description"
+    },
+    {
+      "type": "select",
+      "id": "heading_type",
+      "label": "Choose Heading Size",
+      "options": [
+        {
+          "value": "mrk-h1",
+          "label": "H1"
+        },
+        {
+          "value": "mrk-h2",
+          "label": "H2"
+        },
+        {
+          "value": "mrk-h3",
+          "label": "H3"
+        },
+        {
+          "value": "mrk-h4",
+          "label": "H4"
+        },
+        {
+          "value": "mrk-h5",
+          "label": "H5"
+        },
+        {
+          "value": "mrk-h6",
+          "label": "H6"
+        }
+      ],
+      "default": "mrk-h1"
+    },
+    {
+      "type": "richtext",
+      "id": "description",
+      "label": "Product description",
+      "info": "If Want Default Description Keep Blank"
+    },
+    {
+      "type": "range",
+      "id": "mt",
+      "label": "Margin Top",
+      "default": 30,
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "mb",
+      "label": "Margin Bottom",
+      "default": 40,
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px"
+    },
+    {
+      "type": "checkbox",
+      "id": "add_showore_btn",
+      "label": "Add Show More Button ",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "readmore",
+      "label": "Read More Button Text",
+      "default": "Mehr lesen"
+    },
+    {
+      "type": "text",
+      "id": "readless",
+      "label": "Read Less Button Text",
+      "default": "Weniger Lesen"
+    },
+    {
+      "type": "color",
+      "id": "br_color",
+      "label": "Accordion Border Color",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "icon_color",
+      "label": "Icon Color",
+      "default": "#000000"
+    }
+  ],
+  "blocks": [
+    {
+      "name": "FAQ",
+      "type": "faq",
+      "settings": [
+        {
+          "type": "text",
+          "id": "question",
+          "label": "Question",
+          "default": "How is Snow Extra-Strength Teeth Whitening Serum different?"
+        },
+        {
+          "type": "richtext",
+          "id": "answer",
+          "label": "Answer",
+          "default": "<p>While most whitening serum only uses one whitening agent, this serum uses a potent combination of two powerful whitening agents – Carbamide and Hydrogen peroxide.</p>"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "APEX Pr Des Accordion",
+      "settings": {}
+    }
+  ]
+}
+{% endschema %}
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    class Accordion {
+      constructor(selector) {
+        this.accordions = document.querySelectorAll(selector);
+        this.init();
+      }
+
+      init() {
+        this.accordions.forEach((accordion) => {
+          const button = accordion.querySelector('.accordion-button');
+          button.addEventListener('click', () => this.toggleAccordion(accordion));
+        });
+      }
+
+      toggleAccordion(accordion) {
+        const isOpen = accordion.classList.contains('open');
+
+        // Close all accordions
+        this.accordions.forEach((item) => {
+          item.classList.remove('open');
+          item.querySelector('.accordion-content').style.maxHeight = null;
+        });
+
+        // Toggle the clicked accordion
+        if (!isOpen) {
+          accordion.classList.add('open');
+          const content = accordion.querySelector('.accordion-content');
+          content.style.maxHeight = content.scrollHeight + 'px';
+        }
+      }
+    }
+
+    new Accordion('.accordion-item');
+  });
+</script>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const showMoreBtn = document.querySelector('.show-more');
+    const contentWrapper = document.querySelector('.p-dection-w');
+
+    if (showMoreBtn && contentWrapper) {
+      showMoreBtn.addEventListener('click', function () {
+        contentWrapper.classList.toggle('hideContent');
+        this.textContent = contentWrapper.classList.contains('hideContent')
+          ? '{{ section.settings.readmore }}'
+          : '{{ section.settings.readless }}';
+      });
+    }
+  });
+</script>

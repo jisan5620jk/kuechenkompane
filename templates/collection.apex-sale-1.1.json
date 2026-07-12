@@ -1,0 +1,295 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "apex_top_slider_cLWmNy": {
+      "type": "apex-top-slider",
+      "blocks": {
+        "text_yyFMTt": {
+          "type": "text",
+          "settings": {
+            "top_item": "100 % Massives Olivenholz"
+          }
+        },
+        "text_KykYUz": {
+          "type": "text",
+          "settings": {
+            "top_item": "Handgefertigt in Deutschland"
+          }
+        },
+        "text_KDtkJQ": {
+          "type": "text",
+          "settings": {
+            "top_item": "Lebensmittelecht & antibakteriell"
+          }
+        }
+      },
+      "block_order": [
+        "text_yyFMTt",
+        "text_KykYUz",
+        "text_KDtkJQ"
+      ],
+      "settings": {
+        "color_scheme": "default",
+        "pt": 15,
+        "pb": 0,
+        "mt_mobile": 15,
+        "mb_mobile": 0
+      }
+    },
+    "collection-header": {
+      "type": "collection-page-header",
+      "disabled": true,
+      "settings": {
+        "color_scheme": "default",
+        "container": "container-fluid",
+        "layout": "outside_no_border",
+        "image_position": "background",
+        "enable_parallax": false,
+        "parallax_direction": "vertical",
+        "text_alignment": "center",
+        "text_color": "inherit",
+        "upper_title": false,
+        "show_desc": false,
+        "collection_all_desc": "",
+        "padding_top": 22,
+        "padding_bottom": 18,
+        "enable_bg_zoom_effect": true
+      }
+    },
+    "main": {
+      "type": "main-collection-product-grid",
+      "blocks": {
+        "filter_TQEkVc": {
+          "type": "filter",
+          "settings": {
+            "design_filtergroup": "default",
+            "title": "Tags",
+            "filtergroup": "Vintage,tops,shirts",
+            "show_label": true,
+            "use_accordion": true,
+            "open_filtergroup": true
+          }
+        }
+      },
+      "block_order": [
+        "filter_TQEkVc"
+      ],
+      "disabled": true,
+      "custom_css": [
+        ".m-banner-promotion {order: 3 !important; margin-top: 30px; margin-bottom: 0;}",
+        ".m-collection-filters-form {margin-bottom: 0;}"
+      ],
+      "settings": {
+        "container": "container-fluid",
+        "grid_layout": "grid",
+        "grid_columns": "4",
+        "show_columns_switcher": false,
+        "pagination_limit": 30,
+        "paginate_type": "paginate",
+        "show_sorting": false,
+        "show_filter": false,
+        "filters_type": "tags_filter",
+        "sidebar": "leftColumn",
+        "sidebar_title": "Filters",
+        "limit_height_widget": true,
+        "limit_height": 300,
+        "change_product_variant_on_fitlering": true,
+        "show_product_count": true,
+        "collapsed_groups": "Product type, Brand, Vendor, Size{{ collection.title }}",
+        "color_swatches": "color,colour,couleur,farbe",
+        "color_swatches_design": "list",
+        "overlay_opacity": 0.3,
+        "show_stock_status": false
+      }
+    },
+    "hide_sold_out_toggle_am3Hhj": {
+      "type": "hide-sold-out-toggle",
+      "name": "Floow Hide Sold Out",
+      "settings": {
+        "show_only_in_editor": true,
+        "section_id": "#shopify-section-template--26793915416957__mrk_collection_grid_section_PKCq6B",
+        "text": "Nur verfügbare Artikel anzeigen",
+        "box_layout": false,
+        "section_width": 1340,
+        "section_margin": 15,
+        "margin_top_bottom_desktop": 16,
+        "margin_top_bottom_mobile": 16
+      }
+    },
+    "mrk_collection_grid_section_JTDgJK": {
+      "type": "mrk-collection-grid-section",
+      "name": "Akta Collection Grid",
+      "settings": {
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "show_section_header": false,
+        "section_title": "Featured Collection",
+        "section_description": "Explore our best-selling products.",
+        "collection": "",
+        "products_limit": 20,
+        "use_metafield_image": false,
+        "hover_second_image": false,
+        "pagination_style": "circle",
+        "show_product_ratings": false,
+        "show_stock_status": false,
+        "show_gift_info": false,
+        "info_text": "",
+        "add_border_line": false,
+        "show_max_price": false,
+        "show_save_price": false
+      }
+    },
+    "branded_image_version_JADrxL": {
+      "type": "branded-image-version-",
+      "blocks": {
+        "title_amPxJH": {
+          "type": "title",
+          "settings": {
+            "title": "300 Jahre gewachsen. Für Generationen geschaffen."
+          }
+        },
+        "sub_title_7VHmrM": {
+          "type": "sub_title",
+          "settings": {
+            "text": "Unser Olivenholz stammt aus jahrhundertealten Hainen in Griechenland.\nJeder Baum wird erst verarbeitet, wenn er keine Oliven mehr trägt – nachhaltig und im Einklang mit der Natur.\n\nDie einzigartige Maserung macht jedes Stück zu einem Unikat.\nKein Produkt gleicht dem anderen – so individuell wie deine Küche."
+          }
+        }
+      },
+      "block_order": [
+        "title_amPxJH",
+        "sub_title_7VHmrM"
+      ],
+      "name": "APEX Branded Image Ver 1",
+      "settings": {
+        "use_container": true,
+        "reverse_content": false,
+        "color_scheme": "scheme-9d69adfc-43c2-49f5-894e-b05309f7856b",
+        "shape_color": "#deceba",
+        "margin_top": 20,
+        "margin_bottom": 0,
+        "mobile_margin_top": 20,
+        "mobile_margin_bottom": 0,
+        "bg_img": "shopify://shop_images/freepik__erstelle-mir-ein-bild-von-einer-olivenbaum-plantag__20214_1.jpg",
+        "heading_type": "mrk-h1",
+        "des_size": "p-medium",
+        "button_style": "m-button--primary",
+        "button_size": ""
+      }
+    },
+    "branded_image_version_VGCyCQ": {
+      "type": "branded-image-version-",
+      "blocks": {
+        "title_CcJkqm": {
+          "type": "title",
+          "settings": {
+            "title": "Handgefertigt in Deutschland"
+          }
+        },
+        "sub_title_YQAAEm": {
+          "type": "sub_title",
+          "settings": {
+            "text": "Jedes Produkt wird in Deutschland von erfahrenen Handwerkern gefertigt.\nMit höchster Präzision, Liebe zum Detail und Respekt vor dem Material.\n\nSo entsteht Küchenzubehör, das nicht nur funktioniert –\nsondern begeistert."
+          }
+        }
+      },
+      "block_order": [
+        "title_CcJkqm",
+        "sub_title_YQAAEm"
+      ],
+      "name": "APEX Branded Image Ver 1",
+      "settings": {
+        "use_container": true,
+        "reverse_content": true,
+        "color_scheme": "scheme-9d69adfc-43c2-49f5-894e-b05309f7856b",
+        "shape_color": "#deceba",
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "mobile_margin_top": 0,
+        "mobile_margin_bottom": 0,
+        "bg_img": "shopify://shop_images/freepik__mann-bearbeiten-rohes-olivenholz-in-holz-maufaktur__20211_1.jpg",
+        "heading_type": "mrk-h1",
+        "des_size": "p-medium",
+        "button_style": "m-button--primary",
+        "button_size": ""
+      }
+    },
+    "usp_list_nd6t8y": {
+      "type": "usp-list",
+      "blocks": {
+        "item_aVKf6y": {
+          "type": "item",
+          "settings": {
+            "usp_icon": "shopify://shop_images/cash-bag_10424649_1_79aeb0c4-e404-44f1-8f3d-4ac7d82ea745.png",
+            "usp_title": "100 Tage-geld-zurück Garantie",
+            "title_size": 18,
+            "usp_info": "Wir sind von der Qualität unserer Produkte überzeugt und möchten sicherstellen, dass Du zu 100% zufrieden bist.",
+            "info_size": 14,
+            "divider": false
+          }
+        },
+        "item_9zb4Pn": {
+          "type": "item",
+          "settings": {
+            "usp_icon": "shopify://shop_images/diamond_11883313_1_e3cffe8b-0079-4e4c-89d0-205bf4509eb0.png",
+            "usp_title": "140,000+ zufriedene Kunden",
+            "title_size": 18,
+            "usp_info": "Unsere Messer erobern ganz deutschland im Sturm. Wann wirst du dir ein upgrade zulegen?",
+            "info_size": 14,
+            "divider": false
+          }
+        },
+        "item_4VaJ6g": {
+          "type": "item",
+          "settings": {
+            "usp_icon": "shopify://shop_images/thumb-up_16346369_1_bbb9da88-a768-4853-a27c-06a2092e4acf.png",
+            "usp_title": "Geprüfte Qualität",
+            "title_size": 18,
+            "usp_info": "Möchtest du Küchen-Produkte entdecken, die halten, was sie versprechen? Unsere Produkte sind getestet, empfohlen und garantieren Sicherheit.",
+            "info_size": 14,
+            "divider": false
+          }
+        }
+      },
+      "block_order": [
+        "item_aVKf6y",
+        "item_9zb4Pn",
+        "item_4VaJ6g"
+      ],
+      "settings": {
+        "color_scheme": "",
+        "verticle_padding": 50,
+        "horizontal_padding": 50,
+        "verticle_padding_mobile": 30
+      }
+    },
+    "collection_description_KrcbiD": {
+      "type": "collection-description",
+      "settings": {
+        "collection_bg": "#f8f8f8",
+        "collection_pt": 30,
+        "collection_pb": 30,
+        "collection_pt_m": 30,
+        "collection_pb_m": 30
+      }
+    }
+  },
+  "order": [
+    "apex_top_slider_cLWmNy",
+    "collection-header",
+    "main",
+    "hide_sold_out_toggle_am3Hhj",
+    "mrk_collection_grid_section_JTDgJK",
+    "branded_image_version_JADrxL",
+    "branded_image_version_VGCyCQ",
+    "usp_list_nd6t8y",
+    "collection_description_KrcbiD"
+  ]
+}

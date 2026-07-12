@@ -1,0 +1,2089 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "apex_timer_9Rjc9m": {
+      "type": "Apex-timer",
+      "disabled": true,
+      "settings": {
+        "bg_color": "#dce5dc",
+        "section_pt": 15,
+        "section_pb": 15,
+        "timer_clock": "#d2861a",
+        "timer_clock_text_font_size": 12,
+        "clock_font_weight": "400",
+        "timer_text": "Das Angebot endet in bald!",
+        "timer_font_size": 12,
+        "timer_color": "#000000",
+        "timer_font_weight": "400",
+        "start_time": "00:00:00"
+      }
+    },
+    "main": {
+      "type": "main-product",
+      "disabled": true,
+      "settings": {
+        "container": "container-fluid",
+        "layout": "layout-4",
+        "show_atwl": true,
+        "enable_history_state": true,
+        "enable_variant_group_images": false,
+        "disable_selected_variant_default": false,
+        "show_featured_media": true,
+        "show_zoom_button": true,
+        "enable_video_autoplay": true,
+        "show_nav_media_mobile": true,
+        "show_pagination_mobile": false,
+        "use_sticky_atc": true,
+        "use_sticky_atc_on_mobile": true,
+        "enable_dynamic_checkout": false,
+        "sticky_atc_wishtlist": false,
+        "sticky_atc_compare": false
+      }
+    },
+    "apex_theme_product_page_copy_bfPEWH": {
+      "type": "apex-theme-product-bundle-custom-list",
+      "blocks": {
+        "follower_recom_text_J4dKLR": {
+          "type": "follower_recom_text",
+          "settings": {
+            "follower_img": "shopify://shop_images/Group_1000010018.png",
+            "follower_text": "Empfohlen von Profiköchin <strong>Julia Weber</strong>"
+          }
+        },
+        "title_Bac9Mk": {
+          "type": "title",
+          "settings": {
+            "p_t_s": 32,
+            "p_t_s_m": 20,
+            "font_weight_t": "400"
+          }
+        },
+        "subtitle_xQXVba": {
+          "type": "subtitle",
+          "settings": {
+            "subtitle": "Die Revolution der Damast Küchenmesser",
+            "subtitle_font_size": 16,
+            "subtitle_weight": "400"
+          }
+        },
+        "review_Tgbbak": {
+          "type": "review",
+          "settings": {
+            "p": "4.7/5 bei Trustpilot",
+            "star_range": 5,
+            "star_color": "#000000"
+          }
+        },
+        "ratings_fD4VNJ": {
+          "type": "ratings",
+          "settings": {
+            "likeImg1": "shopify://shop_images/Testi3.webp",
+            "likeImg2": "shopify://shop_images/Testi1_06655792-039c-4c4c-a68d-210b3c8a4ab8.webp",
+            "likeImg3": "shopify://shop_images/Testi2.jpg",
+            "likecount": "90,532+ Personen",
+            "like_bg": "#ddede0",
+            "likeinfo": "lieben unsere Küchenmesser!",
+            "demandBadge": "Hohe Nachfrage",
+            "demandText": "überdurchschnittlich oft besucht!"
+          }
+        },
+        "price_NygfY8": {
+          "type": "price",
+          "settings": {
+            "taxes_included": true,
+            "taxes_included_text": "",
+            "show_saving": true,
+            "sale_badge_type": "percentage",
+            "p_pt": 5,
+            "p_pb": 15,
+            "p_pt_m": 5,
+            "p_pb_m": 5,
+            "price_color": "#000000",
+            "c_price_color": "#a7a7a7",
+            "per_badge_bg": "#000000",
+            "per_badge_color": "#ffffff",
+            "f_s": 19,
+            "f_s_m": 23,
+            "c_price_size": 16,
+            "c_price_size_m": 20,
+            "price_font_weight": "600",
+            "price_tag_bg": "#ddede0",
+            "price_tag_text_color": "#000000",
+            "price_tag_font_size": 8,
+            "price_tag_arrow_bg": "#ddede0",
+            "border_radius": 2
+          }
+        },
+        "price_J4wXWJ": {
+          "type": "price",
+          "disabled": true,
+          "settings": {
+            "taxes_included": true,
+            "taxes_included_text": "",
+            "show_saving": true,
+            "sale_badge_type": "percentage",
+            "p_pt": 5,
+            "p_pb": 5,
+            "p_pt_m": 5,
+            "p_pb_m": 5,
+            "price_color": "#000000",
+            "c_price_color": "#bbbbbb",
+            "per_badge_bg": "#000000",
+            "per_badge_color": "#ffffff",
+            "f_s": 21,
+            "f_s_m": 19,
+            "c_price_size": 16,
+            "c_price_size_m": 16,
+            "price_font_weight": "600",
+            "price_tag_bg": "#ddede0",
+            "price_tag_text_color": "#000000",
+            "price_tag_font_size": 8,
+            "price_tag_arrow_bg": "#ddede0",
+            "border_radius": 2
+          }
+        },
+        "viewer_stock_count_MFNhKz": {
+          "type": "viewerStockCount",
+          "settings": {
+            "viewer_count_font_size": 16,
+            "view_main_text_1": "Personen",
+            "view_main_text_2": "sehen sich dieses Produkt gerade an!",
+            "viewer_margin_top": 10,
+            "viewer_margin_bottom": 10,
+            "margin_size_mobile_top": 1,
+            "margin_size_mobile_bottom": 1,
+            "viewer_count_time": 25
+          }
+        },
+        "featurelist_item_tL79ih": {
+          "type": "featurelist_item",
+          "settings": {
+            "featurelist_item": "<p><strong>Echter Damaststahl</strong> – unvergleichliche Qualität statt einfachem Edelstahl</p>",
+            "featurelist_item_color": "#000000",
+            "featurelist_item_size": 14,
+            "invert_img": false
+          }
+        },
+        "featurelist_item_jQJcPz": {
+          "type": "featurelist_item",
+          "settings": {
+            "featurelist_item": "<p><strong>Handgeschliffen</strong> – erlebe japanische Schärfe bei jedem Schnitt</p>",
+            "featurelist_item_color": "#000000",
+            "featurelist_item_size": 14,
+            "invert_img": false
+          }
+        },
+        "variant_picker_custom_3wFPza": {
+          "type": "variant_picker_custom",
+          "settings": {
+            "custom_product_list": [],
+            "discount_text": "Rabatt",
+            "single_title": "1pcs",
+            "enable_single": false,
+            "discount_badge_bg": "#000000",
+            "variant_badge_bg": "#2d7a2d"
+          }
+        },
+        "buy_buttons_3hQqVi": {
+          "type": "buy_buttons",
+          "disabled": true,
+          "settings": {
+            "show_quantity_selector": true,
+            "show_atc_button": true,
+            "show_dynamic_checkout": false,
+            "show_gift_card_recipient": true
+          }
+        },
+        "payment_icon_tePtpf": {
+          "type": "paymentIcon",
+          "settings": {
+            "payment_img": "shopify://shop_images/Trust_Badges_-_DACH_1.png"
+          }
+        },
+        "product_info_9Yqdn9": {
+          "type": "productInfo",
+          "settings": {
+            "info_img_1": "shopify://shop_images/Garntie_d60e2759-1e67-4bce-b8fb-cfaf27d7576c.png",
+            "info_text_1": "100 Tage risikofrei testen",
+            "info_img_2": "shopify://shop_images/Delivery_acbeffd9-1fa0-4574-bba0-b6c8907df283.png",
+            "info_text_2": "Kostenloser Versand",
+            "info_img_3": "shopify://shop_images/anvil_10102933_1.png",
+            "info_text_3": "2 Jahre Garantie",
+            "info_bg_color": "#ffffff",
+            "info_border_color": "#000000",
+            "info_text_color": "#000000",
+            "invert_img_color": false
+          }
+        }
+      },
+      "block_order": [
+        "follower_recom_text_J4dKLR",
+        "title_Bac9Mk",
+        "subtitle_xQXVba",
+        "review_Tgbbak",
+        "ratings_fD4VNJ",
+        "price_NygfY8",
+        "price_J4wXWJ",
+        "viewer_stock_count_MFNhKz",
+        "featurelist_item_tL79ih",
+        "featurelist_item_jQJcPz",
+        "variant_picker_custom_3wFPza",
+        "buy_buttons_3hQqVi",
+        "payment_icon_tePtpf",
+        "product_info_9Yqdn9"
+      ],
+      "settings": {
+        "show_sold_out_badge_on_image": true,
+        "color_scheme": "default",
+        "container": "container",
+        "layout": "layout-6",
+        "show_atwl": true,
+        "enable_history_state": true,
+        "enable_variant_group_images": false,
+        "disable_selected_variant_default": false,
+        "show_featured_media": true,
+        "show_zoom_button": true,
+        "enable_video_autoplay": false,
+        "show_nav_media_mobile": false,
+        "show_pagination_mobile": true,
+        "use_sticky_atc": true,
+        "use_sticky_atc_on_mobile": true,
+        "enable_dynamic_checkout": false,
+        "sticky_atc_wishtlist": false,
+        "sticky_atc_compare": false,
+        "saving_text": "Du sparst",
+        "price_color": "#000000",
+        "stk_com_p": "#dc2626",
+        "show_stk_icon": false,
+        "glitter_effec": false,
+        "bubble_before_color": "#4b4b4b",
+        "bubble_after_color": "#4b4b4b",
+        "per_title": "Personalisierung",
+        "per_sub_title": "Gib Namen, Initialen oder Zahlen ein. Du kannst sie sogar kombinieren.",
+        "save_btn": "Save",
+        "cancel_btn": "Cancel"
+      }
+    },
+    "pdp_v1_feature_46AkPR": {
+      "type": "PDP-V1-Feature",
+      "blocks": {
+        "item_CmzMRJ": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/Ku_echenkompane_Icons_D1-01.png",
+            "title": "Kostenloser Versand",
+            "description": "Wir liefern dein Messerset schnell und kostenlos direkt zu dir nach Hause."
+          }
+        },
+        "item_p3HhWc": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/Ku_echenkompane_Icons_D1-04.png",
+            "title": "Japanische Schärfe",
+            "description": "Durch die aufwendige Damasttechnik entsteht eine Klinge von außergewöhnlicher Standfestigkeit. Die extreme Schärfe sorgt für präzise, mühelose Schnitte."
+          }
+        },
+        "item_hibNiT": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/Kuechenkompane_Icons_Deutsch.png",
+            "title": "100 Tage risikofrei testen",
+            "description": "Teste dein Messerset ganz in Ruhe und überzeuge dich selbst von der Qualität."
+          }
+        },
+        "item_EGqxge": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/Ku_echenkompane_Icons_D1-03.png",
+            "title": "Japanischer Style",
+            "description": "Mit einzigartigem Design und feiner Maserung bringt jedes Messer den authentischen Spirit japanischer Küchenkultur in dein Zuhause."
+          }
+        }
+      },
+      "block_order": [
+        "item_CmzMRJ",
+        "item_p3HhWc",
+        "item_hibNiT",
+        "item_EGqxge"
+      ],
+      "name": "PDP V1 Feature",
+      "settings": {}
+    },
+    "floow_comparison_table_with_image_UjebmD": {
+      "type": "floow-comparison-table-with-image",
+      "blocks": {
+        "floow_table_group_ncwETD": {
+          "type": "_floow-table-group",
+          "settings": {
+            "show_only_in_editor": false,
+            "bg_color": "",
+            "border_radius": 0,
+            "width": 500,
+            "gap": 10,
+            "flex-wrap": "nowrap",
+            "flex-direction": "column",
+            "justify-content": "center",
+            "align-items": "center",
+            "width_mobile": 300,
+            "gap-mobile": 10,
+            "flex-wrap-mobile": "nowrap",
+            "flex-direction-mobile": "column",
+            "justify-content-mobile": "center",
+            "align-items-mobile": "center",
+            "padding_top": 0,
+            "padding_bottom": 0,
+            "padding_right": 0,
+            "padding_left": 0,
+            "margin_top": 0,
+            "margin_bottom": 0
+          },
+          "blocks": {
+            "floow_image_Kn9Gbb": {
+              "type": "_floow-image",
+              "settings": {
+                "image": "shopify://shop_images/kuechenkompane_vs_andere_final.png",
+                "width": 600,
+                "width_mobile": 600,
+                "radius": 26,
+                "radius_mobile": 20,
+                "margin_top": 0,
+                "margin_bottom": 0,
+                "margin_top_mobile": -80,
+                "margin_bottom_mobile": 0
+              },
+              "blocks": {}
+            },
+            "floow_heading_DUnwV9": {
+              "type": "_floow-heading",
+              "settings": {
+                "heading": "Küchenkompane vs. Andere Anbieter",
+                "heading_type": "h2",
+                "max_width": 0,
+                "font_size": 24,
+                "font_size_mobile": 18,
+                "alignment": "center",
+                "alignment_mobile": "center",
+                "color": "#000000",
+                "margin_top": 12,
+                "margin_bottom": 0,
+                "margin_top_mobile": 0,
+                "margin_bottom_mobile": 0
+              },
+              "blocks": {}
+            },
+            "floow_text_8Qm37f": {
+              "type": "_floow-text",
+              "settings": {
+                "text": "<p>Was uns von anderen abhebt</p>",
+                "font_size": 18,
+                "margin_top": 0,
+                "margin_bottom": 0,
+                "text_type": "h2",
+                "alignment": "center",
+                "font_color": "#000000",
+                "background_color": "",
+                "padding_top": 0,
+                "padding_bottom": 0,
+                "padding_right": 0,
+                "padding_left": 0
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "floow_image_Kn9Gbb",
+            "floow_heading_DUnwV9",
+            "floow_text_8Qm37f"
+          ]
+        },
+        "floow_table_group_QNwChW": {
+          "type": "_floow-table-group",
+          "settings": {
+            "show_only_in_editor": false,
+            "bg_color": "",
+            "border_radius": 0,
+            "width": 500,
+            "gap": 10,
+            "flex-wrap": "nowrap",
+            "flex-direction": "column",
+            "justify-content": "center",
+            "align-items": "center",
+            "width_mobile": 600,
+            "gap-mobile": 10,
+            "flex-wrap-mobile": "nowrap",
+            "flex-direction-mobile": "column",
+            "justify-content-mobile": "center",
+            "align-items-mobile": "center",
+            "padding_top": 0,
+            "padding_bottom": 0,
+            "padding_right": 0,
+            "padding_left": 0,
+            "margin_top": 20,
+            "margin_bottom": 20
+          },
+          "blocks": {
+            "floow_table_cxrXib": {
+              "type": "_floow-table",
+              "settings": {
+                "bg_color": "#ffffff",
+                "border_radius": 15,
+                "padding": 10,
+                "padding_mobile": 10,
+                "enable_show_more": true,
+                "visible_rows": 7,
+                "show_more_text": "Mehr anzeigen",
+                "show_less_text": "Weniger anzeigen",
+                "button_bg_color": "#324a34",
+                "button_text_color": "#ffffff",
+                "button_border_radius": 8,
+                "button_font_size": 14,
+                "button_margin_top": 12
+              },
+              "blocks": {
+                "floow_table_row_HjCCAc": {
+                  "type": "_floow-table-row",
+                  "settings": {
+                    "border_color": "#000000",
+                    "border_width": 0
+                  },
+                  "blocks": {
+                    "floow_table_cell_jpcHF3": {
+                      "type": "_floow-table-cell",
+                      "name": "Floow Table Cell",
+                      "settings": {
+                        "icon": "shopify://shop_images/kuechenkompane_logo_vs.png",
+                        "icon_height": 80,
+                        "icon_height_mobile": 50,
+                        "text": "",
+                        "font_size": 14,
+                        "flex_direction": "row",
+                        "gap": 0,
+                        "flex_direction_mobile": "column",
+                        "align_items_mobile": "center",
+                        "text_align_mobile": "center",
+                        "gap_mobile": 4,
+                        "bg_color": "#eeeff8",
+                        "padding_top": 15,
+                        "padding_bottom": 15,
+                        "padding_right": 15,
+                        "padding_left": 15,
+                        "border_radius_top_left": 5,
+                        "border_radius_top_right": 5,
+                        "border_radius_bottom_right": 5,
+                        "border_radius_bottom_left": 5
+                      },
+                      "blocks": {}
+                    },
+                    "floow_table_cell_wXrrXP": {
+                      "type": "_floow-table-cell",
+                      "name": "Floow Table Cell",
+                      "settings": {
+                        "icon": "shopify://shop_images/andere-anbieter_e3f530b3-3aca-4bb0-8832-6212d37ee989.png",
+                        "icon_height": 80,
+                        "icon_height_mobile": 50,
+                        "text": "",
+                        "font_size": 14,
+                        "flex_direction": "row",
+                        "gap": 0,
+                        "flex_direction_mobile": "column",
+                        "align_items_mobile": "center",
+                        "text_align_mobile": "center",
+                        "gap_mobile": 4,
+                        "bg_color": "",
+                        "padding_top": 15,
+                        "padding_bottom": 15,
+                        "padding_right": 15,
+                        "padding_left": 15,
+                        "border_radius_top_left": 0,
+                        "border_radius_top_right": 0,
+                        "border_radius_bottom_right": 0,
+                        "border_radius_bottom_left": 0
+                      },
+                      "blocks": {}
+                    }
+                  },
+                  "block_order": [
+                    "floow_table_cell_jpcHF3",
+                    "floow_table_cell_wXrrXP"
+                  ]
+                },
+                "floow_table_row_D9gxk9": {
+                  "type": "_floow-table-row",
+                  "name": "Floow Table Row",
+                  "settings": {
+                    "border_color": "#000000",
+                    "border_width": 0
+                  },
+                  "blocks": {
+                    "floow_table_cell_fiMU8b": {
+                      "type": "_floow-table-cell",
+                      "name": "Floow Table Cell",
+                      "settings": {
+                        "icon": "shopify://shop_images/checked_11c824a8-258d-47b5-8d73-7c29463a3f60.png",
+                        "icon_height": 36,
+                        "icon_height_mobile": 24,
+                        "text": "<p>Hoher Härtegrad  <br/>60+ HRC</p>",
+                        "font_size": 16,
+                        "flex_direction": "row",
+                        "gap": 10,
+                        "flex_direction_mobile": "column",
+                        "align_items_mobile": "center",
+                        "text_align_mobile": "center",
+                        "gap_mobile": 10,
+                        "bg_color": "#eeeff8",
+                        "padding_top": 15,
+                        "padding_bottom": 15,
+                        "padding_right": 15,
+                        "padding_left": 15,
+                        "border_radius_top_left": 0,
+                        "border_radius_top_right": 0,
+                        "border_radius_bottom_right": 0,
+                        "border_radius_bottom_left": 0
+                      },
+                      "blocks": {}
+                    },
+                    "floow_table_cell_LyGdXz": {
+                      "type": "_floow-table-cell",
+                      "name": "Floow Table Cell",
+                      "settings": {
+                        "icon": "shopify://shop_images/close.svg",
+                        "icon_height": 36,
+                        "icon_height_mobile": 24,
+                        "text": "<p>Geringer Härtegrad <br/>&lt; 52 HRC</p>",
+                        "font_size": 16,
+                        "flex_direction": "row",
+                        "gap": 10,
+                        "flex_direction_mobile": "column",
+                        "align_items_mobile": "center",
+                        "text_align_mobile": "center",
+                        "gap_mobile": 10,
+                        "bg_color": "",
+                        "padding_top": 15,
+                        "padding_bottom": 5,
+                        "padding_right": 15,
+                        "padding_left": 15,
+                        "border_radius_top_left": 0,
+                        "border_radius_top_right": 0,
+                        "border_radius_bottom_right": 0,
+                        "border_radius_bottom_left": 0
+                      },
+                      "blocks": {}
+                    }
+                  },
+                  "block_order": [
+                    "floow_table_cell_fiMU8b",
+                    "floow_table_cell_LyGdXz"
+                  ]
+                },
+                "floow_table_row_tTaFXy": {
+                  "type": "_floow-table-row",
+                  "name": "Floow Table Row",
+                  "settings": {
+                    "border_color": "#000000",
+                    "border_width": 0
+                  },
+                  "blocks": {
+                    "floow_table_cell_bMEGgq": {
+                      "type": "_floow-table-cell",
+                      "name": "Floow Table Cell",
+                      "settings": {
+                        "icon": "shopify://shop_images/checked_11c824a8-258d-47b5-8d73-7c29463a3f60.png",
+                        "icon_height": 36,
+                        "icon_height_mobile": 24,
+                        "text": "<p>Hochwertiger <br/>Premiumstahl</p>",
+                        "font_size": 16,
+                        "flex_direction": "row",
+                        "gap": 10,
+                        "flex_direction_mobile": "column",
+                        "align_items_mobile": "center",
+                        "text_align_mobile": "center",
+                        "gap_mobile": 10,
+                        "bg_color": "#eeeff8",
+                        "padding_top": 15,
+                        "padding_bottom": 15,
+                        "padding_right": 15,
+                        "padding_left": 15,
+                        "border_radius_top_left": 0,
+                        "border_radius_top_right": 0,
+                        "border_radius_bottom_right": 0,
+                        "border_radius_bottom_left": 0
+                      },
+                      "blocks": {}
+                    },
+                    "floow_table_cell_phgE3F": {
+                      "type": "_floow-table-cell",
+                      "name": "Floow Table Cell",
+                      "settings": {
+                        "icon": "shopify://shop_images/close.svg",
+                        "icon_height": 36,
+                        "icon_height_mobile": 24,
+                        "text": "<p>Billiger<br/>Edelstahl</p>",
+                        "font_size": 16,
+                        "flex_direction": "row",
+                        "gap": 10,
+                        "flex_direction_mobile": "column",
+                        "align_items_mobile": "center",
+                        "text_align_mobile": "center",
+                        "gap_mobile": 10,
+                        "bg_color": "",
+                        "padding_top": 15,
+                        "padding_bottom": 15,
+                        "padding_right": 15,
+                        "padding_left": 15,
+                        "border_radius_top_left": 0,
+                        "border_radius_top_right": 0,
+                        "border_radius_bottom_right": 0,
+                        "border_radius_bottom_left": 0
+                      },
+                      "blocks": {}
+                    }
+                  },
+                  "block_order": [
+                    "floow_table_cell_bMEGgq",
+                    "floow_table_cell_phgE3F"
+                  ]
+                },
+                "floow_table_row_4axdt8": {
+                  "type": "_floow-table-row",
+                  "name": "Floow Table Row",
+                  "settings": {
+                    "border_color": "#000000",
+                    "border_width": 0
+                  },
+                  "blocks": {
+                    "floow_table_cell_MUCtCP": {
+                      "type": "_floow-table-cell",
+                      "name": "Floow Table Cell",
+                      "settings": {
+                        "icon": "shopify://shop_images/checked_11c824a8-258d-47b5-8d73-7c29463a3f60.png",
+                        "icon_height": 36,
+                        "icon_height_mobile": 24,
+                        "text": "<p>Anti-Haft <br/>Kullenschliff</p>",
+                        "font_size": 16,
+                        "flex_direction": "row",
+                        "gap": 10,
+                        "flex_direction_mobile": "column",
+                        "align_items_mobile": "center",
+                        "text_align_mobile": "center",
+                        "gap_mobile": 10,
+                        "bg_color": "#eeeff8",
+                        "padding_top": 15,
+                        "padding_bottom": 15,
+                        "padding_right": 15,
+                        "padding_left": 15,
+                        "border_radius_top_left": 0,
+                        "border_radius_top_right": 0,
+                        "border_radius_bottom_right": 0,
+                        "border_radius_bottom_left": 0
+                      },
+                      "blocks": {}
+                    },
+                    "floow_table_cell_iwJdHa": {
+                      "type": "_floow-table-cell",
+                      "name": "Floow Table Cell",
+                      "settings": {
+                        "icon": "shopify://shop_images/close.svg",
+                        "icon_height": 36,
+                        "icon_height_mobile": 24,
+                        "text": "<p>Glatte haftende <br/>Fläche</p>",
+                        "font_size": 16,
+                        "flex_direction": "row",
+                        "gap": 10,
+                        "flex_direction_mobile": "column",
+                        "align_items_mobile": "center",
+                        "text_align_mobile": "center",
+                        "gap_mobile": 10,
+                        "bg_color": "",
+                        "padding_top": 15,
+                        "padding_bottom": 15,
+                        "padding_right": 15,
+                        "padding_left": 15,
+                        "border_radius_top_left": 0,
+                        "border_radius_top_right": 0,
+                        "border_radius_bottom_right": 0,
+                        "border_radius_bottom_left": 0
+                      },
+                      "blocks": {}
+                    }
+                  },
+                  "block_order": [
+                    "floow_table_cell_MUCtCP",
+                    "floow_table_cell_iwJdHa"
+                  ]
+                },
+                "floow_table_row_QDNBeW": {
+                  "type": "_floow-table-row",
+                  "name": "Floow Table Row",
+                  "settings": {
+                    "border_color": "#000000",
+                    "border_width": 0
+                  },
+                  "blocks": {
+                    "floow_table_cell_K43mrU": {
+                      "type": "_floow-table-cell",
+                      "name": "Floow Table Cell",
+                      "settings": {
+                        "icon": "shopify://shop_images/checked_11c824a8-258d-47b5-8d73-7c29463a3f60.png",
+                        "icon_height": 36,
+                        "icon_height_mobile": 24,
+                        "text": "<p>100% <br/>Rostfrei</p>",
+                        "font_size": 16,
+                        "flex_direction": "row",
+                        "gap": 10,
+                        "flex_direction_mobile": "column",
+                        "align_items_mobile": "center",
+                        "text_align_mobile": "center",
+                        "gap_mobile": 4,
+                        "bg_color": "#eeeff8",
+                        "padding_top": 15,
+                        "padding_bottom": 15,
+                        "padding_right": 15,
+                        "padding_left": 15,
+                        "border_radius_top_left": 0,
+                        "border_radius_top_right": 0,
+                        "border_radius_bottom_right": 0,
+                        "border_radius_bottom_left": 0
+                      },
+                      "blocks": {}
+                    },
+                    "floow_table_cell_zWJ6fc": {
+                      "type": "_floow-table-cell",
+                      "name": "Floow Table Cell",
+                      "settings": {
+                        "icon": "shopify://shop_images/close.svg",
+                        "icon_height": 36,
+                        "icon_height_mobile": 24,
+                        "text": "<p>Kaum<br/>rostbeständig</p>",
+                        "font_size": 16,
+                        "flex_direction": "row",
+                        "gap": 10,
+                        "flex_direction_mobile": "column",
+                        "align_items_mobile": "center",
+                        "text_align_mobile": "center",
+                        "gap_mobile": 4,
+                        "bg_color": "",
+                        "padding_top": 15,
+                        "padding_bottom": 15,
+                        "padding_right": 15,
+                        "padding_left": 15,
+                        "border_radius_top_left": 0,
+                        "border_radius_top_right": 0,
+                        "border_radius_bottom_right": 0,
+                        "border_radius_bottom_left": 0
+                      },
+                      "blocks": {}
+                    }
+                  },
+                  "block_order": [
+                    "floow_table_cell_K43mrU",
+                    "floow_table_cell_zWJ6fc"
+                  ]
+                },
+                "floow_table_row_Df9f3X": {
+                  "type": "_floow-table-row",
+                  "name": "Floow Table Row",
+                  "settings": {
+                    "border_color": "#000000",
+                    "border_width": 0
+                  },
+                  "blocks": {
+                    "floow_table_cell_annyFy": {
+                      "type": "_floow-table-cell",
+                      "name": "Floow Table Cell",
+                      "settings": {
+                        "icon": "shopify://shop_images/checked_11c824a8-258d-47b5-8d73-7c29463a3f60.png",
+                        "icon_height": 36,
+                        "icon_height_mobile": 24,
+                        "text": "<p>Ergonomischer<br/>Holzgriff</p>",
+                        "font_size": 16,
+                        "flex_direction": "row",
+                        "gap": 10,
+                        "flex_direction_mobile": "column",
+                        "align_items_mobile": "center",
+                        "text_align_mobile": "center",
+                        "gap_mobile": 4,
+                        "bg_color": "#eeeff8",
+                        "padding_top": 15,
+                        "padding_bottom": 15,
+                        "padding_right": 15,
+                        "padding_left": 15,
+                        "border_radius_top_left": 0,
+                        "border_radius_top_right": 0,
+                        "border_radius_bottom_right": 0,
+                        "border_radius_bottom_left": 0
+                      },
+                      "blocks": {}
+                    },
+                    "floow_table_cell_EVC3D9": {
+                      "type": "_floow-table-cell",
+                      "name": "Floow Table Cell",
+                      "settings": {
+                        "icon": "shopify://shop_images/close.svg",
+                        "icon_height": 36,
+                        "icon_height_mobile": 24,
+                        "text": "<p>Blliger <br/>Plastikgriff</p>",
+                        "font_size": 16,
+                        "flex_direction": "row",
+                        "gap": 10,
+                        "flex_direction_mobile": "column",
+                        "align_items_mobile": "center",
+                        "text_align_mobile": "center",
+                        "gap_mobile": 4,
+                        "bg_color": "",
+                        "padding_top": 15,
+                        "padding_bottom": 15,
+                        "padding_right": 15,
+                        "padding_left": 15,
+                        "border_radius_top_left": 0,
+                        "border_radius_top_right": 0,
+                        "border_radius_bottom_right": 0,
+                        "border_radius_bottom_left": 0
+                      },
+                      "blocks": {}
+                    }
+                  },
+                  "block_order": [
+                    "floow_table_cell_annyFy",
+                    "floow_table_cell_EVC3D9"
+                  ]
+                },
+                "floow_table_row_TJVxHp": {
+                  "type": "_floow-table-row",
+                  "name": "Floow Table Row",
+                  "settings": {
+                    "border_color": "#000000",
+                    "border_width": 0
+                  },
+                  "blocks": {
+                    "floow_table_cell_WXNPTy": {
+                      "type": "_floow-table-cell",
+                      "name": "Floow Table Cell",
+                      "settings": {
+                        "icon": "shopify://shop_images/checked_11c824a8-258d-47b5-8d73-7c29463a3f60.png",
+                        "icon_height": 36,
+                        "icon_height_mobile": 24,
+                        "text": "<p>365 Tage <br/>Schleifservice</p>",
+                        "font_size": 16,
+                        "flex_direction": "row",
+                        "gap": 10,
+                        "flex_direction_mobile": "column",
+                        "align_items_mobile": "center",
+                        "text_align_mobile": "center",
+                        "gap_mobile": 4,
+                        "bg_color": "#eeeff8",
+                        "padding_top": 15,
+                        "padding_bottom": 15,
+                        "padding_right": 15,
+                        "padding_left": 15,
+                        "border_radius_top_left": 0,
+                        "border_radius_top_right": 0,
+                        "border_radius_bottom_right": 5,
+                        "border_radius_bottom_left": 5
+                      },
+                      "blocks": {}
+                    },
+                    "floow_table_cell_m4qGjc": {
+                      "type": "_floow-table-cell",
+                      "name": "Floow Table Cell",
+                      "settings": {
+                        "icon": "shopify://shop_images/close.svg",
+                        "icon_height": 36,
+                        "icon_height_mobile": 24,
+                        "text": "<p>Meistens kein <br/>Schleifservice</p>",
+                        "font_size": 16,
+                        "flex_direction": "row",
+                        "gap": 10,
+                        "flex_direction_mobile": "column",
+                        "align_items_mobile": "center",
+                        "text_align_mobile": "center",
+                        "gap_mobile": 4,
+                        "bg_color": "",
+                        "padding_top": 15,
+                        "padding_bottom": 15,
+                        "padding_right": 15,
+                        "padding_left": 15,
+                        "border_radius_top_left": 0,
+                        "border_radius_top_right": 0,
+                        "border_radius_bottom_right": 0,
+                        "border_radius_bottom_left": 0
+                      },
+                      "blocks": {}
+                    }
+                  },
+                  "block_order": [
+                    "floow_table_cell_WXNPTy",
+                    "floow_table_cell_m4qGjc"
+                  ]
+                }
+              },
+              "block_order": [
+                "floow_table_row_HjCCAc",
+                "floow_table_row_D9gxk9",
+                "floow_table_row_tTaFXy",
+                "floow_table_row_4axdt8",
+                "floow_table_row_QDNBeW",
+                "floow_table_row_Df9f3X",
+                "floow_table_row_TJVxHp"
+              ]
+            }
+          },
+          "block_order": [
+            "floow_table_cxrXib"
+          ]
+        }
+      },
+      "block_order": [
+        "floow_table_group_ncwETD",
+        "floow_table_group_QNwChW"
+      ],
+      "disabled": true,
+      "name": "Floow Comp Table & Image",
+      "settings": {
+        "show_only_in_editor": true,
+        "bg_color": "#c6d1c4",
+        "border_radius": 0,
+        "gap": 40,
+        "flex-wrap": "nowrap",
+        "flex-direction": "row",
+        "justify-content": "center",
+        "align-items": "center",
+        "gap-mobile": 10,
+        "flex-wrap-mobile": "nowrap",
+        "flex-direction-mobile": "column",
+        "justify-content-mobile": "center",
+        "align-items-mobile": "center",
+        "padding_top": 50,
+        "padding_bottom": 50,
+        "padding_right": 25,
+        "padding_left": 25,
+        "padding_top_mobile": 20,
+        "padding_bottom_mobile": 20,
+        "padding_right_mobile": 10,
+        "padding_left_mobile": 10,
+        "margin_top": 60,
+        "margin_bottom": 40
+      }
+    },
+    "pdp_v1_image_slide_7M4DFc": {
+      "type": "PDP-V1-Image-Slide",
+      "blocks": {
+        "slider_H7irUq": {
+          "type": "Slider",
+          "settings": {
+            "slide_img": "shopify://shop_images/IMG_0558_1_V1.jpg"
+          }
+        },
+        "slider_mYXLQD": {
+          "type": "Slider",
+          "settings": {
+            "slide_img": "shopify://shop_images/IMG_0558_1_V4.jpg"
+          }
+        },
+        "slider_KhrGC7": {
+          "type": "Slider",
+          "settings": {
+            "slide_img": "shopify://shop_images/IMG_0558_1_V2.jpg"
+          }
+        },
+        "slider_E4PfWV": {
+          "type": "Slider",
+          "settings": {
+            "slide_img": "shopify://shop_images/IMG_0558_1_V5.jpg"
+          }
+        },
+        "slider_JhFjm7": {
+          "type": "Slider",
+          "settings": {
+            "slide_img": "shopify://shop_images/IMG_0558_1_V7_1.jpg"
+          }
+        },
+        "slider_rX7PnX": {
+          "type": "Slider",
+          "settings": {
+            "slide_img": "shopify://shop_images/IMG_0558_1_V6_1.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "slider_H7irUq",
+        "slider_mYXLQD",
+        "slider_KhrGC7",
+        "slider_E4PfWV",
+        "slider_JhFjm7",
+        "slider_rX7PnX"
+      ],
+      "name": "PDP V1 - Image Slide",
+      "settings": {
+        "title": "Unser Kunden lieben unsere Klingen"
+      }
+    },
+    "pdp_v1_image_text_dKF9QP": {
+      "type": "PDP-V1-Image-Text",
+      "blocks": {
+        "title_MVPqmk": {
+          "type": "title",
+          "settings": {
+            "title": "67 Lagen Perfektion."
+          }
+        },
+        "description_VnEqPD": {
+          "type": "description",
+          "settings": {
+            "description": "<p>Dieses Messer verbindet 33 Lagen Edelstahl auf jeder Seite mit einem hochfesten 9Cr18MoV-Stahlkern. Durch diese einzigartige Kombination entsteht eine unvergleichliche Balance aus Härte, Schärfe und Flexibilität. Die aufwendige Damaststruktur macht jedes Messer zu einem Unikat und sorgt dafür, dass es nicht nur ein Werkzeug, sondern ein echtes Statement in deiner Küche ist.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "title_MVPqmk",
+        "description_VnEqPD"
+      ],
+      "name": "PDP V1 - Image Text",
+      "settings": {
+        "padding_top": 20,
+        "padding_bottom": 20,
+        "position": "left",
+        "reverse_layout": false,
+        "media_type": "image",
+        "image": "shopify://shop_images/OKAMI_V3_2-Wiederhergestellt_1.jpg"
+      }
+    },
+    "pdp_v1_image_text_mQUw6t": {
+      "type": "PDP-V1-Image-Text",
+      "blocks": {
+        "title_Yx3HNC": {
+          "type": "title",
+          "settings": {
+            "title": "Mehr Schärfe. Mehr Kontrolle."
+          }
+        },
+        "description_xqzCX4": {
+          "type": "description",
+          "settings": {
+            "description": "<p>Gefertigt aus echtem Damaststahl überzeugt dieses Messer mit einer rasiermesserscharfen 12,5° V-Form, die müheloses Schneiden ermöglicht. Der Fingerschutz sorgt für ein sicheres Arbeiten, während der ergonomische Griff mit seiner einzigartigen Struktur perfekt in der Hand liegt. Dank seiner ausgewogenen Balance gleitet das Messer durch Fleisch, Fisch und Gemüse mit höchster Präzision. Es ist nicht nur ein Küchenmesser, sondern ein zuverlässiger Partner für jede kulinarische Herausforderung.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "title_Yx3HNC",
+        "description_xqzCX4"
+      ],
+      "name": "PDP V1 - Image Text",
+      "settings": {
+        "padding_top": 20,
+        "padding_bottom": 20,
+        "position": "right",
+        "reverse_layout": true,
+        "media_type": "image",
+        "image": "shopify://shop_images/Kuechenkompane_OKAMI_V3_1-Wiederhergestellt_1.jpg"
+      }
+    },
+    "pdp_v1_video_cVzt66": {
+      "type": "PDP-V1-Video",
+      "blocks": {
+        "video_block_A8wpDV": {
+          "type": "video_block",
+          "settings": {
+            "video_url": "https://youtu.be/hjAfmLOpD00?si=Do9qDeSlaflA_ieN"
+          }
+        },
+        "video_block_8ektkG": {
+          "type": "video_block",
+          "settings": {
+            "video_url": "https://youtu.be/TJatDlMOGs0?si=P0FJs3ErDLpKmRO9"
+          }
+        }
+      },
+      "block_order": [
+        "video_block_A8wpDV",
+        "video_block_8ektkG"
+      ],
+      "disabled": true,
+      "name": "PDP V1 - Video",
+      "settings": {
+        "heading": "WHAT OUR CUSTOMERS SAY..",
+        "subheading": "More than 956,000+ satisfied customers enjoy our HIKE collection!"
+      }
+    },
+    "product-details-tabs": {
+      "type": "product-details-tabs",
+      "blocks": {
+        "tab_gknmWn": {
+          "type": "tab",
+          "settings": {
+            "header": "Beschreibung",
+            "content": "",
+            "content_page": ""
+          }
+        },
+        "tab": {
+          "type": "tab",
+          "settings": {
+            "header": "Lieferumfang",
+            "content": "{{ product.metafields.custom.accordion_content_2 | metafield_tag }}",
+            "content_page": ""
+          }
+        },
+        "tab_yXpqFL": {
+          "type": "tab",
+          "settings": {
+            "header": "Versand",
+            "content": "",
+            "content_page": ""
+          }
+        },
+        "tab_LBwXaE": {
+          "type": "tab",
+          "settings": {
+            "header": "Garantie",
+            "content": "",
+            "content_page": ""
+          }
+        }
+      },
+      "block_order": [
+        "tab_gknmWn",
+        "tab",
+        "tab_yXpqFL",
+        "tab_LBwXaE"
+      ],
+      "disabled": true,
+      "custom_css": [
+        ".m-tabs__header {justify-content: flex-start;}"
+      ],
+      "settings": {
+        "container": "container",
+        "color_scheme": "",
+        "default_open": true,
+        "padding_top": 0,
+        "padding_bottom": 50,
+        "custom_class": "",
+        "animations": "inherit"
+      }
+    },
+    "ugc_video_testimonial_D4kJ9X": {
+      "type": "ugc-video-testimonial",
+      "blocks": {
+        "item_7xpaVV": {
+          "type": "item",
+          "settings": {
+            "video_poster": "shopify://shop_images/Screenshot_1_fd6e8e0e-b98b-4b2d-be30-f3a0d7888a8e.jpg",
+            "video": "shopify://files/videos/Küchenkompane (3).mp4",
+            "product": "premium"
+          }
+        },
+        "item_tYitmU": {
+          "type": "item",
+          "settings": {
+            "video_poster": "shopify://shop_images/Screenshot_5_89195910-0d90-440f-990e-ccde72fb3897.jpg",
+            "video": "shopify://files/videos/PXL_20250128_155346978_mp4_1_V2.mov",
+            "product": "premium"
+          }
+        },
+        "item_iJxMti": {
+          "type": "item",
+          "settings": {
+            "video_poster": "shopify://shop_images/Screenshot_2_c43ac8ad-5ad8-4e2a-812e-7a9d24440cdf.jpg",
+            "video": "shopify://files/videos/Review-2.mp4",
+            "product": "premium"
+          }
+        },
+        "item_UYW7B3": {
+          "type": "item",
+          "settings": {
+            "video_poster": "shopify://shop_images/Screenshot_3_3afbc759-565a-46fd-b360-7da9ae57dfbd.jpg",
+            "video": "shopify://files/videos/Reeview-1.mp4",
+            "product": "premium"
+          }
+        },
+        "item_ft7YRa": {
+          "type": "item",
+          "settings": {
+            "video_poster": "shopify://shop_images/Screenshot_4_2bfcf4a3-7294-43e4-b92e-db75219f6273.jpg",
+            "video": "shopify://files/videos/PXL_20250128_155346978_mp4_1_V3.mp4",
+            "product": "premium"
+          }
+        },
+        "item_cHcggm": {
+          "type": "item",
+          "settings": {
+            "video_poster": "shopify://shop_images/Screenshot_6_303b9316-5d7c-4433-ad93-6a9da4680614.jpg",
+            "video": "shopify://files/videos/PXL_20250128_155346978_mp4_1_V1.mp4",
+            "product": ""
+          }
+        }
+      },
+      "block_order": [
+        "item_7xpaVV",
+        "item_tYitmU",
+        "item_iJxMti",
+        "item_UYW7B3",
+        "item_ft7YRa",
+        "item_cHcggm"
+      ],
+      "disabled": true,
+      "settings": {
+        "color_scheme": "",
+        "pt": 70,
+        "pb": 50,
+        "pt_mobile": 30,
+        "pb_mobile": 30,
+        "title": "Unsere Produkte in Aktion",
+        "title_size": 20,
+        "heading_type": "mrk-h1",
+        "show_button": false,
+        "btn_url": "https://www.instagram.com/kuechenkompane/",
+        "btn_text": "@kuechenkompane",
+        "autoplay": false
+      }
+    },
+    "logo_greyed_out_FMbnW7": {
+      "type": "logo-greyed-out",
+      "blocks": {
+        "item_mmE6dV": {
+          "type": "item",
+          "settings": {
+            "logo_img": "shopify://shop_images/n_tv_logo_V2_1.png"
+          }
+        },
+        "item_wJFrdf": {
+          "type": "item",
+          "settings": {
+            "logo_img": "shopify://shop_images/n_tv_logo_V4_1.png"
+          }
+        },
+        "item_9i6JaX": {
+          "type": "item",
+          "settings": {
+            "logo_img": "shopify://shop_images/n_tv_logo_V3_1.png"
+          }
+        },
+        "item_FJTFNX": {
+          "type": "item",
+          "settings": {
+            "logo_img": "shopify://shop_images/n_tv_logo_V4_1.png"
+          }
+        },
+        "item_mBdBJK": {
+          "type": "item",
+          "settings": {
+            "logo_img": "shopify://shop_images/n_tv_logo_V6_1.png"
+          }
+        },
+        "item_YtJUgW": {
+          "type": "item",
+          "settings": {
+            "logo_img": "shopify://shop_images/n_tv_logo_V7_1.png"
+          }
+        },
+        "item_dRhRRe": {
+          "type": "item",
+          "settings": {
+            "logo_img": "shopify://shop_images/n_tv_logo_V2_1.png"
+          }
+        },
+        "item_cNkAMR": {
+          "type": "item",
+          "settings": {
+            "logo_img": "shopify://shop_images/n_tv_logo_V3_1.png"
+          }
+        },
+        "item_zdbtYQ": {
+          "type": "item",
+          "settings": {
+            "logo_img": "shopify://shop_images/n_tv_logo_V7_1.png"
+          }
+        },
+        "item_MwAh8h": {
+          "type": "item",
+          "settings": {
+            "logo_img": "shopify://shop_images/n_tv_logo_V6_1.png"
+          }
+        }
+      },
+      "block_order": [
+        "item_mmE6dV",
+        "item_wJFrdf",
+        "item_9i6JaX",
+        "item_FJTFNX",
+        "item_mBdBJK",
+        "item_YtJUgW",
+        "item_dRhRRe",
+        "item_cNkAMR",
+        "item_zdbtYQ",
+        "item_MwAh8h"
+      ],
+      "disabled": true,
+      "settings": {
+        "bg_color": "#fafafb",
+        "p_top": 50,
+        "p_bottom": 50
+      }
+    },
+    "scrolling_promotion_UKXeX3": {
+      "type": "scrolling-promotion",
+      "blocks": {
+        "image_bpiG7J": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/n_tv_logo_V7_1.png",
+            "image_height": 120,
+            "image_link": ""
+          }
+        },
+        "image_NptXmD": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/n_tv_logo_V6_1.png",
+            "image_height": 100,
+            "image_link": ""
+          }
+        },
+        "image_JPQVbf": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/n_tv_logo_V2_1.png",
+            "image_height": 100,
+            "image_link": ""
+          }
+        },
+        "image_T7Lehj": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/n_tv_logo_V4_1.png",
+            "image_height": 100,
+            "image_link": ""
+          }
+        },
+        "image_4NEDGT": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/n_tv_logo_V3_1.png",
+            "image_height": 100,
+            "image_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_bpiG7J",
+        "image_NptXmD",
+        "image_JPQVbf",
+        "image_T7Lehj",
+        "image_4NEDGT"
+      ],
+      "disabled": true,
+      "custom_css": [
+        ".gesehen-in {text-align: center; font-size: 24px; /* Adjust as needed */ font-weight: normal; text-transform: normal; margin-bottom: -15px; display: block; width: 100%; position: relative; top: 15px; /* Adjust this value if needed */}"
+      ],
+      "settings": {
+        "Gesehen_title": "Präsentiert von",
+        "heading_type": "mrk-h3",
+        "text_alignment": "center",
+        "container": "w-full",
+        "direction": "left",
+        "speed": 60,
+        "item_gap": 200,
+        "item_gap_mobile": 30,
+        "color_scheme": "scheme-cee058e4-58e3-46aa-9af9-219dadc79066",
+        "padding_top": 20,
+        "padding_bottom": 20,
+        "custom_class": ""
+      }
+    },
+    "feature_highlight_ktLbnH": {
+      "type": "feature-highlight",
+      "blocks": {
+        "feature_item_left_KLYLgM": {
+          "type": "feature_item_left",
+          "settings": {
+            "item_title": "8-teiliges Messerset",
+            "item_info": "Mit extra scharfen Klingen aus deutschem 7CR17-Edelstahl.",
+            "item_icon": "shopify://shop_images/Untitled_Export_V7_1.png"
+          }
+        },
+        "feature_item_left_etKjAM": {
+          "type": "feature_item_left",
+          "settings": {
+            "item_title": "Drehbarer Messerblock",
+            "item_info": "Magnetischer und drehbarer Messerblock für das ganze Set",
+            "item_icon": "shopify://shop_images/Untitled_Export_V2_1.png"
+          }
+        },
+        "feature_item_left_zGYhna": {
+          "type": "feature_item_left",
+          "settings": {
+            "item_title": "Messerschärfer",
+            "item_info": "Jedes Messer ist in Sekunden wieder scharf.",
+            "item_icon": "shopify://shop_images/Untitled_Export_V3_1.png"
+          }
+        },
+        "feature_center_image_mBHAJH": {
+          "type": "feature_center_image",
+          "settings": {
+            "center_image": "shopify://shop_images/Artboard_2_Kopie_5_1_51f9998a-33b1-4ffd-bfc3-ab3d5b8a61bd.jpg"
+          }
+        },
+        "feature_item_right_YpUkf4": {
+          "type": "feature_item_right",
+          "settings": {
+            "item_title": "Mizo Schneidebrette",
+            "item_info": "Aus Akazienholz, perfekt für schnelle und kleine Schneidearbeiten.",
+            "item_icon": "shopify://shop_images/Untitled_Export_V4_1.png"
+          }
+        },
+        "feature_item_right_dN8J9K": {
+          "type": "feature_item_right",
+          "settings": {
+            "item_title": "Pflegöl",
+            "item_info": "Kamelienöl schützt und pflegt Klinge und Griff.",
+            "item_icon": "shopify://shop_images/Untitled_Export_V5_1.png"
+          }
+        },
+        "feature_item_right_jLCbWD": {
+          "type": "feature_item_right",
+          "settings": {
+            "item_title": "365 Tage Schleifservice",
+            "item_info": "Kostenloser Nachschliff für ein Jahr - immer scharf.",
+            "item_icon": "shopify://shop_images/Untitled_Export_V6_1.png"
+          }
+        }
+      },
+      "block_order": [
+        "feature_item_left_KLYLgM",
+        "feature_item_left_etKjAM",
+        "feature_item_left_zGYhna",
+        "feature_center_image_mBHAJH",
+        "feature_item_right_YpUkf4",
+        "feature_item_right_dN8J9K",
+        "feature_item_right_jLCbWD"
+      ],
+      "disabled": true,
+      "settings": {
+        "pt": 50,
+        "pb": 50,
+        "pt_mobile": 30,
+        "pb_mobile": 30,
+        "title": "Im Set enthalten:"
+      }
+    },
+    "product_explanation_video_xNFp3M": {
+      "type": "product-explanation-video",
+      "blocks": {
+        "sub_heading_aBnF8i": {
+          "type": "sub_heading",
+          "settings": {
+            "sub_heading": "Küchenkompane - Erklärt in 2 Minuten"
+          }
+        },
+        "heading_jQDwbJ": {
+          "type": "heading",
+          "settings": {
+            "heading": "Qualität, die begeistert.",
+            "h1_text_align": "center",
+            "title": "Your Title Here",
+            "padding_top": 1,
+            "padding_bottom": 1,
+            "padding_top_tablet": 1,
+            "padding_bottom_tablet": 1,
+            "padding_top_mobile": 1,
+            "padding_bottom_mobile": 1
+          }
+        },
+        "details_erg8QM": {
+          "type": "details",
+          "settings": {
+            "details": "Unsere Produkte sind für alle gemacht – vom Hobbykoch bis zum Profi. Dank präziser Verarbeitung, hochwertigen Materialien und ergonomischem Design sorgen wir für das beste Kocherlebnis.",
+            "p_text_align": "left",
+            "p_padding_top": 10,
+            "p_padding_bottom": 10,
+            "p_padding_top_tablet": 8,
+            "p_padding_bottom_tablet": 8,
+            "p_padding_top_mobile": 5,
+            "p_padding_bottom_mobile": 5
+          }
+        },
+        "video_XLLb9A": {
+          "type": "video",
+          "settings": {
+            "video_mt": 0,
+            "video_url": "https://cdn.shopify.com/videos/c/o/v/055a54f6adb64fdb890618f1e7edb2fd.mp4",
+            "autoplay": false,
+            "explanation_video_poster": "shopify://shop_images/Screenshot_2025-03-18_at_11.21.04_1.jpg",
+            "loop": true,
+            "muted": true,
+            "playsinline": true,
+            "controls": true
+          }
+        }
+      },
+      "block_order": [
+        "sub_heading_aBnF8i",
+        "heading_jQDwbJ",
+        "details_erg8QM",
+        "video_XLLb9A"
+      ],
+      "settings": {
+        "color_scheme": "badge-hot",
+        "vertical_padding": 50,
+        "vertical_padding_mobile": 30,
+        "heading_type": "mrk-h3",
+        "sub_heading": "p-medium",
+        "des_size": "p-medium"
+      }
+    },
+    "us_vs_them_8Tbqki": {
+      "type": "us-vs-them",
+      "blocks": {
+        "title_F4F6qE": {
+          "type": "title",
+          "settings": {
+            "title": "KÜCHENKOMPANE® vs. ANDERE"
+          }
+        },
+        "description_9Mxcd4": {
+          "type": "description",
+          "settings": {
+            "description": "<p>Unsere Vergleichsgrafik zeigt, warum Küchenkompane die beste Wahl ist. Mit messerscharfer Präzision, hochwertigem Stahl und ergonomischem Design bieten unsere Messer maximale Qualität und Komfort.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "title_F4F6qE",
+        "description_9Mxcd4"
+      ],
+      "disabled": true,
+      "settings": {
+        "color_scheme": "",
+        "img": "shopify://shop_images/steel_kitchen_knives_V11_1.jpg",
+        "padding_top": 50,
+        "padding_bottom": 50,
+        "padding_top_mobile": 50,
+        "padding_bottom_mobile": 50,
+        "heading_type": "mrk-h1",
+        "des_size": "p-medium"
+      }
+    },
+    "apex_faqs_jx7hp6": {
+      "type": "apex-faqs",
+      "blocks": {
+        "item_Y76Jjj": {
+          "type": "item",
+          "settings": {
+            "faq_title": "Wie scharf sind die Messer wirklich?",
+            "faq_body": "<p>Unsere Messer besitzen eine extrem feine 12,5° V-Form und sind rasiermesserscharf. Selbst Tomaten oder Fleisch lassen sich mühelos schneiden – so, wie es Profiköche erwarten.</p>"
+          }
+        },
+        "item_J7jdRT": {
+          "type": "item",
+          "settings": {
+            "faq_title": "Welches Material wird für die Klingen verwendet?",
+            "faq_body": "<p>Wir nutzen mehrlagigen Damaststahl mit einem hochfesten Stahlkern. Das sorgt für maximale Härte, Langlebigkeit und eine einzigartige Maserung, die jedes Messer zum Unikat macht.</p>"
+          }
+        },
+        "item_V7NfBy": {
+          "type": "item",
+          "settings": {
+            "faq_title": "Wie lange bleiben die Messer scharf?",
+            "faq_body": "<p>Durch den hochwertigen Damaststahl bleibt die Schneide deutlich länger scharf als bei herkömmlichen Küchenmessern. Mit normaler Nutzung reicht ein leichtes Nachschärfen nur selten.</p>"
+          }
+        },
+        "item_Q9DGdb": {
+          "type": "item",
+          "settings": {
+            "faq_title": "Sind die Messer rostfrei?",
+            "faq_body": "<p>Ja. Unsere Messer sind korrosionsbeständig und rostfrei. Für die beste Pflege empfehlen wir allerdings das Spülen per Hand statt in der Spülmaschine.</p>"
+          }
+        },
+        "item_xpq4qN": {
+          "type": "item",
+          "settings": {
+            "faq_title": "Was macht Küchenkompane Messer besser als herkömmliche Messer?",
+            "faq_body": "<p>Unsere Messer kombinieren japanisch inspirierte Schärfe mit deutschem Qualitätsanspruch. Sie sind extrem scharf, hervorragend ausbalanciert und liegen angenehm in der Hand.</p>"
+          }
+        },
+        "item_XFGU6y": {
+          "type": "item",
+          "settings": {
+            "faq_title": "Welche Messer sind im Set enthalten?",
+            "faq_body": "<p>Je nach Setgröße (3-teilig, 5-teilig oder 7-teilig) enthält es die wichtigsten Küchenmesser, vom Kochmesser bis zum Gemüsemesser. Damit bist du für alle Schneidarbeiten bestens ausgerüstet.</p>"
+          }
+        },
+        "item_cDC8UT": {
+          "type": "item",
+          "settings": {
+            "faq_title": "Gibt es eine Geld-zurück-Garantie?",
+            "faq_body": "<p>Ja. Du kannst 100 Tage lang risikofrei testen. Solltest du nicht zufrieden sein, erhältst du dein Geld ohne Wenn und Aber zurück.</p>"
+          }
+        },
+        "item_PNKhQY": {
+          "type": "item",
+          "settings": {
+            "faq_title": "Wie lange dauert der Versand?",
+            "faq_body": "<p>In der Regel erreicht dich dein Paket innerhalb weniger Werktage. Zusätzlich bieten wir Expressoptionen an, falls es besonders schnell gehen soll.</p>"
+          }
+        },
+        "item_889zGP": {
+          "type": "item",
+          "settings": {
+            "faq_title": "Welche Zahlungsarten gibt es?",
+            "faq_body": "<p>Du kannst bequem per Kreditkarte, PayPal, Klarna oder Apple Pay bezahlen – sicher und flexibel.</p>"
+          }
+        },
+        "item_9JjGkE": {
+          "type": "item",
+          "settings": {
+            "faq_title": "Habe ich Garantie auf die Messer?",
+            "faq_body": "<p><br/>Ja. Wir bieten dir 2 Jahre volle Garantie auf alle Küchenkompane Messer.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "item_Y76Jjj",
+        "item_J7jdRT",
+        "item_V7NfBy",
+        "item_Q9DGdb",
+        "item_xpq4qN",
+        "item_XFGU6y",
+        "item_cDC8UT",
+        "item_PNKhQY",
+        "item_889zGP",
+        "item_9JjGkE"
+      ],
+      "settings": {
+        "color_scheme": "badge-hot",
+        "icon_color": "#000000",
+        "pt": 50,
+        "pb": 50,
+        "pt_mobile": 30,
+        "pb_mobile": 30,
+        "title": "FAQ - Häufige Fragen",
+        "heading_type": "mrk-h2",
+        "sub_title": "",
+        "sub_title_font_size": 20,
+        "faq_title_font_size": 18,
+        "faq_text_font_size": 16,
+        "alignment": "text-left"
+      }
+    },
+    "benefit_text_MCeGiV": {
+      "type": "benefit-text",
+      "blocks": {
+        "subtitle_8kbCAt": {
+          "type": "subtitle",
+          "settings": {
+            "subtitle": "Der Küchen-Trend 2025"
+          }
+        },
+        "title_KU4fTr": {
+          "type": "title",
+          "settings": {
+            "title": "Perfekte Schnitte in Sekunden"
+          }
+        },
+        "description_PBBAnQ": {
+          "type": "description",
+          "settings": {
+            "description": "Erlebe die nächste Stufe der Messerschärfe mit unserem Premium-Messerset. Jede Klinge ist auf Rasiermesserschärfe geprüft und sorgt für mühelose Präzision bei jedem Schnitt – egal ob Fleisch, Gemüse oder Brot."
+          }
+        }
+      },
+      "block_order": [
+        "subtitle_8kbCAt",
+        "title_KU4fTr",
+        "description_PBBAnQ"
+      ],
+      "settings": {
+        "color_scheme": "badge-hot",
+        "media_type": "image",
+        "image": "shopify://shop_images/IMG_6149_1_1.jpg",
+        "padding_top": 50,
+        "padding_bottom": 50,
+        "reverse": false,
+        "padding_top_mobile": 50,
+        "padding_bottom_mobile": 50,
+        "heading_type": "mrk-h2",
+        "sub_heading": "p-medium",
+        "des_size": "p-medium"
+      }
+    },
+    "benefit_text_right_AFHFhC": {
+      "type": "benefit-text-right",
+      "blocks": {
+        "subtitle_XPX87U": {
+          "type": "subtitle",
+          "settings": {
+            "subtitle": "Robust & langlebig"
+          }
+        },
+        "title_YwDaTz": {
+          "type": "title",
+          "settings": {
+            "title": "Hält jeder Herausforderung stand"
+          }
+        },
+        "description_j4ByyM": {
+          "type": "description",
+          "settings": {
+            "description": "Unsere Messer sind aus hochwertigem Stahl gefertigt und bleiben extrem scharf – ohne Absplittern oder Abnutzen. Die widerstandsfähige Klinge sorgt für jahrelange Höchstleistung in der Küche."
+          }
+        }
+      },
+      "block_order": [
+        "subtitle_XPX87U",
+        "title_YwDaTz",
+        "description_j4ByyM"
+      ],
+      "settings": {
+        "color_scheme": "badge-hot",
+        "media_type": "image",
+        "image": "shopify://shop_images/IMG_6143_1_1.jpg",
+        "padding_top": 50,
+        "padding_bottom": 50,
+        "reverse": true,
+        "padding_top_mobile": 30,
+        "padding_bottom_mobile": 50,
+        "heading_type": "mrk-h2",
+        "sub_heading": "p-medium",
+        "des_size": "p-medium"
+      }
+    },
+    "trustpilot_testimonials_YbXp3E": {
+      "type": "trustpilot-testimonials",
+      "blocks": {
+        "block_n66cBX": {
+          "type": "block",
+          "settings": {
+            "tes_title": "Sehr gute Qualität",
+            "tes_text": "Die Produkte sind auf der Website sehr gut fotografiert und beschrieben, ohne dabei zu viel zu versprechen. Die Ware kam zum vereinbarten Datum. Was bei mir ankam hat mich in zwei Punkten positiv überrascht:erstens die perfekte Qualität der Ware und zweitens die absolut maßgeschneiderte und robuste Verpackung.",
+            "user_name": "Fam. Lemke",
+            "date": "Vor 2 Stunden"
+          }
+        },
+        "block_Cjk3qr": {
+          "type": "block",
+          "settings": {
+            "tes_title": "Sehr Zufrieden",
+            "tes_text": "Das Messer weist eine optisch ansprechende und stabile Verarbeitung auf. Die Klinge ist außerordentlich scharf und durchtrennte den Spülschwamm mühelos beim Reinigen ohne großen Druck. Der Handgriff ist zudem gut dimensioniert. Insgesamt handelt es sich um ein äußerst ansprechendes Produkt.",
+            "user_name": "Lisa",
+            "date": "Vor 8 Stunden"
+          }
+        },
+        "block_ncTrUJ": {
+          "type": "block",
+          "settings": {
+            "tes_title": "Insgesamt sehr gute Messer",
+            "tes_text": "Insgesamt sehr gute Messer,\nmit einer Ausnahme, bei einem gab es ein kleines Qualitätsproblem. Aber da wurde sehr schnell und kundenorientiert reagiert!",
+            "user_name": "Jean",
+            "date": "Vor 19 Stunden"
+          }
+        },
+        "block_tk6TF7": {
+          "type": "block",
+          "settings": {
+            "tes_title": "8 teile Scharfmesser",
+            "tes_text": "8 teile Scharfmesser , Holzbrett und Steakmesser sind sehr zufrieden . Ordentliche Packung und schnelle Lieferung .",
+            "user_name": "Nicole Kunath",
+            "date": "Vor 25 Stunden"
+          }
+        },
+        "block_qCCEJY": {
+          "type": "block",
+          "settings": {
+            "tes_title": "Ich war skeptisch,ob die Qualität der…",
+            "tes_text": "Ich war skeptisch,ob die Qualität der Messer, im Vergleich zum Preis passen würde. Aber meine Frau war begeistert von der Qualität der Messer es waren alle Messer hervorragend geschärft und hochwertige Verpackt geliefert worden innerhalb von 5 Werktagen inkl.Einem Feiertag. Mittlerweile sind die Messer einen Monat in Gebrauch und immer noch sehr scharf .Wir würden das Messerset immer wieder kaufen. Ein hervorragendes Preis Leistungsverhältnis.",
+            "user_name": "Benrdt B.",
+            "date": "Vor 47 Stunden"
+          }
+        },
+        "block_AVgLTe": {
+          "type": "block",
+          "settings": {
+            "tes_title": "Gut, Schnell, Zuverlässig",
+            "tes_text": "Sehr gut, gesamte Bestellung hat die Erwartungen mehr als erfüllt. Probleme seitens DHL wurden sehr schnell von Küchen kompane gelöst.",
+            "user_name": "B.M.H.",
+            "date": "Vor 52 Stunden"
+          }
+        }
+      },
+      "block_order": [
+        "block_n66cBX",
+        "block_Cjk3qr",
+        "block_ncTrUJ",
+        "block_tk6TF7",
+        "block_qCCEJY",
+        "block_AVgLTe"
+      ],
+      "settings": {
+        "color_scheme": "badge-hot",
+        "content_color_scheme": "scheme-4e655027-1e2f-4337-9849-9e285e031119",
+        "mt": 50,
+        "mb": 30,
+        "mt_mobile": 20,
+        "mb_mobile": 20,
+        "title": "Vertraut von",
+        "title_highlight": "+140K Kunden",
+        "heading_type": "mrk-h2",
+        "h_text_color": "#fa8526",
+        "arrow_icon_color": "#000000"
+      }
+    },
+    "cta_final_9B8iN9": {
+      "type": "cta-final",
+      "blocks": {
+        "item_9JUQhz": {
+          "type": "Item",
+          "settings": {
+            "feature_item": "Umfassend getestet und auf höchste Qualität geprüft",
+            "svg_icon": "<img src=\"https://cdn.shopify.com/s/files/1/0018/5329/2643/files/thumb-up_16346369_1.png?v=1739744170\" alt=\"icon\">"
+          }
+        },
+        "item_NYUrjj": {
+          "type": "Item",
+          "settings": {
+            "feature_item": "Mit hochwertigen Materialien für maximale Langlebigkeit gefertigt",
+            "svg_icon": "<img src=\"https://cdn.shopify.com/s/files/1/0018/5329/2643/files/diamond_11883313_1.png?v=1739744170\" alt=\"icon\">"
+          }
+        },
+        "item_Prmf4W": {
+          "type": "Item",
+          "settings": {
+            "feature_item": "Mit Experten zusammen perfektioniert",
+            "svg_icon": "<img src=\"https://cdn.shopify.com/s/files/1/0018/5329/2643/files/setting_9552070_1.png?v=1739744170\" alt=\"icon\">"
+          }
+        }
+      },
+      "block_order": [
+        "item_9JUQhz",
+        "item_NYUrjj",
+        "item_Prmf4W"
+      ],
+      "custom_css": [
+        ".item-icon {display: inline-block; width: 30px; height: 28px;}",
+        "ul.health-feature img {width: 28px; height: 28px; object-fit: contain; border-radius: 0; line-height: 7;}"
+      ],
+      "settings": {
+        "color_scheme": "footer",
+        "subtitle": "Vielen Menschen haben uns als Gründer gefragt:",
+        "sub_heading": "p-medium",
+        "title": "“Warum gibt Küchenkompane eine Zufriedenheitsgarantie?”",
+        "heading_type": "mrk-h2",
+        "des": "Diese Frage haben uns schon viele gestellt. Die Antwort ist einfach: Wir sind zu 100 % überzeugt von unseren Produkten! Und das aus gutem Grund, denn unsere Produkte wurden:",
+        "des_size": "p-medium",
+        "img": "shopify://shop_images/chef-working-together-professional-kitchen.jpg",
+        "verticle_padding": 70,
+        "horizontal_padding": 0,
+        "border_t": false,
+        "border_b": false,
+        "button_style": "m-button--primary",
+        "button_size": "",
+        "item_color": "#0f0f0f",
+        "item_bg": "#f0f0f3",
+        "item_size": 16,
+        "backBtn": "Zum Produkt"
+      }
+    },
+    "17561480766d6cb0aa": {
+      "type": "apps",
+      "blocks": {
+        "loox_reviews_loox_dynamic_section_4wB63P": {
+          "type": "shopify://apps/loox-reviews/blocks/loox-dynamic-section/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
+          "settings": {
+            "reviews_to_display": "",
+            "default_tab": "automatic",
+            "only_photos": false,
+            "aggregated": false,
+            "limit": 20,
+            "hide_thumbnails": false,
+            "maxwidth": 1080,
+            "is_sample": true
+          }
+        }
+      },
+      "block_order": [
+        "loox_reviews_loox_dynamic_section_4wB63P"
+      ],
+      "settings": {
+        "heading": "",
+        "heading_size": "h3",
+        "subheading": "",
+        "header_alignment": "center",
+        "container": "container",
+        "background_color": "",
+        "padding_top": 50,
+        "padding_bottom": 50,
+        "padding_top_mobile": 30,
+        "padding_bottom_mobile": 30,
+        "custom_class": ""
+      }
+    },
+    "benefit_list_gif_iJWmYF": {
+      "type": "benefit-list-gif",
+      "blocks": {
+        "heading_tWq74p": {
+          "type": "heading",
+          "settings": {
+            "title_style": "Beautiful",
+            "title": "BENEFITS"
+          }
+        },
+        "content_nQLTqP": {
+          "type": "content",
+          "settings": {
+            "rich_text": "<p><strong>Suitable for your skin color</strong></p><p>The Changing Foundation seamlessly adapts to your unique skin tone upon application. Designed for fair to medium skin tones, it provides perfect, natural coverage that enhances your complexion.<br/></p><p><strong>Hides imperfections for a natural look</strong></p><p>This lightweight foundation effectively conceals redness and imperfections, allowing your natural beauty to shine through. Experience a radiant glow like never before.</p><p><strong>Create the best result with a brush</strong></p><p>For optimal results, apply the foundation with a brush. This technique ensures that the pigments penetrate deeply into the skin, preventing any white cast for a flawless finish.</p><p><strong>Radiant and even skin all day long</strong></p><p>The Changing Foundation offers long-lasting wear, staying in place for up to 16 hours. With its natural, radiant finish, you can start each day looking and feeling your best.</p><p><strong>No clogged pores</strong></p><p>The Changing Foundation feels light on the skin. Its moisturizing and nourishing ingredients help maintain a fresh appearance without clogging pores, making it ideal for everyday wear.</p>",
+            "video": "shopify://files/videos/216b022817724c84aa85fa2280a076e5.HD-1080p-2.5Mbps-39479780.mp4"
+          }
+        }
+      },
+      "block_order": [
+        "heading_tWq74p",
+        "content_nQLTqP"
+      ],
+      "disabled": true,
+      "settings": {
+        "background_color": "#f6f0e6",
+        "padding_top": 100,
+        "padding_bottom": 100,
+        "padding_top_mobile": 40,
+        "padding_bottom_mobile": 40,
+        "title_color": "#1e1e1e",
+        "title_size": 40,
+        "content_color": "#1e1e1e",
+        "content_size": 15
+      }
+    },
+    "1741277473f9b1112d": {
+      "type": "apps",
+      "blocks": {
+        "loox_reviews_loox_dynamic_section_9tFX78": {
+          "type": "shopify://apps/loox-reviews/blocks/loox-dynamic-section/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
+          "settings": {
+            "reviews_to_display": "",
+            "default_tab": "automatic",
+            "only_photos": false,
+            "aggregated": false,
+            "limit": 20,
+            "hide_thumbnails": false,
+            "maxwidth": 1080,
+            "is_sample": true
+          }
+        }
+      },
+      "block_order": [
+        "loox_reviews_loox_dynamic_section_9tFX78"
+      ],
+      "disabled": true,
+      "settings": {
+        "heading": "",
+        "heading_size": "h3",
+        "subheading": "",
+        "header_alignment": "center",
+        "container": "container",
+        "background_color": "",
+        "padding_top": 50,
+        "padding_bottom": 50,
+        "padding_top_mobile": 30,
+        "padding_bottom_mobile": 30,
+        "custom_class": ""
+      }
+    },
+    "store_benefits_bottom_NPnyUL": {
+      "type": "store-benefits-bottom",
+      "blocks": {
+        "item_96wqwW": {
+          "type": "item",
+          "settings": {
+            "icon": "icon1",
+            "svg-code": "",
+            "store_benefit_text": "Schneller Versand"
+          }
+        },
+        "item_6LarDz": {
+          "type": "item",
+          "settings": {
+            "icon": "icon2",
+            "svg-code": "",
+            "store_benefit_text": "Kostenloser Versand ab 100€"
+          }
+        },
+        "item_AXkcTt": {
+          "type": "item",
+          "settings": {
+            "icon": "icon3",
+            "svg-code": "",
+            "store_benefit_text": "30 Tage Geld-Zurück-Garantie"
+          }
+        },
+        "item_h3KX9m": {
+          "type": "item",
+          "settings": {
+            "icon": "icon4",
+            "svg-code": "",
+            "store_benefit_text": "100% SICHERE ZAHLUNG"
+          }
+        },
+        "item_MzPUFH": {
+          "type": "item",
+          "settings": {
+            "icon": "icon5",
+            "svg-code": "",
+            "store_benefit_text": "2 JAHRE GARANTIE"
+          }
+        }
+      },
+      "block_order": [
+        "item_96wqwW",
+        "item_6LarDz",
+        "item_AXkcTt",
+        "item_h3KX9m",
+        "item_MzPUFH"
+      ],
+      "settings": {
+        "color_scheme": "",
+        "icon_color": "#000000",
+        "pt": 30,
+        "pb": 30,
+        "font_size": 14,
+        "ptm": 30,
+        "pbm": 30
+      }
+    }
+  },
+  "order": [
+    "apex_timer_9Rjc9m",
+    "main",
+    "apex_theme_product_page_copy_bfPEWH",
+    "pdp_v1_feature_46AkPR",
+    "floow_comparison_table_with_image_UjebmD",
+    "pdp_v1_image_slide_7M4DFc",
+    "pdp_v1_image_text_dKF9QP",
+    "pdp_v1_image_text_mQUw6t",
+    "pdp_v1_video_cVzt66",
+    "product-details-tabs",
+    "ugc_video_testimonial_D4kJ9X",
+    "logo_greyed_out_FMbnW7",
+    "scrolling_promotion_UKXeX3",
+    "feature_highlight_ktLbnH",
+    "product_explanation_video_xNFp3M",
+    "us_vs_them_8Tbqki",
+    "apex_faqs_jx7hp6",
+    "benefit_text_MCeGiV",
+    "benefit_text_right_AFHFhC",
+    "trustpilot_testimonials_YbXp3E",
+    "cta_final_9B8iN9",
+    "17561480766d6cb0aa",
+    "benefit_list_gif_iJWmYF",
+    "1741277473f9b1112d",
+    "store_benefits_bottom_NPnyUL"
+  ]
+}

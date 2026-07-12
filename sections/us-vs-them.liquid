@@ -1,0 +1,188 @@
+{{ 'apex-theme.css' | asset_url | stylesheet_tag }}
+{%- style -%}
+     .us-vs-them{
+     padding-top: {{- section.settings.padding_top -}}px;
+     padding-bottom: {{- section.settings.padding_bottom -}}px;
+  }
+  @media only screen and (max-width: 768px) {
+   .us-vs-them{
+     padding-top: {{- section.settings.padding_top_mobile -}}px ;
+     padding-bottom: {{- section.settings.padding_bottom_mobile -}}px ;
+  }
+  }
+{%- endstyle -%}
+
+<div class="us-vs-them m-color-{{ section.settings.color_scheme }}">
+  <div class="us-them-row">
+    <div class="us-them-content">
+      <div class="content-box">
+        {% for block in section.blocks %}
+          {% case block.type %}
+            {% when 'title' %}
+              <h2
+                class="us-them-title {{ section.settings.heading_type }}"
+              >
+                {{ block.settings.title }}
+              </h2>
+            {% when 'description' %}
+              <div
+                class="us-them-description {{ section.settings.des_size}}"
+              >
+                {{ block.settings.description }}
+              </div>
+          {% endcase %}
+        {% endfor %}
+      </div>
+    </div>
+    {% if section.settings.img != blank %}
+      <div class="us-them-img">
+        <img src="{{ section.settings.img | img_url: 'master' }}" width="1000" height="500" alt="image">
+      </div>
+    {% endif %}
+  </div>
+</div>
+{% schema %}
+{
+  "name": "APEX US vs Them",
+  "settings": [
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "Color scheme"
+    },
+    {
+      "type": "image_picker",
+      "id": "img",
+      "label": "Image"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "label": "Padding Top",
+      "default": 50
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "label": "Padding Bottom",
+      "default": 50
+    },
+    {
+      "type": "range",
+      "id": "padding_top_mobile",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "label": "Padding Top (Mobile)",
+      "default": 50
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom_mobile",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "label": "Padding Bottom (Mobile)",
+      "default": 50
+    },
+    {
+      "type": "select",
+      "id": "heading_type",
+      "label": "Choose Heading Size",
+      "options": [
+        {
+          "value": "mrk-h1",
+          "label": "H1"
+        },
+        {
+          "value": "mrk-h2",
+          "label": "H2"
+        },
+        {
+          "value": "mrk-h3",
+          "label": "H3"
+        },
+        {
+          "value": "mrk-h4",
+          "label": "H4"
+        },
+        {
+          "value": "mrk-h5",
+          "label": "H5"
+        },
+        {
+          "value": "mrk-h6",
+          "label": "H6"
+        }
+      ],
+      "default": "mrk-h1"
+    },
+    {
+      "type": "header",
+      "content": "Select Decription size"
+    },
+    {
+      "type": "select",
+      "id": "des_size",
+      "label": "Decription size",
+      "default": "p-medium",
+      "options": [
+        { "value": "p-xl", "label": "Extra Large" },
+        { "value": "p-large", "label": "Large" },
+        { "value": "p-medium", "label": "Medium" },
+        { "value": "p-small", "label": "Small" },
+        { "value": "p-x-small", "label": "Extra Small" }
+      ]
+    }
+  ],
+  "blocks": [
+    {
+      "type": "title",
+      "name": "Title",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title",
+          "default": "Kraftstein® vs. Others"
+        }
+      ]
+    },
+    {
+      "type": "description",
+      "name": "Description",
+      "settings": [
+        {
+          "type": "richtext",
+          "id": "description",
+          "label": "Quotation Text",
+          "default": "<p>Our comparison graphic shows why Kraftstein knives are the best choice. With extremely sharp blades, high-quality steel and ergonomic handles, they offer the highest quality and comfort.</p>"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "APEX US vs Them",
+      "blocks": [
+        {
+          "type": "title"
+        },
+        {
+          "type": "description"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
