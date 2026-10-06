@@ -22,126 +22,14 @@
     "halloween_banner_8LYxRi": {
       "type": "halloween-banner",
       "blocks": {
-        "page_specific_9XyMpR": {
+        "page_specific_nMceU8": {
           "type": "page_specific",
           "settings": {
-            "collection": "lagerumzug",
+            "collection": "geburtstag",
             "product": "",
             "page": "",
-            "ann_title": "LAGERUMZUG LÄUFT",
-            "text": "<p><strong>EINMALIG</strong> <strong>BIS ZU 80 % RABATT</strong></p>",
-            "show_button": false,
-            "button_position": "right_side",
-            "btn_text": "Shop Now",
-            "btn_link": ""
-          }
-        },
-        "page_specific_VXDEra": {
-          "type": "page_specific",
-          "settings": {
-            "collection": "",
-            "product": "",
-            "page": "sortimentswechsel-v2",
-            "ann_title": "Keine Nachproduktion",
-            "text": "<p><strong>Bis zu -75% Rabatt | Sortimentswechsel</strong></p>",
-            "show_button": false,
-            "button_position": "right_side",
-            "btn_text": "Shop Now",
-            "btn_link": ""
-          }
-        },
-        "page_specific_FweaPY": {
-          "type": "page_specific",
-          "settings": {
-            "collection": "sortimentswechsel",
-            "product": "",
-            "page": "",
-            "ann_title": "Keine Nachproduktion",
-            "text": "<p><strong>Bis zu -75% Rabatt | Sortimentswechsel</strong></p>",
-            "show_button": false,
-            "button_position": "right_side",
-            "btn_text": "Shop Now",
-            "btn_link": ""
-          }
-        },
-        "page_specific_dXQq6G": {
-          "type": "page_specific",
-          "settings": {
-            "collection": "sortimentswechsel-kopie",
-            "product": "",
-            "page": "",
-            "ann_title": "DEIN LOS WARTET",
-            "text": "<p><strong> –75% + Chance auf den Hauptgewinn<br/></strong></p>",
-            "show_button": false,
-            "button_position": "right_side",
-            "btn_text": "Shop Now",
-            "btn_link": ""
-          }
-        },
-        "page_specific_NaB9HL": {
-          "type": "page_specific",
-          "settings": {
-            "collection": "",
-            "product": "",
-            "page": "",
-            "ann_title": "Special Collection Offer",
-            "text": "<p>Exclusive deals only for this collection!</p>",
-            "show_button": true,
-            "button_position": "right_side",
-            "btn_text": "Shop Now",
-            "btn_link": ""
-          }
-        },
-        "page_specific_bzgtD6": {
-          "type": "page_specific",
-          "settings": {
-            "collection": "",
-            "product": "",
-            "page": "",
-            "ann_title": "RÄUMUNGS-AKTION",
-            "text": "<p><strong>BIS ZU -80% RABATT</strong></p>",
-            "show_button": false,
-            "button_position": "right_side",
-            "btn_text": "Shop Now",
-            "btn_link": ""
-          }
-        },
-        "page_specific_6LAKFf": {
-          "type": "page_specific",
-          "settings": {
-            "collection": "b-ware",
-            "product": "",
-            "page": "",
-            "ann_title": "B-WARE SALE",
-            "text": "<p><strong> 80% auf Alles!</strong></p>",
-            "show_button": false,
-            "button_position": "right_side",
-            "btn_text": "Shop Now",
-            "btn_link": ""
-          }
-        },
-        "page_specific_KGdC3p": {
-          "type": "page_specific",
-          "settings": {
-            "collection": "",
-            "product": "",
-            "page": "",
-            "ann_title": "Special Collection Offer",
-            "text": "<p>Exclusive deals only for this collection!</p>",
-            "show_button": true,
-            "button_position": "right_side",
-            "btn_text": "Shop Now",
-            "btn_link": ""
-          }
-        },
-        "page_specific_W7946U": {
-          "type": "page_specific",
-          "settings": {
-            "collection": "gratis-taschenmesser-1",
-            "product": "",
-            "page": "",
-            "ann_title": "Gratis Damast Taschenmesser",
-            "text": "<p><strong>100 Tage testen • Bis zu 70% Rabatt</strong></p>",
+            "ann_title": "GEBURTSTAGSBONUS",
+            "text": "<p><strong> 80% Rabatt + 20% EXKLUSIV</strong></p>",
             "show_button": false,
             "button_position": "right_side",
             "btn_text": "Shop Now",
@@ -164,15 +52,7 @@
         }
       },
       "block_order": [
-        "page_specific_9XyMpR",
-        "page_specific_VXDEra",
-        "page_specific_FweaPY",
-        "page_specific_dXQq6G",
-        "page_specific_NaB9HL",
-        "page_specific_bzgtD6",
-        "page_specific_6LAKFf",
-        "page_specific_KGdC3p",
-        "page_specific_W7946U",
+        "page_specific_nMceU8",
         "page_specific_UcrQYx"
       ],
       "name": "APEX Black Friday announcement",

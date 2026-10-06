@@ -1,0 +1,593 @@
+<div class="container widerruf-page">
+  <div class="widerruf-page__inner">
+    <header class="widerruf-page__header">
+      <span class="widerruf-page__eyebrow">Einfach, sicher und nachvollziehbar</span>
+      <h1>{{ section.settings.heading }}</h1>
+      <p class="widerruf-page__intro">{{ section.settings.intro_text }}</p>
+      <div class="widerruf-page__steps" aria-label="Ablauf">
+        <span><b>1</b> Angaben eintragen</span>
+        <span><b>2</b> Widerruf absenden</span>
+        <span><b>3</b> Eingang bestätigen lassen</span>
+      </div>
+    </header>
+
+    {%- if page.content != blank -%}
+      <div class="rte">{{ page.content }}</div>
+    {%- endif -%}
+
+    {%- form 'contact', id: 'widerruf-form', class: 'widerruf-form' -%}
+      {%- if form.posted_successfully? -%}
+        <div class="widerruf-form__success" role="status" aria-live="polite">
+          <span class="widerruf-form__success-icon" aria-hidden="true">✓</span>
+          <strong>{{ section.settings.success_heading }}</strong>
+          <p>{{ section.settings.success_text }}</p>
+          <p class="widerruf-form__timestamp">
+            Eingang registriert: {{ 'now' | date: '%d.%m.%Y, %H:%M Uhr' }} (Zeitzone Shop). Bitte bewahre diese Seite
+            oder einen Screenshot als Nachweis auf – du erhältst zusätzlich eine Bestätigung per E-Mail.
+          </p>
+          <p class="widerruf-form__delivery-status" data-klaviyo-status hidden></p>
+        </div>
+      {%- else -%}
+        {%- if form.errors -%}
+          <div class="widerruf-form__errors" role="alert">
+            {{ form.errors | default_errors }}
+          </div>
+        {%- endif -%}
+
+        <input type="hidden" name="contact[Betreff]" value="WIDERRUF – Ausübung des Widerrufsrechts">
+
+        <div class="widerruf-form__statement">
+          <span>Deine Widerrufserklärung</span>
+          <strong>{{ section.settings.statement_text }}</strong>
+        </div>
+
+        {%- if customer -%}
+          {%- liquid
+            comment
+              Nur Bestellungen der letzten 14 Tage anbieten (Widerrufsfenster).
+            endcomment
+            assign now_s = 'now' | date: '%s' | plus: 0
+            assign cutoff_s = now_s | minus: 1209600
+          -%}
+          {%- paginate customer.orders by 20 -%}
+            {%- assign fresh_count = 0 -%}
+            {%- for order in customer.orders -%}
+              {%- assign order_s = order.created_at | date: '%s' | plus: 0 -%}
+              {%- if order_s >= cutoff_s -%}{%- assign fresh_count = fresh_count | plus: 1 -%}{%- endif -%}
+            {%- endfor -%}
+            {%- if fresh_count > 0 -%}
+              <div class="widerruf-form__field widerruf-form__orderpicker">
+                <label class="label" for="widerruf-order-select">Bestellung auswählen (optional, letzte 14 Tage)</label>
+                <select id="widerruf-order-select">
+                  <option value="">– Bestellung wählen oder unten manuell eintragen –</option>
+                  {%- assign fresh_idx = -1 -%}
+                  {%- for order in customer.orders -%}
+                    {%- assign order_s = order.created_at | date: '%s' | plus: 0 -%}
+                    {%- if order_s >= cutoff_s -%}
+                      {%- assign fresh_idx = fresh_idx | plus: 1 -%}
+                      <option value="{{ fresh_idx }}">
+                        {{ order.name }} vom {{ order.created_at | date: '%d.%m.%Y' }}
+                      </option>
+                    {%- endif -%}
+                  {%- endfor -%}
+                </select>
+                <div class="widerruf-form__items" id="widerruf-items-picker" hidden>
+                  <span class="label">Betroffene Artikel ankreuzen (nichts angekreuzt = gesamte Bestellung)</span>
+                  <div class="widerruf-form__items-list"></div>
+                </div>
+                <script type="application/json" id="widerruf-orders-data">
+                  [
+                    {%- assign fresh_idx = -1 -%}
+                    {%- for order in customer.orders -%}
+                      {%- assign order_s = order.created_at | date: '%s' | plus: 0 -%}
+                      {%- if order_s >= cutoff_s -%}
+                        {%- assign fresh_idx = fresh_idx | plus: 1 -%}
+                        {%- if fresh_idx > 0 -%},{%- endif -%}
+                        {
+                          "name": {{ order.name | json }},
+                          "datum": {{ order.created_at | date: '%d.%m.%Y' | json }},
+                          "artikel": [
+                            {%- for line in order.line_items -%}
+                              {%- capture line_label -%}{{ line.quantity }}x {{ line.title }}{%- endcapture -%}
+                              {{ line_label | json }}{% unless forloop.last %},{% endunless %}
+                            {%- endfor -%}
+                          ]
+                        }
+                      {%- endif -%}
+                    {%- endfor -%}
+                  ]
+                </script>
+              </div>
+            {%- endif -%}
+          {%- endpaginate -%}
+        {%- else -%}
+          <div class="widerruf-form__login-box">
+            <strong>Bestellung automatisch ausfüllen?</strong>
+            <span
+              >Bestätige kurz deine E-Mail-Adresse mit einem Code &ndash; kein Passwort erforderlich. Danach kannst du
+              deine Bestellung und die betroffenen Artikel einfach anklicken.</span
+            >
+            <a class="btn widerruf-form__login-btn" href="{{ routes.storefront_login_url }}"
+              >Bestellung auswählen (mit E-Mail-Code)</a
+            >
+            <span class="widerruf-form__login-alt">Oder fülle das Formular einfach von Hand aus:</span>
+          </div>
+        {%- endif -%}
+
+        <div class="widerruf-form__grid">
+          <div class="widerruf-form__field">
+            <label class="label" for="widerruf-name">Vor- und Nachname *</label>
+            <input
+              type="text"
+              id="widerruf-name"
+              name="contact[Name]"
+              required
+              autocomplete="name"
+              value="{% if customer %}{{ customer.name | escape }}{% endif %}"
+            >
+          </div>
+          <div class="widerruf-form__field">
+            <label class="label" for="widerruf-email">E-Mail-Adresse *</label>
+            <input
+              type="email"
+              id="widerruf-email"
+              name="contact[email]"
+              required
+              autocomplete="email"
+              value="{% if customer %}{{ customer.email | escape }}{% endif %}"
+            >
+          </div>
+          <div class="widerruf-form__field">
+            <label class="label" for="widerruf-order">Bestellnummer *</label>
+            <input type="text" id="widerruf-order" name="contact[Bestellnummer]" required placeholder="z.B. #12345">
+          </div>
+          <div class="widerruf-form__field">
+            <label class="label" for="widerruf-date">Bestell-/Lieferdatum</label>
+            <input type="text" id="widerruf-date" name="contact[Bestelldatum]" placeholder="z.B. 01.07.2026">
+          </div>
+          <div class="widerruf-form__field widerruf-form__field--full">
+            <label class="label" for="widerruf-items"
+              >Betroffene Artikel (optional – ohne Angabe gilt der Widerruf für die gesamte Bestellung)</label
+            >
+            <textarea id="widerruf-items" name="contact[Artikel]" rows="3"></textarea>
+          </div>
+        </div>
+
+        <button type="submit" class="btn btn--large widerruf-form__submit">
+          <span>Jetzt widerrufen</span>
+          <span aria-hidden="true">→</span>
+        </button>
+
+        <p class="widerruf-form__note">{{ section.settings.confirmation_note }}</p>
+      {%- endif -%}
+    {%- endform -%}
+  </div>
+</div>
+
+<script>
+  (function () {
+    var select = document.getElementById('widerruf-order-select');
+    var dataEl = document.getElementById('widerruf-orders-data');
+    if (!select || !dataEl) return;
+    var orders;
+    try {
+      orders = JSON.parse(dataEl.textContent);
+    } catch (e) {
+      return;
+    }
+    var picker = document.getElementById('widerruf-items-picker');
+    var list = picker.querySelector('.widerruf-form__items-list');
+    var orderInput = document.getElementById('widerruf-order');
+    var dateInput = document.getElementById('widerruf-date');
+    var itemsArea = document.getElementById('widerruf-items');
+
+    function syncItems() {
+      var checked = Array.prototype.slice.call(list.querySelectorAll('input:checked')).map(function (c) {
+        return c.value;
+      });
+      itemsArea.value = checked.join('\n');
+    }
+
+    select.addEventListener('change', function () {
+      list.innerHTML = '';
+      if (select.value === '') {
+        picker.hidden = true;
+        orderInput.value = '';
+        dateInput.value = '';
+        itemsArea.value = '';
+        return;
+      }
+      var order = orders[parseInt(select.value, 10)];
+      if (!order) return;
+      orderInput.value = order.name;
+      dateInput.value = order.datum;
+      itemsArea.value = '';
+      order.artikel.forEach(function (a, i) {
+        var id = 'widerruf-item-' + i;
+        var label = document.createElement('label');
+        label.className = 'widerruf-form__item';
+        label.htmlFor = id;
+        var cb = document.createElement('input');
+        cb.type = 'checkbox';
+        cb.id = id;
+        cb.value = a;
+        cb.addEventListener('change', syncItems);
+        var span = document.createElement('span');
+        span.textContent = a;
+        label.appendChild(cb);
+        label.appendChild(span);
+        list.appendChild(label);
+      });
+      picker.hidden = false;
+    });
+  })();
+</script>
+
+<script>
+  (function () {
+    var KLAVIYO_COMPANY_ID = {{ section.settings.klaviyo_company_id | json }};
+    var METRIC = 'Widerruf eingereicht';
+    var STORE_KEY = 'widerruf-pending';
+
+    function eventId() {
+      if (window.crypto && typeof window.crypto.randomUUID === 'function') return window.crypto.randomUUID();
+      return Date.now().toString(36) + '-' + Math.random().toString(36).slice(2);
+    }
+
+    var form = document.getElementById('widerruf-form');
+    if (form && form.querySelector('input[name="contact[email]"]')) {
+      form.addEventListener('submit', function () {
+        try {
+          var data = {
+            email: (form.querySelector('input[name="contact[email]"]') || {}).value || '',
+            name: (form.querySelector('input[name="contact[Name]"]') || {}).value || '',
+            bestellnummer: (form.querySelector('input[name="contact[Bestellnummer]"]') || {}).value || '',
+            bestelldatum: (form.querySelector('input[name="contact[Bestelldatum]"]') || {}).value || '',
+            artikel: (form.querySelector('textarea[name="contact[Artikel]"]') || {}).value || '',
+            eingangszeitpunkt: new Date().toISOString(),
+            unique_id: eventId()
+          };
+          sessionStorage.setItem(STORE_KEY, JSON.stringify(data));
+        } catch (e) {}
+      });
+    }
+
+    var success = document.querySelector('.widerruf-form__success');
+    if (!success) return;
+    if (!KLAVIYO_COMPANY_ID) return;
+    var raw = null;
+    try { raw = sessionStorage.getItem(STORE_KEY); } catch (e) {}
+    if (!raw) return;
+    var d;
+    try { d = JSON.parse(raw); } catch (e) { return; }
+    if (!d.email) return;
+
+    var deliveryStatus = document.querySelector('[data-klaviyo-status]');
+    fetch('https://a.klaviyo.com/client/events/?company_id=' + encodeURIComponent(KLAVIYO_COMPANY_ID), {
+      method: 'POST',
+      keepalive: true,
+      headers: {
+        'Accept': 'application/vnd.api+json',
+        'Content-Type': 'application/vnd.api+json',
+        'revision': '2026-04-15'
+      },
+      body: JSON.stringify({
+        data: {
+          type: 'event',
+          attributes: {
+            properties: {
+              Name: d.name,
+              Bestellnummer: d.bestellnummer,
+              Bestelldatum: d.bestelldatum,
+              BetroffeneArtikel: d.artikel,
+              Eingangszeitpunkt: d.eingangszeitpunkt,
+              Quelle: 'widerruf-formular'
+            },
+            metric: { data: { type: 'metric', attributes: { name: METRIC } } },
+            profile: { data: { type: 'profile', attributes: { email: d.email } } },
+            time: d.eingangszeitpunkt,
+            unique_id: d.unique_id
+          }
+        }
+      })
+    }).then(function (response) {
+      if (!response.ok) throw new Error('Klaviyo event rejected');
+      try { sessionStorage.removeItem(STORE_KEY); } catch (e) {}
+      if (deliveryStatus) {
+        deliveryStatus.textContent = 'Die zusätzliche Eingangsbestätigung wurde angefordert.';
+        deliveryStatus.hidden = false;
+      }
+    }).catch(function () {
+      if (deliveryStatus) {
+        deliveryStatus.textContent = 'Dein Widerruf ist eingegangen. Die zusätzliche E-Mail-Bestätigung konnte gerade nicht automatisch angefordert werden.';
+        deliveryStatus.hidden = false;
+      }
+    });
+  })();
+</script>
+
+{% stylesheet %}
+  .widerruf-page__inner {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: clamp(36px, 6vw, 80px) 0 clamp(56px, 8vw, 104px);
+  }
+  .widerruf-page__header {
+    max-width: 720px;
+    margin: 0 auto 34px;
+    text-align: center;
+  }
+  .widerruf-page__eyebrow {
+    display: inline-flex;
+    margin-bottom: 14px;
+    padding: 7px 13px;
+    border-radius: 999px;
+    background: #eef3ec;
+    color: #36523a;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+  .widerruf-page__header h1 {
+    margin: 0;
+    font-size: clamp(2.1rem, 5vw, 3.6rem);
+    line-height: 1.05;
+    letter-spacing: -0.035em;
+  }
+  .widerruf-page__intro {
+    max-width: 620px;
+    margin: 18px auto 0;
+    color: #5f665f;
+    font-size: clamp(1rem, 2vw, 1.125rem);
+    line-height: 1.65;
+  }
+  .widerruf-page__steps {
+    display: flex;
+    justify-content: center;
+    gap: 12px 22px;
+    margin-top: 26px;
+    color: #455047;
+    font-size: 0.8125rem;
+    font-weight: 600;
+  }
+  .widerruf-page__steps span {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .widerruf-page__steps b {
+    display: grid;
+    width: 26px;
+    height: 26px;
+    place-items: center;
+    border: 1px solid #cbd7c8;
+    border-radius: 50%;
+    background: #fff;
+    color: #36523a;
+    font-size: 0.75rem;
+  }
+  .widerruf-form {
+    padding: clamp(24px, 5vw, 48px);
+    border: 1px solid #dfe3dc;
+    border-radius: 22px;
+    background: #fff;
+    box-shadow: 0 22px 60px rgb(32 47 34 / 0.09);
+  }
+  .widerruf-form__statement {
+    display: grid;
+    gap: 6px;
+    margin: 0 0 26px;
+    padding: 18px 20px;
+    border: 1px solid #d9e2d6;
+    border-radius: 14px;
+    background: #f5f8f3;
+    line-height: 1.55;
+  }
+  .widerruf-form__statement span {
+    color: #59705c;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+  .widerruf-form__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+  }
+  @media (max-width: 599.98px) {
+    .widerruf-form__grid { grid-template-columns: 1fr; }
+    .widerruf-page__steps { align-items: flex-start; flex-direction: column; }
+    .widerruf-page__header { text-align: left; }
+    .widerruf-page__intro { margin-left: 0; }
+    .widerruf-form { border-radius: 16px; }
+  }
+  .widerruf-form__field--full { grid-column: 1 / -1; }
+  .widerruf-form__field .label { display: block; margin-bottom: 7px; font-size: 0.875rem; font-weight: 650; }
+  .widerruf-form__field input,
+  .widerruf-form__field textarea,
+  .widerruf-form__orderpicker select {
+    width: 100%;
+    min-height: 48px;
+    padding: 12px 14px;
+    border: 1px solid #cfd5cd;
+    border-radius: 10px;
+    background: #fff;
+    font-family: inherit;
+    font-size: 1rem;
+    transition: border-color 160ms ease, box-shadow 160ms ease;
+  }
+  .widerruf-form__field input:focus,
+  .widerruf-form__field textarea:focus,
+  .widerruf-form__orderpicker select:focus {
+    border-color: #36523a;
+    box-shadow: 0 0 0 3px rgb(54 82 58 / 0.13);
+    outline: 0;
+  }
+  .widerruf-form__submit {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 54px;
+    margin-top: 22px;
+    padding-inline: 22px;
+    width: 100%;
+    border: 1px solid #36523a;
+    border-radius: 12px;
+    background: #36523a;
+    color: #fff;
+    font-weight: 750;
+    transition: transform 160ms ease, box-shadow 160ms ease;
+  }
+  .widerruf-form__submit:hover {
+    box-shadow: 0 10px 24px rgb(32 47 34 / 0.18);
+    transform: translateY(-1px);
+  }
+  .widerruf-form__note {
+    margin-top: 14px;
+    font-size: 0.8125rem;
+    color: rgb(var(--text-color) / 0.65);
+    line-height: 1.55;
+  }
+  .widerruf-form__success {
+    padding: 28px;
+    background: #f1f8ef;
+    border: 1px solid #bdd9b8;
+    border-radius: 16px;
+    line-height: 1.55;
+  }
+  .widerruf-form__success-icon {
+    display: grid;
+    width: 42px;
+    height: 42px;
+    place-items: center;
+    margin-bottom: 16px;
+    border-radius: 50%;
+    background: #36523a;
+    color: #fff;
+    font-size: 1.25rem;
+  }
+  .widerruf-form__success strong { display: block; font-size: 1.25rem; }
+  .widerruf-form__delivery-status { margin-bottom: 0; font-weight: 650; }
+  .widerruf-form__errors {
+    margin: 16px 0;
+    padding: 12px 16px;
+    border: 1px solid #B4441F;
+    border-radius: 8px;
+    color: #B4441F;
+  }
+  .widerruf-form__orderpicker {
+    margin-bottom: 18px;
+  }
+  .widerruf-form__items {
+    margin-top: 12px;
+    padding: 12px 14px;
+    border: 1px solid rgb(var(--text-color) / 0.12);
+    border-radius: 8px;
+    background: rgb(var(--text-color) / 0.03);
+  }
+  .widerruf-form__items-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 8px;
+  }
+  .widerruf-form__item {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    font-size: 0.9375rem;
+    line-height: 1.4;
+    cursor: pointer;
+  }
+  .widerruf-form__item input {
+    width: auto;
+    margin-top: 2px;
+    flex-shrink: 0;
+  }
+  .widerruf-form__login-hint {
+    margin: 0 0 18px;
+    font-size: 0.875rem;
+    color: rgb(var(--text-color) / 0.7);
+  }
+  .widerruf-form__login-hint a {
+    text-decoration: underline;
+  }
+  .widerruf-form__login-box {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin: 0 0 22px;
+    padding: 16px 18px;
+    background: #fbf6ed;
+    border: 1px solid #eadbc4;
+    border-radius: 14px;
+    font-size: 0.9375rem;
+    line-height: 1.5;
+  }
+  .widerruf-form__login-btn {
+    align-self: flex-start;
+    margin-top: 4px;
+    border: 1px solid #36523a;
+    border-radius: 10px;
+    background: #36523a;
+    color: #fff;
+  }
+  .widerruf-form__login-alt {
+    margin-top: 6px;
+    font-size: 0.8125rem;
+    color: rgb(var(--text-color) / 0.65);
+  }
+{% endstylesheet %}
+
+{% schema %}
+{
+  "name": "Widerrufsfunktion",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Überschrift",
+      "default": "Vertrag widerrufen"
+    },
+    {
+      "type": "textarea",
+      "id": "intro_text",
+      "label": "Einleitung",
+      "default": "Reiche deinen Widerruf direkt online ein. Nach erfolgreicher Übermittlung erhältst du sofort einen Nachweis und zusätzlich eine Bestätigung per E-Mail."
+    },
+    {
+      "type": "textarea",
+      "id": "statement_text",
+      "label": "Widerrufserklärung",
+      "default": "Hiermit widerrufe ich den von mir abgeschlossenen Vertrag über den Kauf der folgenden Waren."
+    },
+    {
+      "type": "text",
+      "id": "success_heading",
+      "label": "Erfolgsmeldung Titel",
+      "default": "Dein Widerruf ist bei uns eingegangen."
+    },
+    {
+      "type": "textarea",
+      "id": "success_text",
+      "label": "Erfolgsmeldung Text",
+      "default": "Wir bestätigen dir den Eingang deiner Widerrufserklärung unverzüglich zusätzlich per E-Mail. Datum des Eingangs ist der heutige Tag."
+    },
+    {
+      "type": "textarea",
+      "id": "confirmation_note",
+      "label": "Hinweis unter dem Button",
+      "default": "Nach dem Absenden erhältst du von uns unverzüglich eine Eingangsbestätigung per E-Mail (inkl. Datum und Uhrzeit des Eingangs). Zur Fristwahrung genügt die rechtzeitige Absendung des Widerrufs."
+    },
+    {
+      "type": "text",
+      "id": "klaviyo_company_id",
+      "label": "Klaviyo Public API Key",
+      "info": "Optional. Erzeugt nach erfolgreichem Absenden das Event 'Widerruf eingereicht'."
+    }
+  ],
+  "presets": []
+}
+{% endschema %}

@@ -157,6 +157,8 @@
         "product_stock_status_bck8gr": {
           "type": "product_stock_status",
           "settings": {
+            "text_limited": "Nur noch wenige verfügbar",
+            "text_instock": "Auf Lager - Sofort lieferbar",
             "unavailable_text": "Derzeit ausverkauft"
           }
         },

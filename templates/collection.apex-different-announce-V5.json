@@ -32,14 +32,14 @@
         "heading_HLFfDJ": {
           "type": "heading",
           "settings": {
-            "heading": "🚨 Restposten-Alarm 🚨",
+            "heading": "🚨 Neuware mit bis zu 80% Rabatt 🚨",
             "heading_size": "h2"
           }
         },
         "text_nAHzLU": {
           "type": "text",
           "settings": {
-            "text": "<p>Ab Dienstag kommt unser neues Karton-Design – deshalb müssen jetzt alle Produkte im bisherigen Design raus. Nur jetzt mit Mega-Rabatten!</p>"
+            "text": "<p>Am Montag kam eine neue Palette bei uns an. Die Außenkartons waren etwas beschädigt. Wir haben jedes Messer einzeln geprüft. Die Produkte sind einwandfrei. Also geben wir sie so raus, zu deinem Sonderpreis.<br/><br/></p>"
           }
         }
       },
@@ -197,7 +197,12 @@
         "hover_second_image": false,
         "pagination_style": "circle",
         "show_product_ratings": false,
-        "show_stock_status": false
+        "show_stock_status": false,
+        "show_gift_info": false,
+        "info_text": "",
+        "add_border_line": false,
+        "show_max_price": false,
+        "show_save_price": false
       }
     },
     "usp_list_xQHfgQ": {
@@ -246,8 +251,7 @@
         "color_scheme": "",
         "verticle_padding": 50,
         "horizontal_padding": 50,
-        "verticle_padding_mobile": 30,
-        "horizontal_padding_mobile": 15
+        "verticle_padding_mobile": 30
       }
     },
     "branded_image_version_ffF3PX": {
@@ -271,6 +275,8 @@
         "sub_title_GcWkqp"
       ],
       "settings": {
+        "use_container": false,
+        "reverse_content": false,
         "color_scheme": "scheme-6f79726a-2c99-40c4-b488-fdd582f63520",
         "shape_color": "#deceba",
         "margin_top": 20,

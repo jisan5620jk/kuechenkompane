@@ -151,6 +151,8 @@
         "product_stock_status_mRq9xN": {
           "type": "product_stock_status",
           "settings": {
+            "text_limited": "Nur noch wenige verfügbar",
+            "text_instock": "Auf Lager - Sofort lieferbar",
             "unavailable_text": "Derzeit ausverkauft"
           }
         },

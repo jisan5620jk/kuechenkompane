@@ -1,0 +1,523 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "collection-header": {
+      "type": "collection-page-header",
+      "disabled": true,
+      "settings": {
+        "color_scheme": "default",
+        "container": "container-fluid",
+        "layout": "outside_no_border",
+        "image_position": "background",
+        "enable_parallax": false,
+        "parallax_direction": "vertical",
+        "text_alignment": "center",
+        "text_color": "inherit",
+        "upper_title": false,
+        "show_desc": false,
+        "collection_all_desc": "",
+        "padding_top": 22,
+        "padding_bottom": 18,
+        "enable_bg_zoom_effect": true
+      }
+    },
+    "mrk_collection_grid_section_PKCq6B": {
+      "type": "mrk-collection-grid-section",
+      "disabled": true,
+      "name": "Akta Collection Grid",
+      "settings": {
+        "padding_top": 30,
+        "padding_bottom": 0,
+        "show_section_header": false,
+        "section_title": "Featured Collection",
+        "section_description": "Explore our best-selling products.",
+        "collection": "",
+        "products_limit": 20,
+        "use_metafield_image": false,
+        "hover_second_image": false,
+        "pagination_style": "circle",
+        "show_product_ratings": false,
+        "show_stock_status": false,
+        "show_gift_info": false,
+        "info_text": "",
+        "add_border_line": false,
+        "show_max_price": false,
+        "show_save_price": false
+      }
+    },
+    "main": {
+      "type": "main-collection-product-grid",
+      "disabled": true,
+      "custom_css": [
+        ".m-banner-promotion {order: 3 !important; margin-top: 30px; margin-bottom: 0;}",
+        ".m-collection-filters-form {margin-bottom: 0;}"
+      ],
+      "settings": {
+        "container": "container-fluid",
+        "grid_layout": "grid",
+        "grid_columns": "4",
+        "show_columns_switcher": true,
+        "pagination_limit": 30,
+        "paginate_type": "infinite",
+        "show_sorting": true,
+        "show_filter": false,
+        "filters_type": "storefront_filters",
+        "sidebar": "leftColumn",
+        "sidebar_title": "Filters",
+        "limit_height_widget": true,
+        "limit_height": 300,
+        "change_product_variant_on_fitlering": true,
+        "show_product_count": true,
+        "collapsed_groups": "Product type, Brand, Vendor, Size",
+        "color_swatches": "color,colour,couleur,farbe",
+        "color_swatches_design": "list",
+        "overlay_opacity": 0,
+        "show_stock_status": false
+      }
+    },
+    "kk_final_header_FKHbfC": {
+      "type": "kk-final-header",
+      "name": "KK Final Header",
+      "settings": {
+        "logo": "shopify://shop_images/logo1.svg",
+        "logo_height": 56,
+        "brand_name": "",
+        "trust_text": "<strong>★ „Exzellent\"</strong> · 4.265 Bewertungen",
+        "bg_color": "#fcfbf8"
+      }
+    },
+    "lagerverkauf_header": {
+      "type": "lagerverkauf-header",
+      "settings": {
+        "eyebrow": "Offizieller Lagerverkauf",
+        "heading": "Letzte Chance:",
+        "heading_accent": "bis zu −80 %",
+        "subtext": "Der Umzug endet — die Aktionspreise auch."
+      }
+    },
+    "kk_featured_offer": {
+      "type": "kk-featured-offer",
+      "blocks": {
+        "trust_1": {
+          "type": "trust",
+          "settings": {
+            "icon": "check",
+            "text": "100 Tage Geld-zurück"
+          }
+        },
+        "trust_2": {
+          "type": "trust",
+          "settings": {
+            "icon": "star",
+            "text": "365 Tage Schärfegarantie"
+          }
+        }
+      },
+      "block_order": [
+        "trust_1",
+        "trust_2"
+      ],
+      "settings": {
+        "dynamic_id": "kk-offer-product",
+        "product": "black-friday-sparangebot-1",
+        "badge": "Grösste Ersparnis",
+        "compare_label": "Normalpreis:",
+        "save_label": "Du sparst",
+        "note": "Nur noch Restbestand — wird nicht zum Aktionspreis nachbestellt.",
+        "button_label": "Angebot sichern",
+        "subtext": "Kostenloser Versand · Sichere Bestellung im Küchenkompane-Shop"
+      }
+    },
+    "kk_sale_grid": {
+      "type": "kk-sale-grid",
+      "blocks": {
+        "kk_sale_card_33RhXe": {
+          "type": "_kk-sale-card",
+          "name": "KK Sale card",
+          "settings": {
+            "product": "premium",
+            "overwrite": false,
+            "title": "",
+            "description": "",
+            "save_text": "Sie sparen",
+            "button_label": "Angebot sichern"
+          },
+          "blocks": {}
+        },
+        "kk_sale_card_XwHwnb": {
+          "type": "_kk-sale-card",
+          "name": "KK Sale card",
+          "settings": {
+            "product": "daily-cooking-set",
+            "overwrite": false,
+            "title": "",
+            "description": "",
+            "save_text": "Sie sparen",
+            "button_label": "Angebot sichern"
+          },
+          "blocks": {}
+        },
+        "kk_sale_card_wpjjtU": {
+          "type": "_kk-sale-card",
+          "name": "KK Sale card",
+          "settings": {
+            "product": "kuro-messerset-premium",
+            "overwrite": false,
+            "title": "",
+            "description": "",
+            "save_text": "Du sparst",
+            "button_label": "Angebot sichern"
+          },
+          "blocks": {}
+        },
+        "kk_sale_card_xRWpPR": {
+          "type": "_kk-sale-card",
+          "name": "KK Sale card",
+          "settings": {
+            "product": "gyuto-set-3pcs",
+            "overwrite": true,
+            "title": "",
+            "description": "",
+            "save_text": "Du sparst",
+            "button_label": "Angebot sichern"
+          },
+          "blocks": {}
+        },
+        "kk_sale_card_jYJnUr": {
+          "type": "_kk-sale-card",
+          "name": "KK Sale card",
+          "settings": {
+            "product": "folding-knife-a",
+            "overwrite": false,
+            "title": "",
+            "description": "",
+            "save_text": "Du sparst",
+            "button_label": "Angebot sichern"
+          },
+          "blocks": {}
+        },
+        "kk_sale_card_rH7WCX": {
+          "type": "_kk-sale-card",
+          "name": "KK Sale card",
+          "settings": {
+            "product": "aoki-damastmesser-set-kopie",
+            "overwrite": false,
+            "title": "",
+            "description": "",
+            "save_text": "Du sparst",
+            "button_label": "Angebot sichern"
+          },
+          "blocks": {}
+        },
+        "kk_sale_card_hXkLFD": {
+          "type": "_kk-sale-card",
+          "name": "KK Sale card",
+          "settings": {
+            "product": "asiatisches-kombipaket-tsuisuto",
+            "overwrite": false,
+            "title": "",
+            "description": "",
+            "save_text": "Du sparst",
+            "button_label": "Angebot sichern"
+          },
+          "blocks": {}
+        },
+        "kk_sale_card_k7bYir": {
+          "type": "_kk-sale-card",
+          "name": "KK Sale card",
+          "settings": {
+            "product": "kumai-messerset-premium",
+            "overwrite": false,
+            "title": "",
+            "description": "",
+            "save_text": "Du sparst",
+            "button_label": "Angebot sichern"
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "kk_sale_card_33RhXe",
+        "kk_sale_card_XwHwnb",
+        "kk_sale_card_wpjjtU",
+        "kk_sale_card_xRWpPR",
+        "kk_sale_card_jYJnUr",
+        "kk_sale_card_rH7WCX",
+        "kk_sale_card_hXkLFD",
+        "kk_sale_card_k7bYir"
+      ],
+      "settings": {
+        "view_all_label": "Alle Lagerumzug-Angebote ansehen",
+        "view_all_link": "",
+        "footnote": "Weitere Sets & Einzelmesser im Restbestand · Nur bis zum Abschluss des Umzugs"
+      }
+    },
+    "kk_promise": {
+      "type": "kk-promise",
+      "blocks": {
+        "promise_media": {
+          "type": "_kk-promise-media",
+          "settings": {
+            "image": "shopify://shop_images/8827784f-4fa6-446b-9be3-3c44bdfe1459_1.jpg",
+            "image_mobile": "shopify://shop_images/download_5_c9e52d45-47a1-477d-bbee-068b50027c3e.jpg",
+            "caption": "Die letzten Paletten werden verladen — verkauft wird, was nicht mit umzieht. (Symbolbild)"
+          },
+          "blocks": {}
+        },
+        "promise_content": {
+          "type": "_kk-promise-content",
+          "settings": {
+            "eyebrow": "Das Küchenkompane-Versprechen",
+            "heading": "Kaufen ohne Risiko — auch im Lagerverkauf"
+          },
+          "blocks": {
+            "promise_item_1": {
+              "type": "_kk-promise-item",
+              "settings": {
+                "icon": "check",
+                "title": "100 Tage Geld-zurück-Garantie",
+                "description": "Nicht überzeugt? Volle Rückerstattung — 100 Tage lang."
+              },
+              "blocks": {}
+            },
+            "promise_item_2": {
+              "type": "_kk-promise-item",
+              "settings": {
+                "icon": "star",
+                "title": "365 Tage Schärfegarantie",
+                "description": "Ein ganzes Jahr garantierte Schärfe — auch bei den Aktionsmodellen."
+              },
+              "blocks": {}
+            },
+            "promise_item_3": {
+              "type": "_kk-promise-item",
+              "settings": {
+                "icon": "truck",
+                "title": "Kostenloser Versand",
+                "description": "Keine Versandkosten — direkt aus dem Lager, bevor es umzieht."
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "promise_item_1",
+            "promise_item_2",
+            "promise_item_3"
+          ]
+        }
+      },
+      "block_order": [
+        "promise_media",
+        "promise_content"
+      ],
+      "settings": {}
+    },
+    "kk_rechnung": {
+      "type": "kk-rechnung",
+      "blocks": {
+        "rechnung_card_1": {
+          "type": "_kk-rechnung-card",
+          "settings": {
+            "number": "1",
+            "lead": "Das Lager zieht um.",
+            "text": "Jede Palette, jeder Karton und jedes Kilogramm verursacht Transportkosten."
+          },
+          "blocks": {}
+        },
+        "rechnung_card_2": {
+          "type": "_kk-rechnung-card",
+          "settings": {
+            "number": "2",
+            "lead": "Verkaufen statt transportieren.",
+            "text": "Was vorher verkauft wird, muss nicht mehr verpackt und verladen werden."
+          },
+          "blocks": {}
+        },
+        "rechnung_card_3": {
+          "type": "_kk-rechnung-card",
+          "settings": {
+            "number": "3",
+            "lead": "Endspurt.",
+            "text": "Die Aktion endet mit dem Umzug — danach gelten wieder Normalpreise. Was ausverkauft ist, kommt nicht zurück."
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "rechnung_card_1",
+        "rechnung_card_2",
+        "rechnung_card_3"
+      ],
+      "settings": {
+        "eyebrow": "Warum so günstig?",
+        "heading": "Die Rechnung hinter den Rabatten",
+        "footnote": "Keine Insolvenz, keine Geschäftsaufgabe, keine B-Ware: reduziert wird reguläre Lagerware vor dem Umzug."
+      }
+    },
+    "kk_final_review_dPd9kN": {
+      "type": "kk-final-review",
+      "blocks": {
+        "review_c7a7cR": {
+          "type": "review",
+          "settings": {
+            "rating": 5,
+            "title": "Sehr gute Qualität",
+            "text": "„Die Produkte sind auf der Website sehr gut fotografiert und beschrieben, ohne dabei zu viel zu versprechen. Die Ware kam zum …\"",
+            "author": "Fam. Lemke · Verifiziert · Trustpilot"
+          }
+        },
+        "review_HPn4ct": {
+          "type": "review",
+          "settings": {
+            "rating": 5,
+            "title": "Sehr zufrieden",
+            "text": "„Das Messer weist eine optisch ansprechende und stabile Verarbeitung auf. Die Klinge ist außerordentlich scharf und …\"",
+            "author": "Lisa · Verifiziert · Trustpilot"
+          }
+        },
+        "review_aizQxg": {
+          "type": "review",
+          "settings": {
+            "rating": 5,
+            "title": "Ich war skeptisch, ob die Qualität passt",
+            "text": "„Ich war skeptisch, ob die Qualität der Messer im Vergleich zum Preis passen würde. Aber meine Frau war begeistert von …\"",
+            "author": "Benrdt B. · Verifiziert · Trustpilot"
+          }
+        }
+      },
+      "block_order": [
+        "review_c7a7cR",
+        "review_HPn4ct",
+        "review_aizQxg"
+      ],
+      "name": "KK Final Review",
+      "settings": {
+        "eyebrow": "Trustpilot",
+        "heading": "Das sagen Kundinnen und Kunden",
+        "subheading": "Bewertet mit „Exzellent\" — 3.735 Bewertungen",
+        "bg_color": "#fcfbf8"
+      }
+    },
+    "kk_final_faq_nhxdC6": {
+      "type": "kk-final-faq",
+      "blocks": {
+        "faq_item_FXRi6G": {
+          "type": "faq_item",
+          "settings": {
+            "question": "Why are the knives so heavily discounted?",
+            "answer": "Küchenkompane's warehouse is moving. Every knife sold beforehand won't need to be packed, loaded, and transported."
+          }
+        },
+        "faq_item_TPTfqe": {
+          "type": "faq_item",
+          "settings": {
+            "question": "Is this B-stock or a bankruptcy sale?",
+            "answer": "No. These are regular new items from existing stock."
+          }
+        },
+        "faq_item_c7DRhk": {
+          "type": "faq_item",
+          "settings": {
+            "question": "Can I return my order?",
+            "answer": "Yes. Küchenkompane's 100-day money-back guarantee applies."
+          }
+        },
+        "faq_item_YPXtWb": {
+          "type": "faq_item",
+          "settings": {
+            "question": "How long are the offers valid for?",
+            "answer": "Promotional prices are only valid while stock lasts."
+          }
+        }
+      },
+      "block_order": [
+        "faq_item_FXRi6G",
+        "faq_item_TPTfqe",
+        "faq_item_c7DRhk",
+        "faq_item_YPXtWb"
+      ],
+      "name": "KK Lagerumzug FAQ",
+      "settings": {
+        "heading": "Frequently Asked Questions",
+        "bg_color": "#fcfbf8"
+      }
+    },
+    "kk_final_banner_LEBAC7": {
+      "type": "kk-final-banner",
+      "blocks": {
+        "heading_3PftLc": {
+          "type": "heading",
+          "settings": {
+            "text": "Der Umzug ist fast abgeschlossen."
+          }
+        },
+        "paragraph_Kt3D76": {
+          "type": "paragraph",
+          "settings": {
+            "text": "Sobald die letzten Bestände geräumt sind, enden die Aktionspreise endgültig."
+          }
+        },
+        "button_JjUbAK": {
+          "type": "button",
+          "settings": {
+            "button_text": "Zu den Angeboten",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "heading_3PftLc",
+        "paragraph_Kt3D76",
+        "button_JjUbAK"
+      ],
+      "name": "Final Banner",
+      "settings": {}
+    },
+    "kk_final_footer_V9nrdh": {
+      "type": "kk-final-footer",
+      "name": "KK Final Footer",
+      "settings": {
+        "brand_name": "Küchenkompane",
+        "tagline": "· Offizieller Lagerverkauf wegen Umzug",
+        "disclaimer": "Angebote, Preise, Rabatte und Verfügbarkeiten gelten vorbehaltlich des jeweiligen Lagerbestands. Es gelten die Rechtstexte des Küchenkompane-Shops (Impressum, Datenschutz, AGB, Widerruf — siehe Shop-Footer).",
+        "copyright": "© 2026 Küchenkompane · Alle Rechte vorbehalten"
+      }
+    },
+    "kk_mobile_sticky_VeCqXc": {
+      "type": "kk-mobile-sticky",
+      "name": "KK Mobile Sticky",
+      "settings": {
+        "headline": "Letzte Chance: bis zu –80 %",
+        "subtext": "Umzug zu",
+        "progress": 89,
+        "scroll_target_id": "produkte",
+        "button_label": "Angebote ↑",
+        "button_link": "#kk-offer-product"
+      }
+    }
+  },
+  "order": [
+    "collection-header",
+    "mrk_collection_grid_section_PKCq6B",
+    "main",
+    "kk_final_header_FKHbfC",
+    "lagerverkauf_header",
+    "kk_featured_offer",
+    "kk_sale_grid",
+    "kk_promise",
+    "kk_rechnung",
+    "kk_final_review_dPd9kN",
+    "kk_final_faq_nhxdC6",
+    "kk_final_banner_LEBAC7",
+    "kk_final_footer_V9nrdh",
+    "kk_mobile_sticky_VeCqXc"
+  ]
+}

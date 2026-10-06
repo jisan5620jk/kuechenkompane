@@ -9,53 +9,26 @@
  */
 {
   "sections": {
-    "rich_text_MPfPJc": {
-      "type": "rich-text",
-      "blocks": {
-        "heading_HLFfDJ": {
-          "type": "heading",
-          "settings": {
-            "heading": "Black-Month Deals zuerst sichern",
-            "heading_size": "h2"
-          }
-        },
-        "text_nAHzLU": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Frühstart: Wegen <strong>hoher Nachfrage </strong>und <strong>knapper Bestände </strong>starten wir unsere besten Black Month Deals vor allen anderen. <strong>Es gelten Preisphasen statt Dauerrabatte. </strong>Unsere Angebote wechseln jeden Tag. Wer <strong>früh zuschlägt</strong>, spart am meisten.</p>"
-          }
-        }
-      },
-      "block_order": [
-        "heading_HLFfDJ",
-        "text_nAHzLU"
-      ],
-      "name": "Rich text",
+    "apex_timer_restart_xJAKpM": {
+      "type": "APEX-timer-restart",
+      "name": "Apex Timer Restart",
       "settings": {
-        "container": "container",
-        "color_scheme": "",
-        "content_alignment": "center",
-        "padding_top": 24,
-        "padding_bottom": 12,
-        "custom_class": "",
-        "animations": "inherit"
-      }
-    },
-    "apex_timer_8KXfky": {
-      "type": "Apex-timer",
-      "name": "Apex Product Timer",
-      "settings": {
-        "bg_color": "#f2f2f2",
+        "bg_color": "#324a34",
         "section_pt": 15,
         "section_pb": 15,
-        "timer_clock": "#c89d00",
-        "timer_clock_text_font_size": 12,
-        "clock_font_weight": "700",
-        "timer_text": "ANGEBOT WECHSELT IN:",
-        "timer_font_size": 12,
-        "timer_color": "#000000",
-        "timer_font_weight": "700",
-        "start_time": "00:00:00"
+        "timer_clock": "#fff",
+        "timer_clock_text_font_size": 15,
+        "clock_font_weight": "400",
+        "timer_text": "BIS ZU 80 % RABATT – SOLANGE DER VORRAT REICHT!",
+        "timer_font_size": 15,
+        "timer_color": "#dcad27",
+        "timer_font_weight": "600",
+        "timer_hide": true,
+        "start_countdown": true,
+        "start_datetime": "2025-12-25 00:00",
+        "not_started_text": "Countdown nicht gestartet",
+        "set_hour": 48,
+        "restart_on": true
       }
     },
     "collection-header": {
@@ -197,7 +170,12 @@
         "hover_second_image": false,
         "pagination_style": "circle",
         "show_product_ratings": false,
-        "show_stock_status": false
+        "show_stock_status": false,
+        "show_gift_info": false,
+        "info_text": "",
+        "add_border_line": false,
+        "show_max_price": false,
+        "show_save_price": false
       }
     },
     "promotion_banner_fd8zPy": {
@@ -279,8 +257,7 @@
         "color_scheme": "",
         "verticle_padding": 50,
         "horizontal_padding": 50,
-        "verticle_padding_mobile": 30,
-        "horizontal_padding_mobile": 15
+        "verticle_padding_mobile": 30
       }
     },
     "collection_description_tUMerW": {
@@ -319,8 +296,7 @@
     }
   },
   "order": [
-    "rich_text_MPfPJc",
-    "apex_timer_8KXfky",
+    "apex_timer_restart_xJAKpM",
     "collection-header",
     "apex_top_slider_GBwqAg",
     "category_selection_iMrTd6",
